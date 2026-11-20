@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <p>&lt;!DOCTYPE html&gt;</p>
+    <p>&lt;html lang="ja"&gt;</p>
+    <p>&lt;head&gt;</p>
+    <p>&lt;meta charset="UTF-8" /&gt;</p>
+    <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+    <p>&lt;title&gt;私立 星陵学園 公式ホームページ | Seiryo Academy&lt;/title&gt;</p>
+    <p>&lt;script src="https://cdn.tailwindcss.com/3.4.17"&gt;&lt;/script&gt;</p>
+    <p>&lt;script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"&gt;&lt;/script&gt;</p>
+    <p>&lt;link rel="preconnect" href="https://fonts.googleapis.com" /&gt;</p>
+    <p>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /&gt;</p>
+    <p>
+      &lt;link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Noto+Serif+JP:wght@600;700&amp;display=swap"
+      rel="stylesheet" /&gt;
+    </p>
+    <p>&lt;style&gt;</p>
+    <p>body {</p>
+    <p>font-family: 'Inter', 'Noto Sans JP', sans-serif;</p>
+    <p>}</p>
+    <p>.font-serif-jp {</p>
+    <p>font-family: 'Noto Serif JP', serif;</p>
+    <p>}</p>
+    <p>.font-mono-tech {</p>
+    <p>font-family: 'JetBrains Mono', monospace;</p>
+    <p>}</p>
+    <p>@keyframes shake {</p>
+    <p>0%, 100% { transform: translateX(0); }</p>
+    <p>20% { transform: translateX(-6px); }</p>
+    <p>40% { transform: translateX(6px); }</p>
+    <p>60% { transform: translateX(-4px); }</p>
+    <p>80% { transform: translateX(4px); }</p>
+    <p>}</p>
+    <p>.animate-shake {</p>
+    <p>animation: shake 0.35s ease-in-out;</p>
+    <p>}</p>
+    <p>@keyframes scanline {</p>
+    <p>0% { transform: translateY(-100%); }</p>
+    <p>100% { transform: translateY(100vh); }</p>
+    <p>}</p>
+    <p>.scanline-bar {</p>
+    <p>animation: scanline 6s linear infinite;</p>
+    <p>}</p>
+    <p>&lt;/style&gt;</p>
+    <p>&lt;/head&gt;</p>
+    <p>&lt;body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-500/30"&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- ==================== 表の偽装サイト (SURFACE VIEW) ==================== --&gt;</p>
+    <p>&lt;div id="surface-view" class="min-h-screen flex flex-col"&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- ===== パターンA: 学校ホームページ風 (SCHOOL THEME) ===== --&gt;</p>
+    <p>&lt;div id="theme-school" class="flex-1 flex flex-col bg-white"&gt;</p>
+    <p>&lt;!-- Top Utility Bar --&gt;</p>
+    <p>&lt;div class="bg-sky-900 text-sky-100 text-xs py-1.5 px-4"&gt;</p>
+    <p>&lt;div class="max-w-6xl mx-auto flex flex-wrap items-center justify-end gap-4"&gt;</p>
+    <p>&lt;button type="button" data-school-tab="access" class="hover:underline"&gt;アクセス&lt;/button&gt;</p>
+    <p>
+      &lt;button type="button" data-school-tab="news" class="hover:underline"&gt;在校生・保護者の方へ&lt;/button&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- School Header --&gt;</p>
+    <p>&lt;header class="border-b border-slate-200 bg-white sticky top-0 z-30"&gt;</p>
+    <p>&lt;div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4"&gt;</p>
+    <p>
+      &lt;button type="button" id="school-logo-trigger" class="flex items-center gap-3 text-left group
+      focus:outline-none select-none" title="私立 星陵学園"&gt;
+    </p>
+    <p>
+      &lt;div class="w-11 h-11 rounded-full bg-sky-800 text-white flex items-center justify-center shadow-sm
+      transition-transform duration-150 group-active:scale-95"&gt;
+    </p>
+    <p>&lt;svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"&gt;</p>
+    <p>
+      &lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12
+      2" /&gt;
+    </p>
+    <p>&lt;/svg&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div&gt;</p>
+    <p>&lt;p class="text-[11px] tracking-widest text-sky-700 font-semibold"&gt;SEIRYO ACADEMY&lt;/p&gt;</p>
+    <p>&lt;h1 class="text-lg sm:text-xl font-serif-jp font-bold text-slate-900"&gt;私立 星陵学園&lt;/h1&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/button&gt;</p>
+    <p><br /></p>
+    <p>&lt;nav class="hidden md:flex items-center gap-1 text-sm font-medium"&gt;</p>
+    <p>
+      &lt;button type="button" data-school-tab="home" class="school-nav-btn px-3.5 py-2 rounded-md text-sky-800
+      bg-sky-50"&gt;ホーム&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-school-tab="about" class="school-nav-btn px-3.5 py-2 rounded-md text-slate-600
+      hover:bg-slate-100"&gt;学園案内&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-school-tab="news" class="school-nav-btn px-3.5 py-2 rounded-md text-slate-600
+      hover:bg-slate-100"&gt;お知らせ&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-school-tab="clubs" class="school-nav-btn px-3.5 py-2 rounded-md text-slate-600
+      hover:bg-slate-100"&gt;部活動&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-school-tab="access" class="school-nav-btn px-3.5 py-2 rounded-md text-slate-600
+      hover:bg-slate-100"&gt;アクセス&lt;/button&gt;
+    </p>
+    <p>&lt;/nav&gt;</p>
+    <p><br /></p>
+    <p>
+      &lt;button type="button" id="school-mobile-menu-btn" class="md:hidden p-2 rounded-md text-slate-600
+      hover:bg-slate-100" aria-label="メニューを開く"&gt;
+    </p>
+    <p>&lt;i data-lucide="menu" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;!-- Mobile Nav --&gt;</p>
+    <p>
+      &lt;div id="school-mobile-nav" class="hidden md:hidden border-t border-slate-200 bg-slate-50 px-4 py-2
+      space-y-1"&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-school-tab="home" class="block w-full text-left px-3 py-2 rounded text-sm
+      font-medium text-sky-800 bg-sky-100/60"&gt;ホーム&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-school-tab="about" class="block w-full text-left px-3 py-2 rounded text-sm
+      font-medium text-slate-700"&gt;学園案内&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-school-tab="news" class="block w-full text-left px-3 py-2 rounded text-sm
+      font-medium text-slate-700"&gt;お知らせ&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-school-tab="clubs" class="block w-full text-left px-3 py-2 rounded text-sm
+      font-medium text-slate-700"&gt;部活動&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-school-tab="access" class="block w-full text-left px-3 py-2 rounded text-sm
+      font-medium text-slate-700"&gt;アクセス&lt;/button&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/header&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- School Main Content --&gt;</p>
+    <p>&lt;main class="flex-1"&gt;</p>
+    <p>&lt;!-- Tab: Home --&gt;</p>
+    <p>&lt;section id="school-panel-home" class="school-panel"&gt;</p>
+    <p>&lt;div class="bg-gradient-to-br from-sky-900 via-sky-800 to-indigo-900 text-white py-14 sm:py-20 px-4"&gt;</p>
+    <p>&lt;div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center"&gt;</p>
+    <p>&lt;div class="space-y-4"&gt;</p>
+    <p>
+      &lt;span class="inline-block px-3 py-1 rounded-full bg-white/15 text-sky-100 text-xs font-medium
+      tracking-wider"&gt;2026年度 入試情報公開中&lt;/span&gt;
+    </p>
+    <p>
+      &lt;h2 class="text-2xl sm:text-4xl font-serif-jp font-bold leading-snug"&gt;知性と探求心で、&lt;br
+      /&gt;未来の扉をひらく。&lt;/h2&gt;
+    </p>
+    <p>&lt;p class="text-sky-100/90 text-sm sm:text-base leading-relaxed"&gt;</p>
+    <p>
+      私立星陵学園は、自主自律の精神とグローバルな視点を育む中高一貫校です。一人ひとりの好奇心を大切にし、確かな学力と豊かな人間性を培います。
+    </p>
+    <p>&lt;/p&gt;</p>
+    <p>&lt;div class="flex flex-wrap gap-3 pt-2"&gt;</p>
+    <p>
+      &lt;button type="button" data-school-tab="about" class="px-5 py-2.5 rounded-lg bg-white text-sky-900 font-semibold
+      text-sm hover:bg-sky-50 transition"&gt;学園の特色を見る&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-school-tab="news" class="px-5 py-2.5 rounded-lg border border-white/40 text-white
+      font-medium text-sm hover:bg-white/10 transition"&gt;最新のお知らせ&lt;/button&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 space-y-4"&gt;</p>
+    <p>&lt;div class="flex items-center justify-between border-b border-white/15 pb-3"&gt;</p>
+    <p>&lt;span class="text-sm font-semibold"&gt;今月の主な行事予定&lt;/span&gt;</p>
+    <p>&lt;span class="text-xs text-sky-200"&gt;2026年11月&lt;/span&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;ul class="space-y-3 text-sm"&gt;</p>
+    <p>&lt;li class="flex items-start gap-3"&gt;</p>
+    <p>&lt;span class="px-2 py-0.5 rounded bg-sky-700 text-xs font-mono-tech shrink-0"&gt;11/14&lt;/span&gt;</p>
+    <p>&lt;span&gt;第2回 学校説明会・校内見学会（要予約）&lt;/span&gt;</p>
+    <p>&lt;/li&gt;</p>
+    <p>&lt;li class="flex items-start gap-3"&gt;</p>
+    <p>&lt;span class="px-2 py-0.5 rounded bg-sky-700 text-xs font-mono-tech shrink-0"&gt;11/21&lt;/span&gt;</p>
+    <p>&lt;span&gt;星陵祭（文化祭）一般公開日&lt;/span&gt;</p>
+    <p>&lt;/li&gt;</p>
+    <p>&lt;li class="flex items-start gap-3"&gt;</p>
+    <p>&lt;span class="px-2 py-0.5 rounded bg-sky-700 text-xs font-mono-tech shrink-0"&gt;11/28&lt;/span&gt;</p>
+    <p>&lt;span&gt;保護者懇談会・進路ガイダンス&lt;/span&gt;</p>
+    <p>&lt;/li&gt;</p>
+    <p>&lt;/ul&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-6"&gt;</p>
+    <p>&lt;div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-2"&gt;</p>
+    <p>&lt;div class="w-9 h-9 rounded-lg bg-sky-100 text-sky-800 flex items-center justify-center"&gt;</p>
+    <p>&lt;i data-lucide="book-open" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;探究型カリキュラム&lt;/h3&gt;</p>
+    <p>
+      &lt;p class="text-sm text-slate-600
+      leading-relaxed"&gt;課題発見から実験・発表までを一貫して行う独自プログラムを全学年で導入しています。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-2"&gt;</p>
+    <p>&lt;div class="w-9 h-9 rounded-lg bg-sky-100 text-sky-800 flex items-center justify-center"&gt;</p>
+    <p>&lt;i data-lucide="globe" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;国際交流プログラム&lt;/h3&gt;</p>
+    <p>
+      &lt;p class="text-sm text-slate-600
+      leading-relaxed"&gt;姉妹校とのオンライン交流や海外研修を通じて、実践的な語学力と異文化理解を深めます。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-2"&gt;</p>
+    <p>&lt;div class="w-9 h-9 rounded-lg bg-sky-100 text-sky-800 flex items-center justify-center"&gt;</p>
+    <p>&lt;i data-lucide="award" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;充実の施設環境&lt;/h3&gt;</p>
+    <p>
+      &lt;p class="text-sm text-slate-600
+      leading-relaxed"&gt;蔵書5万冊の図書メディアセンターや最新の理科実験室、全天候型グラウンドを完備。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- 最新トピックスセクション --&gt;</p>
+    <p>&lt;div class="bg-slate-50 border-y border-slate-200 py-12 px-4"&gt;</p>
+    <p>&lt;div class="max-w-6xl mx-auto space-y-6"&gt;</p>
+    <p>&lt;div class="flex items-center justify-between"&gt;</p>
+    <p>&lt;div&gt;</p>
+    <p>&lt;p class="text-xs font-semibold tracking-widest text-sky-700 uppercase"&gt;TOPICS &amp;amp; NEWS&lt;/p&gt;</p>
+    <p>&lt;h3 class="text-xl font-serif-jp font-bold text-slate-900 mt-1"&gt;最新のお知らせ・トピックス&lt;/h3&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>
+      &lt;button type="button" data-school-tab="news" class="text-xs font-semibold text-sky-800
+      hover:underline"&gt;一覧を見る →&lt;/button&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="grid md:grid-cols-3 gap-4"&gt;</p>
+    <p>&lt;div class="bg-white border border-slate-200 rounded-xl p-4 space-y-2"&gt;</p>
+    <p>&lt;div class="flex items-center gap-2 text-xs"&gt;</p>
+    <p>&lt;span class="font-mono-tech text-slate-400"&gt;2026.11.18&lt;/span&gt;</p>
+    <p>&lt;span class="px-2 py-0.5 rounded bg-sky-100 text-sky-800 font-medium"&gt;重要&lt;/span&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;p class="text-sm font-bold text-slate-800"&gt;冬季休業期間中の事務室窓口について&lt;/p&gt;</p>
+    <p>
+      &lt;p class="text-xs text-slate-500
+      leading-relaxed"&gt;12月26日〜1月4日の期間は窓口業務を休止いたします。証明書等の発行はお早めにご申請ください。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="bg-white border border-slate-200 rounded-xl p-4 space-y-2"&gt;</p>
+    <p>&lt;div class="flex items-center gap-2 text-xs"&gt;</p>
+    <p>&lt;span class="font-mono-tech text-slate-400"&gt;2026.11.10&lt;/span&gt;</p>
+    <p>&lt;span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium"&gt;部活動&lt;/span&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;p class="text-sm font-bold text-slate-800"&gt;物理・情報研究部が科学コンテストで受賞&lt;/p&gt;</p>
+    <p>
+      &lt;p class="text-xs text-slate-500
+      leading-relaxed"&gt;関東地区高校生科学探究コンテストにおいて、自動制御ロボット部門で優秀賞を受賞しました。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="bg-white border border-slate-200 rounded-xl p-4 space-y-2"&gt;</p>
+    <p>&lt;div class="flex items-center gap-2 text-xs"&gt;</p>
+    <p>&lt;span class="font-mono-tech text-slate-400"&gt;2026.11.02&lt;/span&gt;</p>
+    <p>&lt;span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium"&gt;行事&lt;/span&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;p class="text-sm font-bold text-slate-800"&gt;第58回 星陵祭 タイムテーブル公開&lt;/p&gt;</p>
+    <p>
+      &lt;p class="text-xs text-slate-500
+      leading-relaxed"&gt;各クラスの展示企画や講堂での吹奏楽部・演劇部ステージのスケジュールをご確認いただけます。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- スクールライフ・数字で見る星陵学園 --&gt;</p>
+    <p>&lt;div class="max-w-6xl mx-auto px-4 py-14 space-y-10"&gt;</p>
+    <p>&lt;div class="text-center space-y-2"&gt;</p>
+    <p>
+      &lt;p class="text-xs font-semibold tracking-widest text-sky-700 uppercase"&gt;SCHOOL LIFE &amp;amp; DATA&lt;/p&gt;
+    </p>
+    <p>&lt;h3 class="text-2xl font-serif-jp font-bold text-slate-900"&gt;星陵学園の学びと環境&lt;/h3&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"&gt;</p>
+    <p>&lt;div class="p-5 rounded-2xl bg-sky-50 border border-sky-100"&gt;</p>
+    <p>
+      &lt;p class="text-3xl font-bold text-sky-900"&gt;1,080&lt;span class="text-sm font-normal
+      ml-1"&gt;名&lt;/span&gt;&lt;/p&gt;
+    </p>
+    <p>&lt;p class="text-xs text-slate-600 mt-1"&gt;中学・高校 在籍生徒数&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="p-5 rounded-2xl bg-sky-50 border border-sky-100"&gt;</p>
+    <p>
+      &lt;p class="text-3xl font-bold text-sky-900"&gt;34&lt;span class="text-sm font-normal
+      ml-1"&gt;団体&lt;/span&gt;&lt;/p&gt;
+    </p>
+    <p>&lt;p class="text-xs text-slate-600 mt-1"&gt;運動部・文化部・同好会&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="p-5 rounded-2xl bg-sky-50 border border-sky-100"&gt;</p>
+    <p>
+      &lt;p class="text-3xl font-bold text-sky-900"&gt;50,000&lt;span class="text-sm font-normal
+      ml-1"&gt;冊&lt;/span&gt;&lt;/p&gt;
+    </p>
+    <p>&lt;p class="text-xs text-slate-600 mt-1"&gt;図書メディアセンター蔵書&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="p-5 rounded-2xl bg-sky-50 border border-sky-100"&gt;</p>
+    <p>
+      &lt;p class="text-3xl font-bold text-sky-900"&gt;96.4&lt;span class="text-sm font-normal
+      ml-1"&gt;%&lt;/span&gt;&lt;/p&gt;
+    </p>
+    <p>&lt;p class="text-xs text-slate-600 mt-1"&gt;現役大学進学率（昨年度）&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>
+      &lt;div class="bg-sky-900 text-white rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between
+      gap-6"&gt;
+    </p>
+    <p>&lt;div class="space-y-2"&gt;</p>
+    <p>&lt;h4 class="text-lg sm:text-xl font-serif-jp font-bold"&gt;学校説明会・キャンパス見学のご案内&lt;/h4&gt;</p>
+    <p>
+      &lt;p class="text-sm
+      text-sky-100/90"&gt;校舎や部活動の様子を実際にご覧いただけます。個別相談コーナーも設けておりますので、お気軽にご参加ください。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>
+      &lt;button type="button" data-school-tab="access" class="px-6 py-3 rounded-xl bg-white text-sky-900 font-bold
+      text-sm shrink-0 hover:bg-sky-50 transition"&gt;
+    </p>
+    <p>アクセス・受付時間を見る</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/section&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Tab: About --&gt;</p>
+    <p>&lt;section id="school-panel-about" class="school-panel hidden max-w-4xl mx-auto px-4 py-12 space-y-6"&gt;</p>
+    <p>
+      &lt;h2 class="text-2xl font-serif-jp font-bold text-slate-900 border-b border-slate-200
+      pb-3"&gt;学園案内・教育理念&lt;/h2&gt;
+    </p>
+    <p>&lt;p class="text-slate-700 leading-relaxed"&gt;</p>
+    <p>
+      1958年の創立以来、私立星陵学園は「誠実・探究・共生」を校訓とし、変化の激しい社会において自ら考え行動できる人材の育成を目指してきました。
+    </p>
+    <p>&lt;/p&gt;</p>
+    <p>&lt;div class="grid sm:grid-cols-2 gap-4"&gt;</p>
+    <p>&lt;div class="p-4 rounded-xl bg-sky-50 border border-sky-100"&gt;</p>
+    <p>&lt;h3 class="font-bold text-sky-900 mb-1"&gt;建学の精神&lt;/h3&gt;</p>
+    <p>&lt;p class="text-sm text-slate-700"&gt;真理を愛し、他者を尊重し、社会に貢献する知性と品格を養う。&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="p-4 rounded-xl bg-sky-50 border border-sky-100"&gt;</p>
+    <p>&lt;h3 class="font-bold text-sky-900 mb-1"&gt;生徒数・教員数&lt;/h3&gt;</p>
+    <p>&lt;p class="text-sm text-slate-700"&gt;中学・高校あわせて約1,080名の生徒が在籍しています。&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/section&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Tab: News --&gt;</p>
+    <p>&lt;section id="school-panel-news" class="school-panel hidden max-w-4xl mx-auto px-4 py-12 space-y-6"&gt;</p>
+    <p>
+      &lt;h2 class="text-2xl font-serif-jp font-bold text-slate-900 border-b border-slate-200
+      pb-3"&gt;学園からのお知らせ&lt;/h2&gt;
+    </p>
+    <p>&lt;div class="divide-y divide-slate-200 border border-slate-200 rounded-xl bg-white"&gt;</p>
+    <p>&lt;div class="p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4"&gt;</p>
+    <p>&lt;span class="text-xs font-mono-tech text-slate-500"&gt;2026.11.18&lt;/span&gt;</p>
+    <p>&lt;span class="px-2 py-0.5 text-xs rounded bg-sky-100 text-sky-800 w-fit"&gt;重要&lt;/span&gt;</p>
+    <p>
+      &lt;span class="text-sm font-medium text-slate-800"&gt;冬季休業期間中の事務室窓口の取り扱いについて&lt;/span&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4"&gt;</p>
+    <p>&lt;span class="text-xs font-mono-tech text-slate-500"&gt;2026.11.10&lt;/span&gt;</p>
+    <p>&lt;span class="px-2 py-0.5 text-xs rounded bg-emerald-100 text-emerald-800 w-fit"&gt;部活動&lt;/span&gt;</p>
+    <p>
+      &lt;span class="text-sm font-medium
+      text-slate-800"&gt;物理・天文部が関東地区科学コンテストで優秀賞を受賞しました&lt;/span&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4"&gt;</p>
+    <p>&lt;span class="text-xs font-mono-tech text-slate-500"&gt;2026.11.02&lt;/span&gt;</p>
+    <p>&lt;span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-700 w-fit"&gt;行事&lt;/span&gt;</p>
+    <p>
+      &lt;span class="text-sm font-medium
+      text-slate-800"&gt;星陵祭（11/21開催）タイムテーブルを公開しました&lt;/span&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/section&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Tab: Clubs --&gt;</p>
+    <p>&lt;section id="school-panel-clubs" class="school-panel hidden max-w-4xl mx-auto px-4 py-12 space-y-6"&gt;</p>
+    <p>
+      &lt;h2 class="text-2xl font-serif-jp font-bold text-slate-900 border-b border-slate-200
+      pb-3"&gt;部活動紹介&lt;/h2&gt;
+    </p>
+    <p>&lt;div class="grid sm:grid-cols-2 gap-4"&gt;</p>
+    <p>&lt;div class="p-4 border border-slate-200 rounded-xl"&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;吹奏楽部&lt;/h3&gt;</p>
+    <p>
+      &lt;p class="text-sm text-slate-600 mt-1"&gt;週4日、音楽室にて活動中。定期演奏会は毎年満員御礼です。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="p-4 border border-slate-200 rounded-xl"&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;物理・情報研究部&lt;/h3&gt;</p>
+    <p>
+      &lt;p class="text-sm text-slate-600
+      mt-1"&gt;ロボット制作やプログラミング、天体観測など幅広く探究しています。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="p-4 border border-slate-200 rounded-xl"&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;陸上競技部&lt;/h3&gt;</p>
+    <p>&lt;p class="text-sm text-slate-600 mt-1"&gt;県大会出場を目標に、日々のトレーニングに励んでいます。&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="p-4 border border-slate-200 rounded-xl"&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;茶道・華道部&lt;/h3&gt;</p>
+    <p>&lt;p class="text-sm text-slate-600 mt-1"&gt;和室「星心庵」にて伝統文化の作法を楽しく学んでいます。&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/section&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Tab: Access --&gt;</p>
+    <p>&lt;section id="school-panel-access" class="school-panel hidden max-w-4xl mx-auto px-4 py-12 space-y-6"&gt;</p>
+    <p>
+      &lt;h2 class="text-2xl font-serif-jp font-bold text-slate-900 border-b border-slate-200
+      pb-3"&gt;交通アクセス&lt;/h2&gt;
+    </p>
+    <p>&lt;div class="bg-slate-50 border border-slate-200 rounded-xl p-6 space-y-3 text-sm text-slate-700"&gt;</p>
+    <p>&lt;p&gt;&lt;strong&gt;最寄り駅：&lt;/strong&gt;JR総武線・都営新宿線「星陵駅」北口より徒歩8分&lt;/p&gt;</p>
+    <p>&lt;p&gt;&lt;strong&gt;事務室受付：&lt;/strong&gt;平日 8:30〜17:00（土日祝・年末年始を除く）&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/section&gt;</p>
+    <p>&lt;/main&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- School Footer --&gt;</p>
+    <p>&lt;footer class="bg-slate-900 text-slate-400 text-xs py-6 px-4"&gt;</p>
+    <p>&lt;div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3"&gt;</p>
+    <p>&lt;p&gt;私立 星陵学園 広報委員会&lt;/p&gt;</p>
+    <p>
+      &lt;p class="select-none"&gt;&amp;copy; &lt;span id="school-year-trigger"
+      class="cursor-default"&gt;2026&lt;/span&gt; Seiryo Academy. All Rights Reserved.&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/footer&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- ===== パターンB: ニュースホームページ風 (NEWS THEME) ===== --&gt;</p>
+    <p>&lt;div id="theme-news" class="hidden flex-1 flex flex-col bg-white"&gt;</p>
+    <p>&lt;header class="border-b-2 border-slate-900 bg-white sticky top-0 z-30"&gt;</p>
+    <p>&lt;div class="bg-slate-900 text-slate-200 text-xs py-1 px-4"&gt;</p>
+    <p>&lt;div class="max-w-6xl mx-auto flex items-center justify-between"&gt;</p>
+    <p>&lt;span&gt;2026年11月20日（金） 東京・曇り 14℃&lt;/span&gt;</p>
+    <p>&lt;span class="text-rose-400 font-semibold"&gt;● LIVE 速報配信中&lt;/span&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4"&gt;</p>
+    <p>
+      &lt;button type="button" id="news-logo-trigger" class="flex items-center gap-2.5 text-left group
+      focus:outline-none select-none"&gt;
+    </p>
+    <p>
+      &lt;div class="w-9 h-9 bg-rose-600 text-white font-bold flex items-center justify-center rounded text-sm
+      tracking-tighter transition-transform group-active:scale-95"&gt;
+    </p>
+    <p>MN</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div&gt;</p>
+    <p>&lt;h1 class="text-xl font-bold tracking-tight text-slate-900"&gt;METRO DAILY NEWS&lt;/h1&gt;</p>
+    <p>&lt;p class="text-[10px] text-slate-500 uppercase tracking-widest"&gt;Independent Digital Press&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/button&gt;</p>
+    <p><br /></p>
+    <p>&lt;nav class="hidden sm:flex items-center gap-4 text-sm font-semibold text-slate-700"&gt;</p>
+    <p>&lt;button type="button" data-news-cat="all" class="news-cat-btn text-rose-600"&gt;総合&lt;/button&gt;</p>
+    <p>
+      &lt;button type="button" data-news-cat="tech" class="news-cat-btn
+      hover:text-rose-600"&gt;テクノロジー&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-news-cat="economy" class="news-cat-btn hover:text-rose-600"&gt;経済&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-news-cat="city" class="news-cat-btn
+      hover:text-rose-600"&gt;社会・都市&lt;/button&gt;
+    </p>
+    <p>&lt;/nav&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/header&gt;</p>
+    <p><br /></p>
+    <p>&lt;main class="flex-1 max-w-6xl w-full mx-auto px-4 py-8 space-y-8"&gt;</p>
+    <p>&lt;div class="bg-rose-50 border-l-4 border-rose-600 px-4 py-3 flex items-center gap-3"&gt;</p>
+    <p>&lt;span class="px-2 py-0.5 bg-rose-600 text-white text-xs font-bold rounded shrink-0"&gt;速報&lt;/span&gt;</p>
+    <p>
+      &lt;p class="text-sm font-medium
+      text-slate-800"&gt;都心部の次世代交通インフラ実証実験、来春から第2フェーズへ移行&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;div id="news-articles-grid" class="grid md:grid-cols-3 gap-6"&gt;</p>
+    <p>
+      &lt;article data-cat="tech" class="news-card md:col-span-2 bg-slate-50 border border-slate-200 rounded-xl p-6 flex
+      flex-col justify-between space-y-4"&gt;
+    </p>
+    <p>&lt;div class="space-y-2"&gt;</p>
+    <p>&lt;span class="text-xs font-bold text-rose-600 uppercase"&gt;テクノロジー&lt;/span&gt;</p>
+    <p>
+      &lt;h2 class="text-xl sm:text-2xl font-bold text-slate-900
+      leading-snug"&gt;次世代量子暗号ネットワーク、国内研究機関で接続テストに成功&lt;/h2&gt;
+    </p>
+    <p>&lt;p class="text-sm text-slate-600 leading-relaxed"&gt;</p>
+    <p>
+      都内の通信研究コンソーシアムは20日、盗聴が理論上不可能とされる新型量子鍵配送プロトコルの都市間テストに成功したと発表した。金融機関や行政機関での実用化が期待される。
+    </p>
+    <p>&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="text-xs text-slate-500 flex items-center justify-between pt-2 border-t border-slate-200"&gt;</p>
+    <p>&lt;span&gt;配信：2026/11/20 19:45&lt;/span&gt;</p>
+    <p>&lt;span&gt;科学・IT取材班&lt;/span&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/article&gt;</p>
+    <p><br /></p>
+    <p>
+      &lt;article data-cat="economy" class="news-card bg-white border border-slate-200 rounded-xl p-5 space-y-3"&gt;
+    </p>
+    <p>&lt;span class="text-xs font-bold text-sky-700 uppercase"&gt;経済&lt;/span&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;東京株式市場、ハイテク関連株を中心に反発&lt;/h3&gt;</p>
+    <p>
+      &lt;p class="text-sm text-slate-600
+      leading-relaxed"&gt;午後の取引では半導体関連やソフトウェア銘柄に買いが集まり、終値は前日比プラスで引けた。&lt;/p&gt;
+    </p>
+    <p>&lt;p class="text-xs text-slate-400"&gt;2026/11/20 16:10&lt;/p&gt;</p>
+    <p>&lt;/article&gt;</p>
+    <p><br /></p>
+    <p>&lt;article data-cat="city" class="news-card bg-white border border-slate-200 rounded-xl p-5 space-y-3"&gt;</p>
+    <p>&lt;span class="text-xs font-bold text-emerald-700 uppercase"&gt;社会・都市&lt;/span&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;都内図書館のデジタルアーカイブ利用者が過去最多に&lt;/h3&gt;</p>
+    <p>
+      &lt;p class="text-sm text-slate-600
+      leading-relaxed"&gt;自宅から歴史資料や地域新聞を閲覧できるオンラインサービスが幅広い世代に浸透している。&lt;/p&gt;
+    </p>
+    <p>&lt;p class="text-xs text-slate-400"&gt;2026/11/20 14:20&lt;/p&gt;</p>
+    <p>&lt;/article&gt;</p>
+    <p><br /></p>
+    <p>&lt;article data-cat="tech" class="news-card bg-white border border-slate-200 rounded-xl p-5 space-y-3"&gt;</p>
+    <p>&lt;span class="text-xs font-bold text-rose-600 uppercase"&gt;テクノロジー&lt;/span&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;衛星コンステレーションによる山間部通信の高速化&lt;/h3&gt;</p>
+    <p>
+      &lt;p class="text-sm text-slate-600
+      leading-relaxed"&gt;防災拠点や山小屋での安定したデータ通信確保に向け、新型受信端末の配備が進んでいる。&lt;/p&gt;
+    </p>
+    <p>&lt;p class="text-xs text-slate-400"&gt;2026/11/20 11:05&lt;/p&gt;</p>
+    <p>&lt;/article&gt;</p>
+    <p><br /></p>
+    <p>&lt;article data-cat="city" class="news-card bg-white border border-slate-200 rounded-xl p-5 space-y-3"&gt;</p>
+    <p>&lt;span class="text-xs font-bold text-emerald-700 uppercase"&gt;社会・都市&lt;/span&gt;</p>
+    <p>&lt;h3 class="font-bold text-slate-900"&gt;週末の関東地方は秋晴れ、日中は過ごしやすい陽気&lt;/h3&gt;</p>
+    <p>
+      &lt;p class="text-sm text-slate-600
+      leading-relaxed"&gt;朝晩は冷え込むため、外出時は上着の携行が推奨される。&lt;/p&gt;
+    </p>
+    <p>&lt;p class="text-xs text-slate-400"&gt;2026/11/20 08:30&lt;/p&gt;</p>
+    <p>&lt;/article&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/main&gt;</p>
+    <p><br /></p>
+    <p>&lt;footer class="bg-slate-900 text-slate-400 text-xs py-6 px-4"&gt;</p>
+    <p>&lt;div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3"&gt;</p>
+    <p>&lt;p&gt;METRO DAILY NEWS&lt;/p&gt;</p>
+    <p>
+      &lt;p class="select-none"&gt;&amp;copy; &lt;span id="news-year-trigger"
+      class="cursor-default"&gt;2026&lt;/span&gt; Metro Daily Press.&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/footer&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- ==================== 秘密のキーパッド (KEYPAD MODAL) ==================== --&gt;</p>
+    <p>
+      &lt;div id="keypad-modal" class="hidden fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md flex items-center
+      justify-center p-4"&gt;
+    </p>
+    <p>
+      &lt;div id="keypad-box" class="w-full max-w-xs bg-slate-900 border border-emerald-500/40 rounded-2xl shadow-2xl
+      shadow-emerald-950/50 p-6 space-y-5 text-slate-100"&gt;
+    </p>
+    <p>&lt;div class="flex items-center justify-between"&gt;</p>
+    <p>&lt;div class="flex items-center gap-2"&gt;</p>
+    <p>&lt;span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"&gt;&lt;/span&gt;</p>
+    <p>
+      &lt;span class="font-mono-tech text-xs tracking-widest text-emerald-400 uppercase"&gt;Auth Terminal&lt;/span&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>
+      &lt;button type="button" id="keypad-close-btn" class="text-slate-400 hover:text-white p-1 rounded"
+      aria-label="閉じる"&gt;
+    </p>
+    <p>&lt;i data-lucide="x" class="w-4 h-4"&gt;&lt;/i&gt;</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Display Screen --&gt;</p>
+    <p>&lt;div class="bg-black/80 border border-slate-700 rounded-xl p-4 text-center space-y-1"&gt;</p>
+    <p>
+      &lt;div id="keypad-status" class="font-mono-tech text-[11px] tracking-wider text-slate-400 uppercase"&gt;Enter
+      Access Code&lt;/div&gt;
+    </p>
+    <p>
+      &lt;div id="keypad-display" class="font-mono-tech text-2xl tracking-[0.45em] text-emerald-300 h-8 flex
+      items-center justify-center"&gt;
+    </p>
+    <p>----</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Numeric Grid --&gt;</p>
+    <p>&lt;div class="grid grid-cols-3 gap-2.5 font-mono-tech"&gt;</p>
+    <p>
+      &lt;button type="button" data-key="1" class="kp-btn py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700
+      active:bg-emerald-600/30 border border-slate-700 text-lg font-semibold transition"&gt;1&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-key="2" class="kp-btn py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700
+      active:bg-emerald-600/30 border border-slate-700 text-lg font-semibold transition"&gt;2&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-key="3" class="kp-btn py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700
+      active:bg-emerald-600/30 border border-slate-700 text-lg font-semibold transition"&gt;3&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-key="4" class="kp-btn py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700
+      active:bg-emerald-600/30 border border-slate-700 text-lg font-semibold transition"&gt;4&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-key="5" class="kp-btn py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700
+      active:bg-emerald-600/30 border border-slate-700 text-lg font-semibold transition"&gt;5&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-key="6" class="kp-btn py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700
+      active:bg-emerald-600/30 border border-slate-700 text-lg font-semibold transition"&gt;6&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-key="7" class="kp-btn py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700
+      active:bg-emerald-600/30 border border-slate-700 text-lg font-semibold transition"&gt;7&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-key="8" class="kp-btn py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700
+      active:bg-emerald-600/30 border border-slate-700 text-lg font-semibold transition"&gt;8&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-key="9" class="kp-btn py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700
+      active:bg-emerald-600/30 border border-slate-700 text-lg font-semibold transition"&gt;9&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" id="kp-clear" class="py-3.5 rounded-xl bg-slate-800/70 hover:bg-rose-950/60 text-rose-400
+      border border-slate-700 text-xs font-bold tracking-wider transition"&gt;CLR&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-key="0" class="kp-btn py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700
+      active:bg-emerald-600/30 border border-slate-700 text-lg font-semibold transition"&gt;0&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" id="kp-enter" class="py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950
+      font-bold text-xs tracking-wider transition"&gt;ENT&lt;/button&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- ==================== 復号トランジション (DECRYPT OVERLAY) ==================== --&gt;</p>
+    <p>
+      &lt;div id="decrypt-overlay" class="hidden fixed inset-0 z-50 bg-black flex flex-col items-center justify-center
+      text-emerald-400 font-mono-tech p-6"&gt;
+    </p>
+    <p>&lt;div class="max-w-md w-full space-y-3 text-center"&gt;</p>
+    <p>
+      &lt;div class="text-xs tracking-[0.3em] uppercase text-emerald-500 animate-pulse"&gt;Access Granted&lt;/div&gt;
+    </p>
+    <p>&lt;div class="text-xl sm:text-2xl font-bold tracking-wider"&gt;DECRYPTING CORE...&lt;/div&gt;</p>
+    <p>&lt;div class="w-full h-1.5 bg-slate-900 rounded-full overflow-hidden border border-emerald-500/30"&gt;</p>
+    <p>&lt;div id="decrypt-progress" class="h-full bg-emerald-400 w-0 transition-all duration-700"&gt;&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;p class="text-xs text-slate-500"&gt;Establishing secure session // Node-09&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- ==================== 裏のホームページ (SECRET VIEW / LAYER 01) ==================== --&gt;</p>
+    <p>
+      &lt;div id="secret-view" class="hidden min-h-screen bg-slate-950 text-slate-100 relative overflow-hidden flex
+      flex-col"&gt;
+    </p>
+    <p>
+      &lt;div class="pointer-events-none fixed inset-0 opacity-10" style="background-image: radial-gradient(#10b981 1px,
+      transparent 1px); background-size: 24px 24px;"&gt;&lt;/div&gt;
+    </p>
+    <p>
+      &lt;div class="pointer-events-none fixed inset-x-0 h-24 bg-gradient-to-b from-transparent via-emerald-500/5
+      to-transparent scanline-bar"&gt;&lt;/div&gt;
+    </p>
+    <p><br /></p>
+    <p>&lt;!-- Secret Header --&gt;</p>
+    <p>&lt;header class="relative z-10 border-b border-emerald-500/30 bg-slate-950/90 backdrop-blur-md"&gt;</p>
+    <p>&lt;div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3"&gt;</p>
+    <p>&lt;div class="flex items-center gap-3"&gt;</p>
+    <p>
+      &lt;div class="w-9 h-9 rounded-lg bg-emerald-500/15 border border-emerald-500/50 flex items-center justify-center
+      text-emerald-400"&gt;
+    </p>
+    <p>&lt;i data-lucide="shield-alert" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div&gt;</p>
+    <p>&lt;div class="flex items-center gap-2"&gt;</p>
+    <p>
+      &lt;span class="font-mono-tech text-xs text-emerald-400 tracking-widest uppercase"&gt;Project:
+      Eclipse&lt;/span&gt;
+    </p>
+    <p>
+      &lt;span class="px-1.5 py-0.5 text-[10px] font-mono-tech bg-emerald-500/20 text-emerald-300 rounded border
+      border-emerald-500/30"&gt;LAYER 01&lt;/span&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;h1 class="text-base sm:text-lg font-bold tracking-wide text-white"&gt;秘密指令室 // 裏ポータル&lt;/h1&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;div class="flex items-center gap-2"&gt;</p>
+    <p>
+      &lt;button type="button" id="enter-deep-core-btn" class="px-3.5 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400
+      text-slate-950 text-xs font-mono-tech font-bold tracking-wider flex items-center gap-1.5 shadow-lg
+      shadow-cyan-950/50 transition"&gt;
+    </p>
+    <p>&lt;i data-lucide="terminal" class="w-3.5 h-3.5"&gt;&lt;/i&gt;</p>
+    <p>本当の裏サイトへ</p>
+    <p>&lt;/button&gt;</p>
+    <p>
+      &lt;button type="button" id="panic-lock-btn" class="px-3.5 py-2 rounded-lg bg-rose-600/90 hover:bg-rose-500
+      text-white text-xs font-mono-tech font-bold tracking-wider flex items-center gap-1.5 shadow-lg shadow-rose-950/50
+      transition" title="Escキーでも即座に表サイトへ戻ります"&gt;
+    </p>
+    <p>&lt;i data-lucide="eye-off" class="w-3.5 h-3.5"&gt;&lt;/i&gt;</p>
+    <p>緊急偽装 (ESC)</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Secret Sub-Nav --&gt;</p>
+    <p>
+      &lt;div class="max-w-6xl mx-auto px-4 flex items-center gap-2 border-t border-slate-800/80 py-2
+      overflow-x-auto"&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-secret-tab="dashboard" class="secret-tab-btn px-3 py-1.5 rounded-md text-xs
+      font-mono-tech bg-emerald-500/20 text-emerald-300 border border-emerald-500/40
+      whitespace-nowrap"&gt;01_指令室&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-secret-tab="files" class="secret-tab-btn px-3 py-1.5 rounded-md text-xs
+      font-mono-tech text-slate-400 hover:text-slate-200 whitespace-nowrap"&gt;02_機密アーカイブ&lt;/button&gt;
+    </p>
+    <p>
+      &lt;button type="button" data-secret-tab="settings" class="secret-tab-btn px-3 py-1.5 rounded-md text-xs
+      font-mono-tech text-slate-400 hover:text-slate-200 whitespace-nowrap"&gt;03_偽装・暗号設定&lt;/button&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/header&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Secret Main Content --&gt;</p>
+    <p>&lt;main class="relative z-10 flex-1 max-w-6xl w-full mx-auto px-4 py-8"&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Secret Panel 1: Dashboard --&gt;</p>
+    <p>&lt;section id="secret-panel-dashboard" class="secret-panel space-y-6"&gt;</p>
+    <p>&lt;!-- Deep Core Gateway Card --&gt;</p>
+    <p>
+      &lt;div class="bg-gradient-to-r from-cyan-950/70 via-slate-900 to-emerald-950/50 border border-cyan-500/40
+      rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4"&gt;
+    </p>
+    <p>&lt;div class="space-y-1"&gt;</p>
+    <p>&lt;div class="flex items-center gap-2"&gt;</p>
+    <p>&lt;span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"&gt;&lt;/span&gt;</p>
+    <p>
+      &lt;span class="font-mono-tech text-xs text-cyan-400 uppercase tracking-widest"&gt;Deep Core Gateway&lt;/span&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;h2 class="text-base font-bold text-white"&gt;深層エリア（本当の裏サイト）&lt;/h2&gt;</p>
+    <p>
+      &lt;p class="text-xs
+      text-slate-300"&gt;複数のHTMLコードを記憶し、切り替えて実行できる本当の裏サイトへアクセスします。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>
+      &lt;button type="button" id="enter-deep-core-card-btn" class="px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400
+      text-slate-950 font-mono-tech font-bold text-xs tracking-wider shrink-0 transition"&gt;
+    </p>
+    <p>本当の裏サイトを開く →</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Status KPIs --&gt;</p>
+    <p>&lt;div class="grid grid-cols-2 lg:grid-cols-4 gap-4"&gt;</p>
+    <p>&lt;div class="bg-slate-900/80 border border-emerald-500/25 rounded-xl p-4"&gt;</p>
+    <p>&lt;p class="text-[11px] font-mono-tech text-slate-400 uppercase"&gt;Camouflage Status&lt;/p&gt;</p>
+    <p>&lt;p id="status-cover-label" class="text-lg font-bold text-emerald-400 mt-1"&gt;学校サイト偽装中&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="bg-slate-900/80 border border-slate-800 rounded-xl p-4"&gt;</p>
+    <p>&lt;p class="text-[11px] font-mono-tech text-slate-400 uppercase"&gt;Saved HTML Apps&lt;/p&gt;</p>
+    <p>&lt;p id="status-saved-count" class="text-lg font-mono-tech font-bold text-cyan-400 mt-1"&gt;0 件&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="bg-slate-900/80 border border-slate-800 rounded-xl p-4"&gt;</p>
+    <p>&lt;p class="text-[11px] font-mono-tech text-slate-400 uppercase"&gt;Active Missions&lt;/p&gt;</p>
+    <p>&lt;p id="status-mission-count" class="text-lg font-mono-tech font-bold text-white mt-1"&gt;3 件&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="bg-slate-900/80 border border-slate-800 rounded-xl p-4"&gt;</p>
+    <p>&lt;p class="text-[11px] font-mono-tech text-slate-400 uppercase"&gt;System Clock&lt;/p&gt;</p>
+    <p>&lt;p id="secret-clock" class="text-lg font-mono-tech font-bold text-amber-300 mt-1"&gt;--:--:--&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Mission Log &amp; Add --&gt;</p>
+    <p>&lt;div class="grid lg:grid-cols-3 gap-6"&gt;</p>
+    <p>&lt;div class="lg:col-span-2 bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4"&gt;</p>
+    <p>&lt;div class="flex items-center justify-between"&gt;</p>
+    <p>
+      &lt;h2 class="font-mono-tech text-sm font-bold text-emerald-400 tracking-wider uppercase"&gt;//
+      進行中の極秘ミッション&lt;/h2&gt;
+    </p>
+    <p>&lt;span class="text-xs text-slate-500"&gt;クリックで完了切替&lt;/span&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;ul id="mission-list" class="space-y-2.5"&gt;&lt;/ul&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4 h-fit"&gt;</p>
+    <p>
+      &lt;h2 class="font-mono-tech text-sm font-bold text-cyan-400 tracking-wider uppercase"&gt;//
+      新規指令の登録&lt;/h2&gt;
+    </p>
+    <p>&lt;form id="mission-form" class="space-y-3"&gt;</p>
+    <p>&lt;div&gt;</p>
+    <p>&lt;label for="mission-input" class="block text-xs text-slate-400 mb-1"&gt;作戦名・メモ&lt;/label&gt;</p>
+    <p>
+      &lt;input id="mission-input" type="text" placeholder="例：第3観測所のデータ回収" class="w-full px-3 py-2
+      rounded-lg bg-slate-950 border border-slate-700 text-sm text-white focus:outline-none focus:border-emerald-500"
+      /&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div&gt;</p>
+    <p>&lt;label for="mission-rank" class="block text-xs text-slate-400 mb-1"&gt;機密レベル&lt;/label&gt;</p>
+    <p>
+      &lt;select id="mission-rank" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-700 text-sm
+      text-white focus:outline-none focus:border-emerald-500"&gt;
+    </p>
+    <p>&lt;option value="TOP SECRET"&gt;TOP SECRET&lt;/option&gt;</p>
+    <p>&lt;option value="CONFIDENTIAL"&gt;CONFIDENTIAL&lt;/option&gt;</p>
+    <p>&lt;option value="ROUTINE"&gt;ROUTINE&lt;/option&gt;</p>
+    <p>&lt;/select&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>
+      &lt;button type="submit" class="w-full py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-slate-950
+      font-bold text-xs font-mono-tech tracking-wider transition"&gt;
+    </p>
+    <p>指令を追加する</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/form&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/section&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Secret Panel 2: Classified Files --&gt;</p>
+    <p>&lt;section id="secret-panel-files" class="secret-panel hidden space-y-5"&gt;</p>
+    <p>&lt;div class="flex items-center justify-between"&gt;</p>
+    <p>
+      &lt;h2 class="font-mono-tech text-sm font-bold text-emerald-400 tracking-wider uppercase"&gt;//
+      暗号化アーカイブ（クリックで復号）&lt;/h2&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div id="classified-grid" class="grid md:grid-cols-2 gap-4"&gt;&lt;/div&gt;</p>
+    <p>&lt;/section&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Secret Panel 3: Settings (Camouflage &amp; Passcode) --&gt;</p>
+    <p>&lt;section id="secret-panel-settings" class="secret-panel hidden max-w-3xl space-y-6"&gt;</p>
+    <p>&lt;div class="bg-slate-900/80 border border-slate-800 rounded-xl p-6 space-y-4"&gt;</p>
+    <p>
+      &lt;h2 class="font-mono-tech text-sm font-bold text-emerald-400 tracking-wider uppercase"&gt;//
+      表サイトの偽装テーマ切替&lt;/h2&gt;
+    </p>
+    <p>
+      &lt;p class="text-xs
+      text-slate-400"&gt;緊急偽装（ESC）やリロード時に表示される「表の顔」を切り替えられます。&lt;/p&gt;
+    </p>
+    <p>&lt;div class="grid sm:grid-cols-2 gap-3"&gt;</p>
+    <p>
+      &lt;button type="button" data-set-cover="school" class="cover-choice-btn p-4 rounded-xl border
+      border-emerald-500/60 bg-emerald-500/10 text-left transition"&gt;
+    </p>
+    <p>&lt;div class="font-bold text-sm text-white"&gt;学校ホームページ風&lt;/div&gt;</p>
+    <p>&lt;div class="text-xs text-slate-400 mt-1"&gt;私立 星陵学園 公式Webサイト&lt;/div&gt;</p>
+    <p>&lt;/button&gt;</p>
+    <p>
+      &lt;button type="button" data-set-cover="news" class="cover-choice-btn p-4 rounded-xl border border-slate-700
+      bg-slate-950/60 text-left hover:border-slate-500 transition"&gt;
+    </p>
+    <p>&lt;div class="font-bold text-sm text-white"&gt;ニュースサイト風&lt;/div&gt;</p>
+    <p>&lt;div class="text-xs text-slate-400 mt-1"&gt;METRO DAILY NEWS&lt;/div&gt;</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;div class="bg-slate-900/80 border border-slate-800 rounded-xl p-6 space-y-4"&gt;</p>
+    <p>
+      &lt;h2 class="font-mono-tech text-sm font-bold text-cyan-400 tracking-wider uppercase"&gt;//
+      キーパッド・パスコード変更&lt;/h2&gt;
+    </p>
+    <p>&lt;form id="passcode-form" class="flex flex-col sm:flex-row gap-3"&gt;</p>
+    <p>
+      &lt;input id="new-passcode-input" type="text" inputmode="numeric" maxlength="8" placeholder="4〜8桁の半角数字（例:
+      7373）" class="flex-1 px-3.5 py-2.5 rounded-lg bg-slate-950 border border-slate-700 text-sm font-mono-tech
+      text-white focus:outline-none focus:border-cyan-500" /&gt;
+    </p>
+    <p>
+      &lt;button type="submit" class="px-5 py-2.5 rounded-lg bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold
+      text-xs font-mono-tech tracking-wider transition"&gt;
+    </p>
+    <p>コードを更新</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/form&gt;</p>
+    <p>&lt;p id="passcode-feedback" class="text-xs font-mono-tech text-slate-400"&gt;&lt;/p&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;div class="bg-slate-900/80 border border-slate-800 rounded-xl p-6 space-y-2 text-xs text-slate-300"&gt;</p>
+    <p>&lt;h3 class="font-mono-tech font-bold text-amber-300 uppercase"&gt;// 隠しトリガー一覧&lt;/h3&gt;</p>
+    <p>&lt;ul class="list-disc list-inside space-y-1 text-slate-400"&gt;</p>
+    <p>
+      &lt;li&gt;表サイトの左上ロゴ（校章または「MN」マーク）を &lt;strong
+      class="text-white"&gt;5回連続クリック&lt;/strong&gt;&lt;/li&gt;
+    </p>
+    <p>
+      &lt;li&gt;表サイトのフッターにある年号「&lt;strong class="text-white"&gt;2026&lt;/strong&gt;」を &lt;strong
+      class="text-white"&gt;ダブルクリック&lt;/strong&gt;&lt;/li&gt;
+    </p>
+    <p>
+      &lt;li&gt;キーボードショートカット：&lt;strong class="text-white"&gt;Shift + K&lt;/strong&gt; でキーパッド起動 ／
+      &lt;strong class="text-white"&gt;Esc&lt;/strong&gt; で緊急偽装&lt;/li&gt;
+    </p>
+    <p>&lt;/ul&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/section&gt;</p>
+    <p>&lt;/main&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- ==================== 本当の裏サイト (DEEP SECRET VIEW / LAYER 02) ==================== --&gt;</p>
+    <p>&lt;div id="deep-secret-view" class="hidden min-h-screen bg-black text-slate-100 flex flex-col"&gt;</p>
+    <p>&lt;header class="border-b border-cyan-500/30 bg-slate-950 px-4 py-3"&gt;</p>
+    <p>&lt;div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-3"&gt;</p>
+    <p>&lt;div class="flex items-center gap-3"&gt;</p>
+    <p>
+      &lt;div class="w-8 h-8 rounded-lg bg-cyan-500/20 border border-cyan-400/50 flex items-center justify-center
+      text-cyan-300"&gt;
+    </p>
+    <p>&lt;i data-lucide="cpu" class="w-4 h-4"&gt;&lt;/i&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div&gt;</p>
+    <p>
+      &lt;span class="font-mono-tech text-[10px] text-cyan-400 tracking-widest uppercase"&gt;DEEP CORE // LAYER
+      02&lt;/span&gt;
+    </p>
+    <p>&lt;h2 class="text-sm sm:text-base font-bold text-white"&gt;本当の裏サイト（保存済みHTML一覧）&lt;/h2&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="flex flex-wrap items-center gap-2"&gt;</p>
+    <p>
+      &lt;button type="button" id="deep-new-code-btn" class="px-3 py-1.5 rounded-lg bg-cyan-500 hover:bg-cyan-400
+      text-slate-950 text-xs font-mono-tech font-bold transition"&gt;
+    </p>
+    <p>＋ 新しいHTMLを追加</p>
+    <p>&lt;/button&gt;</p>
+    <p>
+      &lt;button type="button" id="back-to-layer1-btn" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700
+      text-slate-200 text-xs font-mono-tech transition"&gt;
+    </p>
+    <p>← 裏サイトに戻る</p>
+    <p>&lt;/button&gt;</p>
+    <p>
+      &lt;button type="button" id="deep-panic-btn" class="px-3 py-1.5 rounded-lg bg-rose-600/90 hover:bg-rose-500
+      text-white text-xs font-mono-tech font-bold transition"&gt;
+    </p>
+    <p>緊急偽装 (ESC)</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/header&gt;</p>
+    <p><br /></p>
+    <p>&lt;main class="flex-1 flex flex-col max-w-5xl w-full mx-auto p-4 sm:p-6 gap-5"&gt;</p>
+    <p>&lt;!-- Code Injection / Edit Panel --&gt;</p>
+    <p>
+      &lt;div id="deep-editor-panel" class="hidden bg-slate-900/95 border border-cyan-500/40 rounded-xl p-5
+      space-y-4"&gt;
+    </p>
+    <p>&lt;div class="flex items-center justify-between gap-2"&gt;</p>
+    <p>
+      &lt;h3 id="deep-editor-heading" class="font-mono-tech text-sm font-bold text-cyan-300"&gt;//
+      HTMLコードの登録・編集&lt;/h3&gt;
+    </p>
+    <p>
+      &lt;button type="button" id="deep-cancel-edit-btn" class="text-xs font-mono-tech text-slate-400 hover:text-white
+      px-2 py-1 rounded"&gt;
+    </p>
+    <p>閉じる ✕</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div&gt;</p>
+    <p>
+      &lt;label for="deep-title-input" class="block text-xs text-slate-400
+      mb-1"&gt;ページのタイトル（識別名）&lt;/label&gt;
+    </p>
+    <p>
+      &lt;input id="deep-title-input" type="text" placeholder="例：秘密基地ツール / ゲーム / メモ帳" class="w-full px-3
+      py-2 rounded-lg bg-black border border-slate-700 text-sm text-white focus:outline-none focus:border-cyan-400"
+      /&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div&gt;</p>
+    <p>
+      &lt;label for="deep-code-input" class="block text-xs text-slate-400
+      mb-1"&gt;HTMLコード（CSS・JS含む）&lt;/label&gt;
+    </p>
+    <p>
+      &lt;textarea id="deep-code-input" rows="10"
+      placeholder="ここにHTMLコードを貼り付けてください（例：&lt;h1&gt;秘密基地へようこそ&lt;/h1&gt; ...）"
+      class="w-full p-3 rounded-lg bg-black border border-slate-700 font-mono-tech text-xs text-emerald-300
+      focus:outline-none focus:border-cyan-400"&gt;&lt;/textarea&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div class="flex flex-wrap items-center justify-end gap-3"&gt;</p>
+    <p>
+      &lt;button type="button" id="deep-run-code-btn" class="px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400
+      text-slate-950 font-mono-tech font-bold text-xs tracking-wider transition"&gt;
+    </p>
+    <p>保存して全画面で開く →</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- Saved HTML List --&gt;</p>
+    <p>&lt;div class="space-y-3"&gt;</p>
+    <p>&lt;div class="flex items-center justify-between"&gt;</p>
+    <p>
+      &lt;h3 class="font-mono-tech text-xs text-cyan-400 tracking-wider uppercase"&gt;//
+      登録済みHTMLリスト（横のボタンで全画面起動）&lt;/h3&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;div id="deep-saved-list" class="space-y-3"&gt;&lt;/div&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/main&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- ==================== 全画面HTML実行オーバーレイ (FULLSCREEN RUNNER) ==================== --&gt;</p>
+    <p>&lt;div id="deep-fullscreen-overlay" class="hidden fixed inset-0 z-50 bg-black"&gt;</p>
+    <p>
+      &lt;iframe id="deep-code-frame" class="w-full h-full border-0 bg-white" sandbox="allow-scripts allow-forms
+      allow-modals allow-popups" title="Deep Core Fullscreen Output"&gt;&lt;/iframe&gt;
+    </p>
+    <p>
+      &lt;button type="button" id="deep-fs-close-btn" class="fixed top-3 right-3 z-[60] w-8 h-8 rounded-full
+      bg-slate-900/75 hover:bg-rose-600 text-white/90 hover:text-white border border-white/25 backdrop-blur-sm flex
+      items-center justify-center text-sm font-bold shadow-lg transition" title="一覧に戻る"&gt;
+    </p>
+    <p>✕</p>
+    <p>&lt;/button&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p><br /></p>
+    <p>&lt;!-- In-page Toast --&gt;</p>
+    <p>
+      &lt;div id="toast-box" class="hidden fixed bottom-5 right-5 z-50 px-4 py-2.5 rounded-lg bg-slate-900 border
+      border-emerald-500/40 text-emerald-300 text-xs font-mono-tech shadow-xl"&gt;&lt;/div&gt;
+    </p>
+    <p><br /></p>
+    <p>&lt;script&gt;</p>
+    <p>(function () {</p>
+    <p>const STORAGE_KEY = 'eclipse_portal_state_v4';</p>
+    <p>const PREV_STORAGE_KEY = 'eclipse_portal_state_v3';</p>
+    <p>
+      const PRESET_NEON_B64 =
+      'PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImphIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCxpbml0aWFsLXNjYWxlPTEsbWF4aW11bS1zY2FsZT0xLHVzZXItc2NhbGFibGU9bm8iPgo8dGl0bGU+TkVPTiBDSVJDVUlUIOKAlCAzRCBSQUNFPC90aXRsZT4KPHN0eWxlPgo6cm9vdHstLWN5YW46IzQ4ZjRmZjstLXBpbms6I2ZmNGJkODstLXBhbmVsOnJnYmEoNywxMywzNSwuODYpOy0tbGluZTpyZ2JhKDcyLDI0NCwyNTUsLjU1KX0KKntib3gtc2l6aW5nOmJvcmRlci1ib3h9aHRtbCxib2R5e21hcmdpbjowO3dpZHRoOjEwMCU7aGVpZ2h0OjEwMCU7b3ZlcmZsb3c6aGlkZGVuO2JhY2tncm91bmQ6IzA1MDgxNjtjb2xvcjojZmZmO2ZvbnQtZmFtaWx5OnN5c3RlbS11aSwtYXBwbGUtc3lzdGVtLCJTZWdvZSBVSSIsc2Fucy1zZXJpZjt0b3VjaC1hY3Rpb246bm9uZX0KY2FudmFze2Rpc3BsYXk6YmxvY2t9CiNodWR7cG9zaXRpb246Zml4ZWQ7aW5zZXQ6MDtwb2ludGVyLWV2ZW50czpub25lfQoudG9we3Bvc2l0aW9uOmFic29sdXRlO3RvcDoxMnB4O2xlZnQ6MTJweDtyaWdodDoxMnB4O2Rpc3BsYXk6ZmxleDtqdXN0aWZ5LWNvbnRlbnQ6c3BhY2UtYmV0d2VlbjtnYXA6OHB4O2FsaWduLWl0ZW1zOmZsZXgtc3RhcnR9Ci5wYW5lbHtiYWNrZ3JvdW5kOnZhcigtLXBhbmVsKTtib3JkZXI6MXB4IHNvbGlkIHZhcigtLWxpbmUpO2JveC1zaGFkb3c6MCAwIDE4cHggIzE5ZDlmZjIyLGluc2V0IDAgMCAxOHB4ICMxOWQ5ZmYxMjtib3JkZXItcmFkaXVzOjEycHg7cGFkZGluZzo5cHggMTNweDtiYWNrZHJvcC1maWx0ZXI6Ymx1cig4cHgpfQouc3RhdHtmb250LXNpemU6Y2xhbXAoMTJweCwyLjR2dywxN3B4KTtmb250LXdlaWdodDo4MDA7bGV0dGVyLXNwYWNpbmc6LjA2ZW19LnN0YXQgYntjb2xvcjp2YXIoLS1jeWFuKTtmb250LXZhcmlhbnQtbnVtZXJpYzp0YWJ1bGFyLW51bXN9CiNjZW50ZXJNc2d7cG9zaXRpb246YWJzb2x1dGU7dG9wOjM0JTtsZWZ0OjUwJTt0cmFuc2Zvcm06dHJhbnNsYXRlKC01MCUsLTUwJSk7Zm9udC1zaXplOmNsYW1wKDQ0cHgsMTJ2dyw5MnB4KTtmb250LXdlaWdodDoxMDAwO2xldHRlci1zcGFjaW5nOi4wOGVtO2NvbG9yOndoaXRlO3RleHQtc2hhZG93OjAgMCAxMnB4IHZhcigtLWN5YW4pLDAgMCAzNXB4IHZhcigtLXBpbmspO3RleHQtYWxpZ246Y2VudGVyO3doaXRlLXNwYWNlOm5vd3JhcH0KI3N1Yk1zZ3tmb250LXNpemU6MTRweDtsZXR0ZXItc3BhY2luZzouMTVlbTt0ZXh0LWFsaWduOmNlbnRlcn0KI2NvbnRyb2xze3Bvc2l0aW9uOmFic29sdXRlO2JvdHRvbToxNnB4O2xlZnQ6MTRweDtyaWdodDoxNHB4O2Rpc3BsYXk6ZmxleDtqdXN0aWZ5LWNvbnRlbnQ6c3BhY2UtYmV0d2VlbjthbGlnbi1pdGVtczpmbGV4LWVuZH0KLnBhZHtkaXNwbGF5OmZsZXg7Z2FwOjEwcHg7cG9pbnRlci1ldmVudHM6YXV0b30uY3RybHt3aWR0aDpjbGFtcCg4MnB4LDE1dncsMTA0cHgpO2hlaWdodDpjbGFtcCg4MnB4LDE1dncsMTA0cHgpO2JvcmRlci1yYWRpdXM6MjBweDtib3JkZXI6MXB4IHNvbGlkICM4YWZhZmZhYTtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCgxNDVkZWcsIzE3MzQ1ZGNjLCMwNzExMjdkZCk7Y29sb3I6d2hpdGU7Zm9udC1zaXplOjM0cHg7Zm9udC13ZWlnaHQ6OTAwO2JveC1zaGFkb3c6MCAwIDE2cHggIzI3ZWFmZjQ0O3RvdWNoLWFjdGlvbjpub25lO3VzZXItc2VsZWN0Om5vbmV9Ci5jdHJsOmFjdGl2ZSwuY3RybC5kb3due2JhY2tncm91bmQ6IzFkODI5OTtjb2xvcjojZmZmO2JveC1zaGFkb3c6MCAwIDI1cHggdmFyKC0tY3lhbil9CiNyaWdodFBhZHthbGlnbi1pdGVtczpmbGV4LWVuZDtnYXA6OHB4fS5jdHJsLmFjdGlvbntmb250LXNpemU6MTJweDt3aWR0aDpjbGFtcCg1OHB4LDExdncsNzRweCk7aGVpZ2h0OmNsYW1wKDU4cHgsMTF2dyw3NHB4KX0jaXRlbUJ0bntmb250LXNpemU6MTJweDt3aWR0aDpjbGFtcCg2MHB4LDEydncsNzhweCk7aGVpZ2h0OmNsYW1wKDYwcHgsMTJ2dyw3OHB4KTtib3JkZXItcmFkaXVzOjUwJTtib3JkZXItY29sb3I6I2ZmNzJlNztjb2xvcjojZmZiNWYyfSNicmFrZXtib3JkZXItY29sb3I6I2ZmYWQ2NTtjb2xvcjojZmZkMGE3fQojbWVudXtwb3NpdGlvbjpmaXhlZDtpbnNldDowO2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlcjtiYWNrZ3JvdW5kOnJhZGlhbC1ncmFkaWVudChlbGxpcHNlIGF0IDUwJSA0NSUsIzE3MjQ1Yjk5LCMwMzA2MTFmMiA3MiUpO3otaW5kZXg6NTtwYWRkaW5nOjE4cHh9Ci5jYXJke3dpZHRoOm1pbig1MjBweCwxMDAlKTtwYWRkaW5nOjI0cHg7Ym9yZGVyOjFweCBzb2xpZCAjNDhmNGZmODg7Ym9yZGVyLXJhZGl1czoyMHB4O2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDE0NWRlZywjMTAxYjNhZWUsIzA3MGIxZWVlKTtib3gtc2hhZG93OjAgMCA0NXB4ICMxY2U5ZmYyMn0KaDF7bWFyZ2luOjA7Zm9udC1zaXplOmNsYW1wKDMwcHgsOHZ3LDU0cHgpO2xldHRlci1zcGFjaW5nOi4xMmVtO2xpbmUtaGVpZ2h0OjE7Y29sb3I6I2ZmZjt0ZXh0LXNoYWRvdzowIDAgMThweCAjMzVlZGZmfQoua2lja2Vye2NvbG9yOnZhcigtLWN5YW4pO2xldHRlci1zcGFjaW5nOi4zZW07Zm9udC1zaXplOjExcHg7Zm9udC13ZWlnaHQ6ODAwO21hcmdpbi1ib3R0b206MTBweH0KLmRlc2N7Y29sb3I6I2MzZDRlZjtmb250LXNpemU6MTNweDtsaW5lLWhlaWdodDoxLjc7bWFyZ2luOjE0cHggMCAxOHB4fQpsYWJlbHtkaXNwbGF5OmJsb2NrO2NvbG9yOiM5ZWI3ZDg7Zm9udC1zaXplOjEycHg7bWFyZ2luOjEzcHggMCA2cHh9CnNlbGVjdHt3aWR0aDoxMDAlO3BhZGRpbmc6MTJweDtib3JkZXItcmFkaXVzOjlweDtib3JkZXI6MXB4IHNvbGlkICM0YmRmZjA4ODtiYWNrZ3JvdW5kOiMwYTE1MzA7Y29sb3I6d2hpdGU7Zm9udC1zaXplOjE1cHh9CiNzdGFydHt3aWR0aDoxMDAlO21hcmdpbi10b3A6MjBweDtwYWRkaW5nOjE1cHg7Ym9yZGVyOjA7Ym9yZGVyLXJhZGl1czoxMHB4O2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDkwZGVnLCMxNmJjZDIsIzhhNDNkYyk7Y29sb3I6d2hpdGU7Zm9udC1zaXplOjE3cHg7Zm9udC13ZWlnaHQ6OTAwO2xldHRlci1zcGFjaW5nOi4xOGVtfQojaGVscHtmb250LXNpemU6MTFweDtjb2xvcjojOGZhOGNhO2xpbmUtaGVpZ2h0OjEuNzttYXJnaW4tdG9wOjEycHh9CiNyZXN1bHR7ZGlzcGxheTpub25lO3Bvc2l0aW9uOmZpeGVkO2luc2V0OjA7ei1pbmRleDo2O2JhY2tncm91bmQ6IzAzMDYxMWRkO2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO3BhZGRpbmc6MjBweH0KI3Jlc3VsdCAuY2FyZHt0ZXh0LWFsaWduOmNlbnRlcn0KQG1lZGlhKG1heC13aWR0aDo2MDBweCl7LnRvcHt0b3A6OHB4O2xlZnQ6OHB4O3JpZ2h0OjhweH0ucGFuZWx7cGFkZGluZzo3cHggOXB4fS5zdGF0e2ZvbnQtc2l6ZToxMXB4fSNjb250cm9sc3tib3R0b206MTJweH19Ci5wYW5lbHtib3JkZXItY29sb3I6IzY2ZjdmZjk5O2JveC1zaGFkb3c6MCAwIDIycHggIzIwZGNmZjJiLGluc2V0IDAgMCAyMHB4ICMyN2RmZmYxNztib3JkZXItcmFkaXVzOjE1cHh9Ci5zdGF0IGJ7dGV4dC1zaGFkb3c6MCAwIDEwcHggIzM4ZWFmZjY2fQojY29udHJvbHN7Ym90dG9tOm1heCgxNHB4LGVudihzYWZlLWFyZWEtaW5zZXQtYm90dG9tKSk7bGVmdDoxMnB4O3JpZ2h0OjEycHh9Ci5jdHJse2JvcmRlci1yYWRpdXM6MjNweDtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCgxNTVkZWcsIzI5NGE3MGU4LCMwOTEzMjllZCA2OCUpO2JvcmRlcjoxcHggc29saWQgIzljZmFmZmJiO2JveC1zaGFkb3c6MCA3cHggMCAjMDMwOTE2LDAgMCAyMHB4ICMyMGRmZmY1NSxpbnNldCAwIDFweCAwICNmZmZmZmY1NTt0cmFuc2l0aW9uOmZpbHRlciAuMTJzLHRyYW5zZm9ybSAuMTJzfQouY3RybDphY3RpdmUsLmN0cmwuZG93bnt0cmFuc2Zvcm06dHJhbnNsYXRlWSg0cHgpO2JveC1zaGFkb3c6MCAycHggMCAjMDMwOTE2LDAgMCAzMHB4ICMzOGVmZmY5OTtmaWx0ZXI6YnJpZ2h0bmVzcygxLjM1KX0KI2l0ZW1CdG57YmFja2dyb3VuZDpsaW5lYXItZ3JhZGllbnQoMTQ1ZGVnLCM3NDNjOWQsIzIxMTIzZSk7Ym94LXNoYWRvdzowIDZweCAwICMxMDA5MWUsMCAwIDIycHggI2U2NWJmZjY2fQojYnJha2V7YmFja2dyb3VuZDpsaW5lYXItZ3JhZGllbnQoMTQ1ZGVnLCM4YzQ3MmUsIzI4MTMyMyl9CiNib29zdHtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCgxNDVkZWcsIzE2OGRhMCwjMTAzMDRkKX0KI3NwZWVkRlh7cG9zaXRpb246YWJzb2x1dGU7aW5zZXQ6MDtvcGFjaXR5OjA7cG9pbnRlci1ldmVudHM6bm9uZTtvdmVyZmxvdzpoaWRkZW47dHJhbnNpdGlvbjpvcGFjaXR5IC4xMnM7YmFja2dyb3VuZDpyYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCBjZW50ZXIsdHJhbnNwYXJlbnQgMzAlLCMwNzExMjYwMCA1NSUsIzAyMDYxNWFhIDEwMCUpfQojc3BlZWRGWDo6YmVmb3JlLCNzcGVlZEZYOjphZnRlcntjb250ZW50OiIiO3Bvc2l0aW9uOmFic29sdXRlO2luc2V0Oi0yMCU7YmFja2dyb3VuZDpyZXBlYXRpbmctY29uaWMtZ3JhZGllbnQoZnJvbSAwZGVnIGF0IDUwJSA1NSUsdHJhbnNwYXJlbnQgMGRlZyA1ZGVnLCNiOGZiZmY2NiA1LjE1ZGVnIDUuMzVkZWcsdHJhbnNwYXJlbnQgNS42ZGVnIDEwZGVnKTttYXNrLWltYWdlOnJhZGlhbC1ncmFkaWVudChlbGxpcHNlIGF0IGNlbnRlcix0cmFuc3BhcmVudCAwIDMyJSwjMDAwIDY4JSk7b3BhY2l0eTouNjV9CiNzcGVlZEZYOjphZnRlcnt0cmFuc2Zvcm06c2NhbGVYKC0xKSByb3RhdGUoN2RlZyk7b3BhY2l0eTouMzV9CiNib29zdEZsYXNoe3Bvc2l0aW9uOmFic29sdXRlO2luc2V0OjA7b3BhY2l0eTowO3BvaW50ZXItZXZlbnRzOm5vbmU7YmFja2dyb3VuZDpyYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCBjZW50ZXIsI2Q5ZmZmZjU1IDAlLCM1OGRmZmYyMiAyOCUsdHJhbnNwYXJlbnQgNjglKTttaXgtYmxlbmQtbW9kZTpzY3JlZW59CiNib29zdEJhbm5lcntwb3NpdGlvbjphYnNvbHV0ZTt0b3A6MjQlO2xlZnQ6NTAlO3RyYW5zZm9ybTp0cmFuc2xhdGUoLTUwJSwtNTAlKSBzY2FsZSguNjUpO29wYWNpdHk6MDtjb2xvcjojZmZmO2ZvbnQtc2l6ZTpjbGFtcCgyNHB4LDd2dyw1NHB4KTtmb250LXdlaWdodDoxMDAwO2ZvbnQtc3R5bGU6aXRhbGljO2xldHRlci1zcGFjaW5nOi4xMmVtO3RleHQtc2hhZG93OjAgMCAxMnB4ICNmZmYsMCAwIDMwcHggIzAwZWFmZiw0cHggNXB4IDAgIzljMjhmZjt3aGl0ZS1zcGFjZTpub3dyYXA7cG9pbnRlci1ldmVudHM6bm9uZX0KI2Jvb3N0QmFubmVyLnNob3d7YW5pbWF0aW9uOmJvb3N0UG9wIC44NXMgY3ViaWMtYmV6aWVyKC4xNSwuOCwuMiwxKSBib3RofQojcmFua1BhbmVse21pbi13aWR0aDoxMDRweDt0ZXh0LWFsaWduOmNlbnRlcjtib3JkZXItY29sb3I6I2ZmZGM2Yjk5O2JveC1zaGFkb3c6MCAwIDIycHggI2ZmY2YzYjIyLGluc2V0IDAgMCAxOHB4ICNmZmNmM2IxMn0KI3JhbmtQYW5lbCAjcG9ze2NvbG9yOiNmZmU2NmI7dGV4dC1zaGFkb3c6MCAwIDE0cHggI2ZmYzgzZDk5fQojcXVpdFJhY2V7cG9zaXRpb246Zml4ZWQ7ei1pbmRleDo0O3JpZ2h0OjEycHg7dG9wOjEyOHB4O3BvaW50ZXItZXZlbnRzOmF1dG87Ym9yZGVyOjFweCBzb2xpZCAjZmY4YTliOTk7Ym9yZGVyLXJhZGl1czo5OTlweDtwYWRkaW5nOjhweCAxMnB4O2JhY2tncm91bmQ6IzI5MTAxZGRkO2NvbG9yOiNmZmU1ZTk7Zm9udC13ZWlnaHQ6OTAwO2ZvbnQtc2l6ZToxMXB4O2xldHRlci1zcGFjaW5nOi4wNmVtO2JveC1zaGFkb3c6MCAwIDE1cHggI2ZmNDU2MDQ0O3RvdWNoLWFjdGlvbjptYW5pcHVsYXRpb259CiNzb3VuZFRvZ2dsZXtwb3NpdGlvbjpmaXhlZDt6LWluZGV4OjQ7cmlnaHQ6MTJweDt0b3A6ODZweDtwb2ludGVyLWV2ZW50czphdXRvO2JvcmRlcjoxcHggc29saWQgIzdjZWZmZjk5O2JvcmRlci1yYWRpdXM6OTk5cHg7cGFkZGluZzo4cHggMTJweDtiYWNrZ3JvdW5kOiMwODE1MmRkZDtjb2xvcjojZGZmYWZmO2ZvbnQtd2VpZ2h0OjgwMDtmb250LXNpemU6MTFweDtsZXR0ZXItc3BhY2luZzouMDhlbTtib3gtc2hhZG93OjAgMCAxNXB4ICMyNWRmZmY0NDt0b3VjaC1hY3Rpb246bWFuaXB1bGF0aW9ufQpAa2V5ZnJhbWVzIGJvb3N0UG9wezAle29wYWNpdHk6MDt0cmFuc2Zvcm06dHJhbnNsYXRlKC01MCUsLTUwJSkgc2NhbGUoLjQ1KSBza2V3WCgtMTJkZWcpfTIyJXtvcGFjaXR5OjE7dHJhbnNmb3JtOnRyYW5zbGF0ZSgtNTAlLC01MCUpIHNjYWxlKDEuMTYpIHNrZXdYKC04ZGVnKX03MCV7b3BhY2l0eToxO3RyYW5zZm9ybTp0cmFuc2xhdGUoLTUwJSwtNTAlKSBzY2FsZSgxKSBza2V3WCgtNWRlZyl9MTAwJXtvcGFjaXR5OjA7dHJhbnNmb3JtOnRyYW5zbGF0ZSgtNTAlLC01MCUpIHNjYWxlKDEuMTIpIHNrZXdYKC01ZGVnKX19CiNtZW51IC5jYXJke2JvcmRlci1jb2xvcjojNjVmNmZmYmI7Ym94LXNoYWRvdzowIDAgNjVweCAjMWNlOWZmMzMsaW5zZXQgMCAwIDM1cHggIzI0ZGZmZjEyO2JhY2tkcm9wLWZpbHRlcjpibHVyKDE2cHgpfQpoMXt0ZXh0LXNoYWRvdzowIDAgMTJweCAjMzVlZGZmLDAgMCAzNHB4ICNhMTJjZmY5OX0KI3N0YXJ0e2JveC1zaGFkb3c6MCA2cHggMCAjMTAyMDRiLDAgMCAyOHB4ICMzMmRmZmY2Njt0cmFuc2l0aW9uOnRyYW5zZm9ybSAuMTJzLGZpbHRlciAuMTJzfQojc3RhcnQ6YWN0aXZle3RyYW5zZm9ybTp0cmFuc2xhdGVZKDNweCk7ZmlsdGVyOmJyaWdodG5lc3MoMS4yNSl9CkBtZWRpYShtYXgtd2lkdGg6NjAwcHgpey50b3B7Z2FwOjVweH0ucGFuZWx7cGFkZGluZzo3cHggOHB4fS5zdGF0e2ZvbnQtc2l6ZToxMHB4fSNjb250cm9sc3tib3R0b206bWF4KDEycHgsZW52KHNhZmUtYXJlYS1pbnNldC1ib3R0b20pKX19CiNjb250cm9sc3tsZWZ0OjEwcHg7cmlnaHQ6MTBweDtib3R0b206bWF4KDE4cHgsZW52KHNhZmUtYXJlYS1pbnNldC1ib3R0b20pKX0KLnBhZHtnYXA6MTBweH0KLmN0cmx7d2lkdGg6Y2xhbXAoOTRweCwxN3Z3LDEyMnB4KTtoZWlnaHQ6Y2xhbXAoOTRweCwxN3Z3LDEyMnB4KTtmb250LXNpemU6NDBweDtib3JkZXItcmFkaXVzOjI1cHh9Ci5jdHJsLmFjdGlvbnt3aWR0aDpjbGFtcCg3NnB4LDE0dncsOTRweCk7aGVpZ2h0OmNsYW1wKDc2cHgsMTR2dyw5NHB4KTtmb250LXNpemU6MTNweH0KI2l0ZW1CdG57d2lkdGg6Y2xhbXAoODJweCwxNXZ3LDEwMnB4KTtoZWlnaHQ6Y2xhbXAoODJweCwxNXZ3LDEwMnB4KTtmb250LXNpemU6MTRweH0KI3F1aXRSYWNlLCNzb3VuZFRvZ2dsZXtwYWRkaW5nOjExcHggMTVweDtmb250LXNpemU6MTJweDttaW4taGVpZ2h0OjQycHh9CiNzdGFydHtwYWRkaW5nOjE5cHg7Zm9udC1zaXplOjE5cHg7bWluLWhlaWdodDo1OHB4fQpzZWxlY3R7cGFkZGluZzoxNXB4O2ZvbnQtc2l6ZToxNnB4O21pbi1oZWlnaHQ6NTBweH0KQG1lZGlhKG1heC13aWR0aDo2MDBweCl7CiNjb250cm9sc3tsZWZ0OjhweDtyaWdodDo4cHg7Ym90dG9tOm1heCgxNHB4LGVudihzYWZlLWFyZWEtaW5zZXQtYm90dG9tKSl9Ci5wYWR7Z2FwOjdweH0KLmN0cmx7d2lkdGg6Y2xhbXAoNzhweCwxOXZ3LDEwNHB4KTtoZWlnaHQ6Y2xhbXAoNzhweCwxOXZ3LDEwNHB4KTtmb250LXNpemU6MzRweH0KLmN0cmwuYWN0aW9ue3dpZHRoOmNsYW1wKDY0cHgsMTV2dyw4MHB4KTtoZWlnaHQ6Y2xhbXAoNjRweCwxNXZ3LDgwcHgpO2ZvbnQtc2l6ZToxMXB4fQojaXRlbUJ0bnt3aWR0aDpjbGFtcCg3MHB4LDE2dncsODhweCk7aGVpZ2h0OmNsYW1wKDcwcHgsMTZ2dyw4OHB4KTtmb250LXNpemU6MTJweH0KI3F1aXRSYWNlLCNzb3VuZFRvZ2dsZXtwYWRkaW5nOjlweCAxMnB4O21pbi1oZWlnaHQ6NDBweH0KfQoucGFke2dhcDoxMnB4fQouY3RybHt3aWR0aDpjbGFtcCg5NnB4LDE3dncsMTIycHgpO2hlaWdodDpjbGFtcCg5NnB4LDE3dncsMTIycHgpO2ZvbnQtc2l6ZTo0MHB4fQouY3RybC5hY3Rpb257d2lkdGg6Y2xhbXAoNzZweCwxM3Z3LDk0cHgpO2hlaWdodDpjbGFtcCg3NnB4LDEzdncsOTRweCk7Zm9udC1zaXplOjE0cHh9CiNpdGVtQnRue3dpZHRoOmNsYW1wKDgycHgsMTR2dywxMDBweCk7aGVpZ2h0OmNsYW1wKDgycHgsMTR2dywxMDBweCk7Zm9udC1zaXplOjE0cHh9CiNyaWdodFBhZHtnYXA6MTBweH0KI3N0YXJ0e3BhZGRpbmc6MTlweDtmb250LXNpemU6MTlweDttaW4taGVpZ2h0OjYwcHh9CnNlbGVjdHtwYWRkaW5nOjE1cHg7Zm9udC1zaXplOjE3cHg7bWluLWhlaWdodDo1MnB4fQojcXVpdFJhY2UsI3NvdW5kVG9nZ2xle3BhZGRpbmc6MTFweCAxNXB4O2ZvbnQtc2l6ZToxM3B4O21pbi1oZWlnaHQ6NDJweH0KQG1lZGlhKG1heC13aWR0aDo2MDBweCl7Ci5wYWR7Z2FwOjhweH0KLmN0cmx7d2lkdGg6Y2xhbXAoODhweCwyMHZ3LDEwOHB4KTtoZWlnaHQ6Y2xhbXAoODhweCwyMHZ3LDEwOHB4KX0KLmN0cmwuYWN0aW9ue3dpZHRoOmNsYW1wKDY4cHgsMTZ2dyw4MnB4KTtoZWlnaHQ6Y2xhbXAoNjhweCwxNnZ3LDgycHgpfQojaXRlbUJ0bnt3aWR0aDpjbGFtcCg3NHB4LDE3dncsODhweCk7aGVpZ2h0OmNsYW1wKDc0cHgsMTd2dyw4OHB4KX0KI3JpZ2h0UGFke2dhcDo2cHh9CiNxdWl0UmFjZSwjc291bmRUb2dnbGV7cmlnaHQ6OHB4O3BhZGRpbmc6MTBweCAxMnB4fQp9CiNyaWdodFBhZHtnYXA6OXB4fQojaXRlbUJ0bnt3aWR0aDpjbGFtcCgxMDRweCwxOHZ3LDEyNnB4KTtoZWlnaHQ6Y2xhbXAoMTA0cHgsMTh2dywxMjZweCk7Zm9udC1zaXplOjE1cHg7ZmxleDowIDAgYXV0b30KI2Jvb3N0e3dpZHRoOmNsYW1wKDEwOHB4LDE5dncsMTMycHgpO2hlaWdodDpjbGFtcCgxMDhweCwxOXZ3LDEzMnB4KTtmb250LXNpemU6NDNweDtmbGV4OjAgMCBhdXRvfQojYnJha2V7d2lkdGg6Y2xhbXAoNDhweCw4dncsNjBweCk7aGVpZ2h0OmNsYW1wKDQ4cHgsOHZ3LDYwcHgpO2ZvbnQtc2l6ZTo5cHg7Ym9yZGVyLXJhZGl1czoxNXB4O2ZsZXg6MCAwIGF1dG99CkBtZWRpYShtYXgtd2lkdGg6NjAwcHgpewojcmlnaHRQYWR7Z2FwOjZweH0KI2l0ZW1CdG57d2lkdGg6Y2xhbXAoODhweCwyMnZ3LDEwOHB4KTtoZWlnaHQ6Y2xhbXAoODhweCwyMnZ3LDEwOHB4KTtmb250LXNpemU6MTNweH0KI2Jvb3N0e3dpZHRoOmNsYW1wKDk2cHgsMjR2dywxMTZweCk7aGVpZ2h0OmNsYW1wKDk2cHgsMjR2dywxMTZweCk7Zm9udC1zaXplOjM4cHh9CiNicmFrZXt3aWR0aDpjbGFtcCg0MnB4LDExdncsNTJweCk7aGVpZ2h0OmNsYW1wKDQycHgsMTF2dyw1MnB4KTtmb250LXNpemU6OHB4O2JvcmRlci1yYWRpdXM6MTNweH0KfQojb3BlblRldHJpc3t3aWR0aDoxMDAlO21hcmdpbi10b3A6MTBweDtwYWRkaW5nOjE0cHg7Ym9yZGVyOjFweCBzb2xpZCAjNzBmNGZmOTk7Ym9yZGVyLXJhZGl1czoxMHB4O2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDkwZGVnLCMyNDNkNzYsIzU1MjM2Zik7Y29sb3I6I2ZmZjtmb250LXNpemU6MTZweDtmb250LXdlaWdodDo5MDA7bGV0dGVyLXNwYWNpbmc6LjEyZW07Ym94LXNoYWRvdzowIDVweCAwICMxMDIwNGIsMCAwIDIycHggIzMyZGZmZjMzfQojb3BlblRldHJpczphY3RpdmV7dHJhbnNmb3JtOnRyYW5zbGF0ZVkoM3B4KTtmaWx0ZXI6YnJpZ2h0bmVzcygxLjIpfQojdGV0cmlzU2NyZWVue2Rpc3BsYXk6bm9uZTtwb3NpdGlvbjpmaXhlZDtpbnNldDowO3otaW5kZXg6MTk7b3ZlcmZsb3c6YXV0bztmbGV4LWRpcmVjdGlvbjpjb2x1bW47YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpmbGV4LXN0YXJ0O3BhZGRpbmc6bWF4KDEycHgsZW52KHNhZmUtYXJlYS1pbnNldC10b3ApKSAxNHB4IG1heCgxNHB4LGVudihzYWZlLWFyZWEtaW5zZXQtYm90dG9tKSk7YmFja2dyb3VuZDpyYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCA1MCUgMTglLCMxODJiNjAgMCUsIzBhMTIzMCA0MiUsIzAzMDcxMyAxMDAlKTtjb2xvcjojZjRmYmZmfQojdGV0cmlzU2NyZWVuOjpiZWZvcmV7Y29udGVudDoiIjtwb3NpdGlvbjpmaXhlZDtpbnNldDowO3BvaW50ZXItZXZlbnRzOm5vbmU7b3BhY2l0eTouMjI7YmFja2dyb3VuZDpsaW5lYXItZ3JhZGllbnQodHJhbnNwYXJlbnQgOTYlLCM1OGVhZmYyMiAxMDAlKTtiYWNrZ3JvdW5kLXNpemU6MTAwJSA1cHh9CiN0ZXRyaXNIZWFkZXJ7cG9zaXRpb246cmVsYXRpdmU7ei1pbmRleDoxO3dpZHRoOm1pbig1NjBweCwxMDAlKTtkaXNwbGF5OmdyaWQ7Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOjFmciBhdXRvO2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6MTBweDttYXJnaW46MnB4IGF1dG8gMTRweH0KI3RldHJpc0hlYWRlciBoMnttYXJnaW46MDtjb2xvcjojZmZmO2ZvbnQtc2l6ZTpjbGFtcCgyNXB4LDZ2dywzNnB4KTtsZXR0ZXItc3BhY2luZzouMmVtO3RleHQtc2hhZG93OjAgMCAxMHB4ICMzOWVhZmYsMCAwIDI4cHggIzhjNDVmZjt0ZXh0LWFsaWduOmNlbnRlcn0KLnRldHJpc1NtYWxse2JvcmRlcjoxcHggc29saWQgIzVkZWVmZjk5O2JvcmRlci1yYWRpdXM6MTBweDtwYWRkaW5nOjlweCAxMXB4O2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDE0NWRlZywjMWEzMTU3ZWUsIzBhMTQyY2VlKTtjb2xvcjojZGZmYWZmO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtd2VpZ2h0Ojg1MDtib3gtc2hhZG93OjAgMCAxNHB4ICMyOGRmZmYyNTt0b3VjaC1hY3Rpb246bWFuaXB1bGF0aW9ufQojdGV0cmlzSW5mb3twb3NpdGlvbjpyZWxhdGl2ZTt6LWluZGV4OjE7d2lkdGg6bWluKDQzMHB4LDEwMCUpO2Rpc3BsYXk6Z3JpZDtncmlkLXRlbXBsYXRlLWNvbHVtbnM6cmVwZWF0KDMsMWZyKTtnYXA6OHB4O21hcmdpbjowIGF1dG8gMTJweH0KLnRJbmZve3BhZGRpbmc6OHB4IDZweDtib3JkZXI6MXB4IHNvbGlkICM1ZGVlZmY2Njtib3JkZXItcmFkaXVzOjExcHg7YmFja2dyb3VuZDojMDgxNTJkZGQ7dGV4dC1hbGlnbjpjZW50ZXI7Y29sb3I6IzlmYjlkYztmb250LXNpemU6MTBweDtmb250LXdlaWdodDo4MDA7bGV0dGVyLXNwYWNpbmc6LjEzZW07Ym94LXNoYWRvdzppbnNldCAwIDAgMTZweCAjMjRkZmZmMGR9Ci50SW5mbyBie2Rpc3BsYXk6YmxvY2s7bWFyZ2luLXRvcDozcHg7Y29sb3I6I2ZmZjtmb250LXNpemU6Y2xhbXAoMTdweCw0dncsMjNweCk7Zm9udC12YXJpYW50LW51bWVyaWM6dGFidWxhci1udW1zO3RleHQtc2hhZG93OjAgMCAxMHB4ICMzOGVhZmY1NX0KI3RldHJpc0JvYXJkV3JhcHtwb3NpdGlvbjpyZWxhdGl2ZTt6LWluZGV4OjE7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmZsZXgtc3RhcnQ7anVzdGlmeS1jb250ZW50OmNlbnRlcjtnYXA6MTJweDt3aWR0aDptaW4oNDMwcHgsMTAwJSk7bWFyZ2luOjAgYXV0b30KI3RldHJpc0NhbnZhc3t3aWR0aDptaW4obWluKDY2dncsMzAwcHgpLGNhbGMoKDEwMGR2aCAtIDI4NXB4KSouNSkpO2hlaWdodDphdXRvO21heC1oZWlnaHQ6Y2FsYygxMDBkdmggLSAyNzVweCk7YXNwZWN0LXJhdGlvOjEvMjtib3JkZXI6MnB4IHNvbGlkICM1NWVhZmZhYTtib3JkZXItcmFkaXVzOjhweDtiYWNrZ3JvdW5kOiMwODBlMjA7Ym94LXNoYWRvdzowIDAgMjRweCAjMjFkZmZmMzUsMCAwIDU1cHggIzZlNDNmZjIwO2ltYWdlLXJlbmRlcmluZzpwaXhlbGF0ZWR9CiNuZXh0UGFuZWx7ZmxleDowIDAgOTJweDttaW4taGVpZ2h0OjExMnB4O3BhZGRpbmc6MTBweCA3cHg7Ym9yZGVyOjFweCBzb2xpZCAjNThlYWZmNzc7Ym9yZGVyLXJhZGl1czoxMnB4O2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDE0NWRlZywjMTAxZTQwZWQsIzA4MGUyMGVkKTtjb2xvcjojOWRjOWU3O3RleHQtYWxpZ246Y2VudGVyO2ZvbnQtc2l6ZToxMXB4O2ZvbnQtd2VpZ2h0OjkwMDtsZXR0ZXItc3BhY2luZzouMmVtO2JveC1zaGFkb3c6MCAwIDE4cHggIzI1ZGZmZjIyfQojbmV4dENhbnZhc3tkaXNwbGF5OmJsb2NrO3dpZHRoOjgwcHg7aGVpZ2h0OjgwcHg7bWFyZ2luOjhweCBhdXRvIDB9CiN0ZXRyaXNNZXNzYWdle3Bvc2l0aW9uOnJlbGF0aXZlO3otaW5kZXg6MTttaW4taGVpZ2h0OjIycHg7bWFyZ2luOjlweCBhdXRvIDhweDtjb2xvcjojYmNlZmZmO3RleHQtYWxpZ246Y2VudGVyO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtd2VpZ2h0Ojc1MDtsZXR0ZXItc3BhY2luZzouMDVlbTt0ZXh0LXNoYWRvdzowIDAgMTBweCAjMjFkZmZmNTV9CiN0ZXRyaXNDb250cm9sc3twb3NpdGlvbjpyZWxhdGl2ZTt6LWluZGV4OjE7d2lkdGg6bWluKDQzMHB4LDEwMCUpO2Rpc3BsYXk6Z3JpZDtncmlkLXRlbXBsYXRlLWNvbHVtbnM6cmVwZWF0KDUsbWlubWF4KDAsMWZyKSk7Z2FwOjhweDttYXJnaW46MCBhdXRvIDVweH0KLnRLZXl7bWluLXdpZHRoOjA7bWluLWhlaWdodDo0OHB4O2JvcmRlcjoxcHggc29saWQgIzY5ZWZmZjk5O2JvcmRlci1yYWRpdXM6MTJweDtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCgxNTVkZWcsIzI0NDY2YywjMGIxNzMxIDcyJSk7Y29sb3I6I2Y0ZmRmZjtmb250LXNpemU6Y2xhbXAoMTNweCwzLjN2dywxN3B4KTtmb250LXdlaWdodDo5NTA7Ym94LXNoYWRvdzowIDRweCAwICMwMzA5MTgsMCAwIDE0cHggIzI1ZGZmZjJiLGluc2V0IDAgMXB4IDAgI2ZmZmZmZjMzO3RvdWNoLWFjdGlvbjptYW5pcHVsYXRpb247dXNlci1zZWxlY3Q6bm9uZTstd2Via2l0LXVzZXItc2VsZWN0Om5vbmV9Ci50S2V5OmFjdGl2ZXt0cmFuc2Zvcm06dHJhbnNsYXRlWSgzcHgpO2ZpbHRlcjpicmlnaHRuZXNzKDEuMzUpO2JveC1zaGFkb3c6MCAxcHggMCAjMDMwOTE4LDAgMCAyMHB4ICMzMWVhZmY2Nn0KLnRLZXkuZHJvcHtib3JkZXItY29sb3I6I2ZmOGJlODtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCgxNDVkZWcsIzc3M2Q5MSwjMjExMzNlKTtjb2xvcjojZmZlNWZiO2JveC1zaGFkb3c6MCA0cHggMCAjMTAwOTFlLDAgMCAxNnB4ICNlNjViZmYzM30KLnRLZXkud2lkZXtncmlkLWNvbHVtbjpzcGFuIDI7Zm9udC1zaXplOjEzcHg7Ym9yZGVyLWNvbG9yOiNhMThjZmY4ODtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCgxNDVkZWcsIzQwM2I3ZCwjMTUxNjM4KX0KQG1lZGlhKG1heC1oZWlnaHQ6NzAwcHgpeyN0ZXRyaXNTY3JlZW57cGFkZGluZy10b3A6N3B4fSN0ZXRyaXNIZWFkZXJ7bWFyZ2luLWJvdHRvbTo3cHh9I3RldHJpc0luZm97bWFyZ2luLWJvdHRvbTo3cHh9LnRJbmZve3BhZGRpbmc6NXB4fS50SW5mbyBie2ZvbnQtc2l6ZToxN3B4fSN0ZXRyaXNNZXNzYWdle21hcmdpbjo1cHggYXV0b30udEtleXttaW4taGVpZ2h0OjQwcHh9fQpAbWVkaWEobWF4LXdpZHRoOjM4MHB4KXsjdGV0cmlzQm9hcmRXcmFwe2dhcDo3cHh9I25leHRQYW5lbHtmbGV4LWJhc2lzOjc2cHg7bWluLWhlaWdodDoxMDBweDtwYWRkaW5nOjhweCA0cHh9I25leHRDYW52YXN7d2lkdGg6NjhweDtoZWlnaHQ6NjhweH0jdGV0cmlzQ29udHJvbHN7Z2FwOjVweH0udEtleXttaW4taGVpZ2h0OjQ0cHg7Ym9yZGVyLXJhZGl1czo5cHh9fQo8L3N0eWxlPgoKPHN0eWxlIGlkPSJwb3J0YWxTdHlsZXMiPgojcG9ydGFsSG9tZSwjcG9ydGFsU2NyYXRjaHsKICBwb3NpdGlvbjpmaXhlZDtpbnNldDowO3otaW5kZXg6MTAwMDtvdmVyZmxvdy15OmF1dG87b3ZlcmZsb3cteDpoaWRkZW47CiAgY29sb3I6I2VmZjhmZjtiYWNrZ3JvdW5kOgogICByYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCAxMiUgNCUscmdiYSgyOSwxMTgsMTY1LC4yKSx0cmFuc3BhcmVudCAzNHJlbSksCiAgIHJhZGlhbC1ncmFkaWVudChlbGxpcHNlIGF0IDkyJSAxOCUscmdiYSgxNDQsNDgsMTM1LC4xNiksdHJhbnNwYXJlbnQgMzJyZW0pLAogICBsaW5lYXItZ3JhZGllbnQoMTQ1ZGVnLCMwNzBiMTQsIzA5MTMyMSA1NSUsIzA4MGQxOCk7CiAgZm9udC1mYW1pbHk6c3lzdGVtLXVpLC1hcHBsZS1zeXN0ZW0sQmxpbmtNYWNTeXN0ZW1Gb250LCJIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OIiwiTm90byBTYW5zIEpQIixzYW5zLXNlcmlmOwogIHRvdWNoLWFjdGlvbjpwYW4teQp9CiNwb3J0YWxIb21lICogLCNwb3J0YWxTY3JhdGNoICp7Ym94LXNpemluZzpib3JkZXItYm94fQojcG9ydGFsSG9tZSAucG9ydGFsR3JpZEJnLCNwb3J0YWxTY3JhdGNoIC5wb3J0YWxHcmlkQmd7cG9zaXRpb246Zml4ZWQ7aW5zZXQ6MDtwb2ludGVyLWV2ZW50czpub25lO29wYWNpdHk6LjI7YmFja2dyb3VuZC1pbWFnZTpsaW5lYXItZ3JhZGllbnQocmdiYSgxMTAsMTgwLDIxMCwuMDcpIDFweCx0cmFuc3BhcmVudCAxcHgpLGxpbmVhci1ncmFkaWVudCg5MGRlZyxyZ2JhKDExMCwxODAsMjEwLC4wNykgMXB4LHRyYW5zcGFyZW50IDFweCk7YmFja2dyb3VuZC1zaXplOjQycHggNDJweDttYXNrLWltYWdlOmxpbmVhci1ncmFkaWVudCh0byBib3R0b20sYmxhY2ssdHJhbnNwYXJlbnQgODAlKX0KI3BvcnRhbEhvbWUgLnBvcnRhbEJhciwjcG9ydGFsU2NyYXRjaCAucG9ydGFsQmFye2hlaWdodDo2OHB4O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OnNwYWNlLWJldHdlZW47cGFkZGluZzowIGNsYW1wKDE3cHgsNXZ3LDcwcHgpO2JvcmRlci1ib3R0b206MXB4IHNvbGlkIHJnYmEoMTQyLDE5MCwyMjUsLjE2KTtiYWNrZ3JvdW5kOnJnYmEoNywxMiwyMiwuNzIpO2JhY2tkcm9wLWZpbHRlcjpibHVyKDE4cHgpO3Bvc2l0aW9uOnN0aWNreTt0b3A6MDt6LWluZGV4OjJ9CiNwb3J0YWxIb21lIC5wb3J0YWxCcmFuZCwjcG9ydGFsU2NyYXRjaCAucG9ydGFsQnJhbmR7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6MTJweDtmb250LXdlaWdodDo5MDA7bGV0dGVyLXNwYWNpbmc6LjE0ZW07Zm9udC1zaXplOjEzcHh9CiNwb3J0YWxIb21lIC5wb3J0YWxNYXJrLCNwb3J0YWxTY3JhdGNoIC5wb3J0YWxNYXJre3dpZHRoOjM0cHg7aGVpZ2h0OjM0cHg7Ym9yZGVyOjFweCBzb2xpZCAjNTdlOGZmOTk7Ym9yZGVyLXJhZGl1czoxMHB4O2Rpc3BsYXk6Z3JpZDtwbGFjZS1pdGVtczpjZW50ZXI7Y29sb3I6IzU3ZThmZjtib3gtc2hhZG93OjAgMCAyMnB4ICM1N2U4ZmYyMjtmb250LXNpemU6MTdweH0KI3BvcnRhbEhvbWUgLnBvcnRhbEJyYW5kIHNtYWxsLCNwb3J0YWxTY3JhdGNoIC5wb3J0YWxCcmFuZCBzbWFsbHtkaXNwbGF5OmJsb2NrO2NvbG9yOiM3Zjk5YjE7Zm9udC1zaXplOjlweDtsZXR0ZXItc3BhY2luZzouMjRlbTttYXJnaW4tdG9wOjJweH0KI3BvcnRhbEhvbWUgLnBvcnRhbFdyYXAsI3BvcnRhbFNjcmF0Y2ggLnBvcnRhbFdyYXB7d2lkdGg6bWluKDEwNTBweCxjYWxjKDEwMCUgLSAzNHB4KSk7bWFyZ2luOjAgYXV0b30KI3BvcnRhbEhvbWUgLnBvcnRhbEhlcm97cGFkZGluZzpjbGFtcCg1NXB4LDl2aCw5MHB4KSAwIDM1cHh9CiNwb3J0YWxIb21lIC5wb3J0YWxFeWVicm93e2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7Z2FwOjEwcHg7Y29sb3I6IzU3ZThmZjtmb250LXNpemU6MTBweDtmb250LXdlaWdodDo4NTA7bGV0dGVyLXNwYWNpbmc6LjI0ZW19CiNwb3J0YWxIb21lIC5wb3J0YWxFeWVicm93OmJlZm9yZXtjb250ZW50OiIiO3dpZHRoOjI4cHg7aGVpZ2h0OjFweDtiYWNrZ3JvdW5kOiM1N2U4ZmY7Ym94LXNoYWRvdzowIDAgMTBweCAjNTdlOGZmfQojcG9ydGFsSG9tZSAucG9ydGFsSGVybyBoMntmb250LXNpemU6Y2xhbXAoNDNweCw4LjV2dyw4NHB4KTtsaW5lLWhlaWdodDouOTY7bGV0dGVyLXNwYWNpbmc6LS4wNjVlbTttYXJnaW46MjFweCAwIDE3cHg7Zm9udC13ZWlnaHQ6OTUwO2NvbG9yOiNmMmY4ZmZ9CiNwb3J0YWxIb21lIC5wb3J0YWxIZXJvIGgyIHNwYW57Y29sb3I6dHJhbnNwYXJlbnQ7LXdlYmtpdC10ZXh0LXN0cm9rZToxcHggIzU3ZThmZjt0ZXh0LXNoYWRvdzowIDAgMzJweCAjNTdlOGZmMjJ9CiNwb3J0YWxIb21lIC5wb3J0YWxJbnRyb3ttYXgtd2lkdGg6NjAwcHg7Y29sb3I6I2E3YjljYjtsaW5lLWhlaWdodDoxLjk7Zm9udC1zaXplOjEzcHg7bWFyZ2luOjB9CiNwb3J0YWxIb21lIC5wb3J0YWxQaWxsc3tkaXNwbGF5OmZsZXg7Z2FwOjlweDtmbGV4LXdyYXA6d3JhcDttYXJnaW4tdG9wOjIzcHh9CiNwb3J0YWxIb21lIC5wb3J0YWxQaWxse2JvcmRlcjoxcHggc29saWQgcmdiYSgxNDIsMTkwLDIyNSwuMTYpO2JhY2tncm91bmQ6IzExMWQyZGIzO2NvbG9yOiNhOWJmZDE7Ym9yZGVyLXJhZGl1czo5OTlweDtwYWRkaW5nOjhweCAxMnB4O2ZvbnQtc2l6ZTo5cHg7bGV0dGVyLXNwYWNpbmc6LjA4ZW19CiNwb3J0YWxIb21lIC5wb3J0YWxTZWN0aW9uSGVhZHtkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6ZW5kO2p1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuO2dhcDoxNnB4O21hcmdpbjoxOHB4IDAgMTZweH0KI3BvcnRhbEhvbWUgLnBvcnRhbEtpY2tlcntmb250LXNpemU6MTBweDtjb2xvcjojNTdlOGZmO2xldHRlci1zcGFjaW5nOi4yMmVtO2ZvbnQtd2VpZ2h0Ojg1MH0KI3BvcnRhbEhvbWUgLnBvcnRhbFNlY3Rpb25IZWFkIGgze2ZvbnQtc2l6ZToyMnB4O21hcmdpbjo2cHggMCAwO2NvbG9yOiNmMmY4ZmZ9CiNwb3J0YWxIb21lIC5wb3J0YWxIaW50e2ZvbnQtc2l6ZToxMHB4O2NvbG9yOiM5MWE2YmJ9CiNwb3J0YWxIb21lIC5wb3J0YWxDYXJkc3tkaXNwbGF5OmdyaWQ7Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOnJlcGVhdCgyLG1pbm1heCgwLDFmcikpO2dhcDoxNnB4O3BhZGRpbmctYm90dG9tOjQycHh9CiNwb3J0YWxIb21lIC5wb3J0YWxDYXJke2JvcmRlcjoxcHggc29saWQgcmdiYSgxNDIsMTkwLDIyNSwuMTcpO2JvcmRlci1yYWRpdXM6MTlweDtvdmVyZmxvdzpoaWRkZW47YmFja2dyb3VuZDpsaW5lYXItZ3JhZGllbnQoMTU1ZGVnLHJnYmEoMjEsMzYsNTUsLjk2KSxyZ2JhKDExLDE5LDMxLC45NykpO2JveC1zaGFkb3c6MCAyNHB4IDY1cHggIzAwMDY7bWluLXdpZHRoOjB9CiNwb3J0YWxIb21lIC5wb3J0YWxBcnR7aGVpZ2h0OjE3MHB4O2Rpc3BsYXk6Z3JpZDtwbGFjZS1pdGVtczpjZW50ZXI7cG9zaXRpb246cmVsYXRpdmU7b3ZlcmZsb3c6aGlkZGVuO2JhY2tncm91bmQ6cmFkaWFsLWdyYWRpZW50KGNpcmNsZSBhdCA1MCUgNDglLCMyNGE3Y2EzMyx0cmFuc3BhcmVudCA1NiUpLGxpbmVhci1ncmFkaWVudCgxMzVkZWcsIzExMWYzMSwjMGIxNDIyKX0KI3BvcnRhbEhvbWUgLnBvcnRhbEFydDpiZWZvcmV7Y29udGVudDoiIjtwb3NpdGlvbjphYnNvbHV0ZTtpbnNldDowO2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDExNWRlZyx0cmFuc3BhcmVudCAzNSUsI2ZmZmZmZjBiIDUwJSx0cmFuc3BhcmVudCA2NSUpO3RyYW5zZm9ybTp0cmFuc2xhdGVYKC0xMDAlKTthbmltYXRpb246cG9ydGFsU2hpbmUgNnMgaW5maW5pdGV9CkBrZXlmcmFtZXMgcG9ydGFsU2hpbmV7NTAlLDEwMCV7dHJhbnNmb3JtOnRyYW5zbGF0ZVgoMTAwJSl9fQojcG9ydGFsSG9tZSAucG9ydGFsQXJ0SWNvbntmb250LXNpemU6NjVweDtjb2xvcjojNTdlOGZmO2ZpbHRlcjpkcm9wLXNoYWRvdygwIDAgMjBweCAjNTdlOGZmNjYpfQojcG9ydGFsSG9tZSAucG9ydGFsUHV6emxlSWNvbntmb250LXNpemU6NTJweDtjb2xvcjojYjlhMWZmO3RleHQtc2hhZG93OjAgMCAyMnB4ICNiOWExZmY1NTtsZXR0ZXItc3BhY2luZzotLjE1ZW19CiNwb3J0YWxIb21lIC5wb3J0YWxBcnRMYWJlbHtwb3NpdGlvbjphYnNvbHV0ZTtsZWZ0OjE3cHg7dG9wOjE1cHg7Y29sb3I6IzliYjNjODtmb250LXNpemU6OXB4O2ZvbnQtd2VpZ2h0OjgwMDtsZXR0ZXItc3BhY2luZzouMmVtfQojcG9ydGFsSG9tZSAucG9ydGFsQ2FyZEJvZHl7cGFkZGluZzoxOXB4IDIwcHggMjBweH0KI3BvcnRhbEhvbWUgLnBvcnRhbENhcmRUYWd7Zm9udC1zaXplOjlweDtjb2xvcjojNTdlOGZmO2ZvbnQtd2VpZ2h0Ojg1MDtsZXR0ZXItc3BhY2luZzouMmVtfQojcG9ydGFsSG9tZSAucG9ydGFsQ2FyZFRpdGxle2ZvbnQtc2l6ZToyMnB4O2ZvbnQtd2VpZ2h0OjkwMDtsZXR0ZXItc3BhY2luZzotLjAzNWVtO21hcmdpbjo4cHggMCA3cHg7Y29sb3I6I2YyZjhmZn0KI3BvcnRhbEhvbWUgLnBvcnRhbENhcmREZXNje2ZvbnQtc2l6ZToxMXB4O2xpbmUtaGVpZ2h0OjEuODtjb2xvcjojOTJhOGJkO21pbi1oZWlnaHQ6NDJweDttYXJnaW46MH0KI3BvcnRhbEhvbWUgLnBvcnRhbENhcmRGb290e2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OnNwYWNlLWJldHdlZW47Z2FwOjEwcHg7bWFyZ2luLXRvcDoxNnB4fQojcG9ydGFsSG9tZSAucG9ydGFsSW5kZXh7Zm9udC1zaXplOjlweDtjb2xvcjojNjA3YTkxO2xldHRlci1zcGFjaW5nOi4xNmVtfQojcG9ydGFsSG9tZSAucG9ydGFsQnV0dG9uLCNwb3J0YWxTY3JhdGNoIC5wb3J0YWxCdXR0b257bWluLWhlaWdodDo0MnB4O3BhZGRpbmc6MCAxNnB4O2JvcmRlcjoxcHggc29saWQgIzU3ZThmZjcwO2JvcmRlci1yYWRpdXM6MTBweDtiYWNrZ3JvdW5kOiMyZmIzY2UxYTtjb2xvcjojZTRmY2ZmO2ZvbnQtc2l6ZToxMXB4O2ZvbnQtd2VpZ2h0Ojg1MDtsZXR0ZXItc3BhY2luZzouMDVlbX0KI3BvcnRhbEhvbWUgLnBvcnRhbEJ1dHRvbjphY3RpdmUsI3BvcnRhbFNjcmF0Y2ggLnBvcnRhbEJ1dHRvbjphY3RpdmV7ZmlsdGVyOmJyaWdodG5lc3MoMS4zKTt0cmFuc2Zvcm06dHJhbnNsYXRlWSgxcHgpfQojcG9ydGFsSG9tZSAucG9ydGFsRm9vdGVye2JvcmRlci10b3A6MXB4IHNvbGlkIHJnYmEoMTQyLDE5MCwyMjUsLjE2KTtwYWRkaW5nOjIycHggMCAyOHB4O2NvbG9yOiM2NTdlOTU7Zm9udC1zaXplOjlweDtsZXR0ZXItc3BhY2luZzouMDhlbX0KI3BvcnRhbEhvbWUgLnBvcnRhbEZvb3RlcklubmVye2Rpc3BsYXk6ZmxleDtqdXN0aWZ5LWNvbnRlbnQ6c3BhY2UtYmV0d2VlbjtnYXA6MTBweDtmbGV4LXdyYXA6d3JhcH0KI3BvcnRhbEhvbWUgLnBvcnRhbE9uZUdhbWVOb3Rle21hcmdpbjowIDAgNDhweDtwYWRkaW5nOjE3cHggMTlweDtib3JkZXI6MXB4IHNvbGlkIHJnYmEoODcsMjMyLDI1NSwuMTgpO2JvcmRlci1yYWRpdXM6MTVweDtiYWNrZ3JvdW5kOiMwZDE3MjZiODtjb2xvcjojOTNhOWJmO2ZvbnQtc2l6ZToxMXB4O2xpbmUtaGVpZ2h0OjEuOH0KI3BvcnRhbFNjcmF0Y2h7ZGlzcGxheTpub25lO3BhZGRpbmctYm90dG9tOjU1cHh9CiNwb3J0YWxTY3JhdGNoIC5wb3J0YWxTY3JhdGNoSGVhZHtwYWRkaW5nOjM0cHggMCAyMnB4O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczplbmQ7anVzdGlmeS1jb250ZW50OnNwYWNlLWJldHdlZW47Z2FwOjE1cHg7ZmxleC13cmFwOndyYXB9CiNwb3J0YWxTY3JhdGNoIC5wb3J0YWxTY3JhdGNoSGVhZCBoMntmb250LXNpemU6MjhweDttYXJnaW46N3B4IDA7Y29sb3I6I2YyZjhmZn0KI3BvcnRhbFNjcmF0Y2ggLnBvcnRhbFNjcmF0Y2hIZWFkIHB7Zm9udC1zaXplOjExcHg7Y29sb3I6IzkxYTZiYjttYXJnaW46MH0KI3BvcnRhbFNjcmF0Y2ggLnBvcnRhbFByb2ZpbGV7Y29sb3I6IzU3ZThmZjtmb250LXNpemU6MTBweDt0ZXh0LWRlY29yYXRpb246bm9uZTtib3JkZXItYm90dG9tOjFweCBzb2xpZCAjNTdlOGZmNjY7cGFkZGluZy1ib3R0b206NHB4fQojcG9ydGFsU2NyYXRjaCAucG9ydGFsTm90aWNle2JvcmRlcjoxcHggc29saWQgI2ZmYjc1ZTMzO2JvcmRlci1yYWRpdXM6MTJweDtiYWNrZ3JvdW5kOiNmZmI3NWUwZDtwYWRkaW5nOjE0cHg7Y29sb3I6I2U0Yzk5Zjtmb250LXNpemU6MTFweDtsaW5lLWhlaWdodDoxLjg7bWFyZ2luLWJvdHRvbToxN3B4fQojcG9ydGFsU2NyYXRjaCAucG9ydGFsUHJvamVjdEdyaWR7ZGlzcGxheTpncmlkO2dyaWQtdGVtcGxhdGUtY29sdW1uczpyZXBlYXQoYXV0by1maWxsLG1pbm1heCgxOTBweCwxZnIpKTtnYXA6MTNweH0KI3BvcnRhbFNjcmF0Y2ggLnBvcnRhbFByb2plY3R7Ym9yZGVyOjFweCBzb2xpZCByZ2JhKDE0MiwxOTAsMjI1LC4xNik7Ym9yZGVyLXJhZGl1czoxNHB4O292ZXJmbG93OmhpZGRlbjtiYWNrZ3JvdW5kOiMxMDFjMmJ9CiNwb3J0YWxTY3JhdGNoIC5wb3J0YWxQcm9qZWN0IGltZ3tkaXNwbGF5OmJsb2NrO3dpZHRoOjEwMCU7YXNwZWN0LXJhdGlvOjQvMztvYmplY3QtZml0OmNvdmVyO2JhY2tncm91bmQ6IzE3MjYzYX0KI3BvcnRhbFNjcmF0Y2ggLnBvcnRhbFByb2plY3RJbmZve3BhZGRpbmc6MTJweH0KI3BvcnRhbFNjcmF0Y2ggLnBvcnRhbFByb2plY3RJbmZvIHN0cm9uZ3tkaXNwbGF5OmJsb2NrO2ZvbnQtc2l6ZToxMnB4O2xpbmUtaGVpZ2h0OjEuNTttaW4taGVpZ2h0OjM2cHg7Y29sb3I6I2YyZjhmZn0KI3BvcnRhbFNjcmF0Y2ggLnBvcnRhbFByb2plY3RJbmZvIGJ1dHRvbnttYXJnaW4tdG9wOjlweDt3aWR0aDoxMDAlO21pbi1oZWlnaHQ6MzZweDtib3JkZXI6MXB4IHNvbGlkICM1N2U4ZmY1NTtib3JkZXItcmFkaXVzOjhweDtiYWNrZ3JvdW5kOiM1N2U4ZmYxMjtjb2xvcjojZGZmYWZmO2ZvbnQtc2l6ZToxMHB4O2ZvbnQtd2VpZ2h0OjgwMH0KI3BvcnRhbFNjcmF0Y2ggLnBvcnRhbFBsYXllcntkaXNwbGF5Om5vbmU7bWFyZ2luLXRvcDoyMHB4O2JvcmRlcjoxcHggc29saWQgcmdiYSgxNDIsMTkwLDIyNSwuMTYpO2JvcmRlci1yYWRpdXM6MTVweDtvdmVyZmxvdzpoaWRkZW47YmFja2dyb3VuZDojMDgwZDE4fQojcG9ydGFsU2NyYXRjaCAucG9ydGFsUGxheWVyQmFye2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OnNwYWNlLWJldHdlZW47Z2FwOjEwcHg7YmFja2dyb3VuZDojMTExZjMxO3BhZGRpbmc6MTBweCAxM3B4O2ZvbnQtc2l6ZToxMXB4O2NvbG9yOiNlZmY4ZmZ9CiNwb3J0YWxTY3JhdGNoIC5wb3J0YWxQbGF5ZXIgaWZyYW1le2Rpc3BsYXk6YmxvY2s7d2lkdGg6MTAwJTtoZWlnaHQ6bWluKDY4dmgsNjUwcHgpO2JvcmRlcjowO2JhY2tncm91bmQ6I2ZmZn0KI3BvcnRhbFNjcmF0Y2ggLnBvcnRhbEJhY2t7bWFyZ2luLXRvcDoyMnB4fQojcG9ydGFsU2NyYXRjaCAucG9ydGFsQmFjayBidXR0b257Ym9yZGVyOjFweCBzb2xpZCByZ2JhKDE0MiwxOTAsMjI1LC4yMik7Ym9yZGVyLXJhZGl1czo5cHg7YmFja2dyb3VuZDojMTQyMzM3O2NvbG9yOiNkNGU0ZjE7cGFkZGluZzoxMHB4IDE0cHg7Zm9udC1zaXplOjExcHh9CiNwb3J0YWxSZXR1cm57d2lkdGg6MTAwJTttYXJnaW4tdG9wOjEwcHg7cGFkZGluZzoxMHB4O2JvcmRlcjoxcHggc29saWQgIzc3ZWNmZjU1O2JvcmRlci1yYWRpdXM6OXB4O2JhY2tncm91bmQ6IzEwMjk0Mztjb2xvcjojYzlmOGZmO2ZvbnQtc2l6ZToxMXB4O2ZvbnQtd2VpZ2h0OjgwMDtsZXR0ZXItc3BhY2luZzouMDhlbX0KQG1lZGlhKG1heC13aWR0aDo2NTBweCl7CiAjcG9ydGFsSG9tZSAucG9ydGFsQmFyLCNwb3J0YWxTY3JhdGNoIC5wb3J0YWxCYXJ7aGVpZ2h0OjYycHg7cGFkZGluZzowIDE1cHh9CiAjcG9ydGFsSG9tZSAucG9ydGFsV3JhcCwjcG9ydGFsU2NyYXRjaCAucG9ydGFsV3JhcHt3aWR0aDpjYWxjKDEwMCUgLSAyOHB4KX0KICNwb3J0YWxIb21lIC5wb3J0YWxIZXJve3BhZGRpbmc6NDhweCAwIDI5cHh9CiAjcG9ydGFsSG9tZSAucG9ydGFsSGVybyBoMntmb250LXNpemU6NDlweH0KICNwb3J0YWxIb21lIC5wb3J0YWxJbnRyb3tmb250LXNpemU6MTJweH0KICNwb3J0YWxIb21lIC5wb3J0YWxTZWN0aW9uSGVhZHthbGlnbi1pdGVtczpmbGV4LXN0YXJ0O2ZsZXgtZGlyZWN0aW9uOmNvbHVtbn0KICNwb3J0YWxIb21lIC5wb3J0YWxDYXJkc3tncmlkLXRlbXBsYXRlLWNvbHVtbnM6MWZyO2dhcDoxMnB4fQogI3BvcnRhbEhvbWUgLnBvcnRhbEFydHtoZWlnaHQ6MTM1cHh9CiAjcG9ydGFsSG9tZSAucG9ydGFsQ2FyZERlc2N7bWluLWhlaWdodDowfQogI3BvcnRhbEhvbWUgLnBvcnRhbE9uZUdhbWVOb3Rle21hcmdpbi1ib3R0b206MzVweH0KfQo8L3N0eWxlPgoKPC9oZWFkPgo8Ym9keT4KPGRpdiBpZD0idGV0cmlzU2NyZWVuIj4KIDxkaXYgaWQ9InRldHJpc0hlYWRlciI+PGJ1dHRvbiBjbGFzcz0idGV0cmlzU21hbGwiIGlkPSJ0ZXRyaXNCYWNrIj7ihpAg44Ky44O844Og6YG45oqePC9idXR0b24+PGgyPlRFVFJJUzwvaDI+PC9kaXY+CiA8ZGl2IGlkPSJ0ZXRyaXNJbmZvIj48ZGl2IGNsYXNzPSJ0SW5mbyI+U0NPUkU8YiBpZD0idFNjb3JlIj4wPC9iPjwvZGl2PjxkaXYgY2xhc3M9InRJbmZvIj5MSU5FUzxiIGlkPSJ0TGluZXMiPjA8L2I+PC9kaXY+PGRpdiBjbGFzcz0idEluZm8iPkxFVkVMPGIgaWQ9InRMZXZlbCI+MTwvYj48L2Rpdj48L2Rpdj4KIDxkaXYgaWQ9InRldHJpc0JvYXJkV3JhcCI+PGNhbnZhcyBpZD0idGV0cmlzQ2FudmFzIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjYwMCI+PC9jYW52YXM+PGRpdiBpZD0ibmV4dFBhbmVsIj5ORVhUPGNhbnZhcyBpZD0ibmV4dENhbnZhcyIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiPjwvY2FudmFzPjwvZGl2PjwvZGl2PgogPGRpdiBpZD0idGV0cmlzTWVzc2FnZSI+44OW44Ot44OD44Kv44KS44Gd44KN44GI44Gm44Op44Kk44Oz44KS5raI44Gd44GG77yBPC9kaXY+CiA8ZGl2IGlkPSJ0ZXRyaXNDb250cm9scyI+CiAgPGJ1dHRvbiBjbGFzcz0idEtleSIgZGF0YS1hY3Q9ImxlZnQiPuKGkDwvYnV0dG9uPjxidXR0b24gY2xhc3M9InRLZXkiIGRhdGEtYWN0PSJyaWdodCI+4oaSPC9idXR0b24+PGJ1dHRvbiBjbGFzcz0idEtleSIgZGF0YS1hY3Q9ImRvd24iPuKGkzwvYnV0dG9uPjxidXR0b24gY2xhc3M9InRLZXkiIGRhdGEtYWN0PSJyb3RhdGUiPuWbnui7ojwvYnV0dG9uPjxidXR0b24gY2xhc3M9InRLZXkgZHJvcCIgZGF0YS1hY3Q9ImRyb3AiPkRST1A8L2J1dHRvbj4KICA8YnV0dG9uIGNsYXNzPSJ0S2V5IHdpZGUiIGRhdGEtYWN0PSJwYXVzZSI+5LiA5pmC5YGc5q2iPC9idXR0b24+PGJ1dHRvbiBjbGFzcz0idEtleSB3aWRlIiBkYXRhLWFjdD0icmVzdGFydCI+5pyA5Yid44GL44KJPC9idXR0b24+CiA8L2Rpdj4KPC9kaXY+CjxkaXYgaWQ9Imh1ZCI+CiA8ZGl2IGlkPSJzcGVlZEZYIj48L2Rpdj48ZGl2IGlkPSJib29zdEZsYXNoIj48L2Rpdj48ZGl2IGlkPSJib29zdEJhbm5lciI+TVVTSFJPT00gQk9PU1QhPC9kaXY+CiA8YnV0dG9uIGlkPSJzb3VuZFRvZ2dsZSIgdHlwZT0iYnV0dG9uIj7wn5SKIFNPVU5EIE9OPC9idXR0b24+CiA8YnV0dG9uIGlkPSJxdWl0UmFjZSIgdHlwZT0iYnV0dG9uIiBzdHlsZT0iZGlzcGxheTpub25lIj7ij7kg44Os44O844K55Lit5patPC9idXR0b24+CiA8ZGl2IGNsYXNzPSJ0b3AiPgogIDxkaXYgY2xhc3M9InBhbmVsIHN0YXQiIGlkPSJyYW5rUGFuZWwiPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTFweDtjb2xvcjojYTljMWRmO2xldHRlci1zcGFjaW5nOi4xNmVtIj5DVVJSRU5UIFJBTks8L3NwYW4+PGJyPjxiIGlkPSJwb3MiIHN0eWxlPSJmb250LXNpemU6Y2xhbXAoMjRweCw1dncsMzRweCk7bGluZS1oZWlnaHQ6MS4yIj4xIC8gMTI8L2I+PGJyPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTFweDtjb2xvcjojYTljMWRmIj5MQVAgPGIgaWQ9ImxhcCI+MSAvIDM8L2I+PC9zcGFuPjwvZGl2PgogIDxkaXYgY2xhc3M9InBhbmVsIHN0YXQiIHN0eWxlPSJ0ZXh0LWFsaWduOnJpZ2h0Ij5USU1FIDxiIGlkPSJ0aW1lIj4wMDowMC4wMDA8L2I+PGJyPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTFweDtjb2xvcjojYTljMWRmIj5CRVNUIDxiIGlkPSJiZXN0Ij4tLTotLS4tLS08L2I+PC9zcGFuPjwvZGl2PgogIDxkaXYgY2xhc3M9InBhbmVsIHN0YXQiIHN0eWxlPSJ0ZXh0LWFsaWduOnJpZ2h0Ij5TUEVFRCA8YiBpZD0ic3BlZWQiPjA8L2I+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMXB4Ij4ga20vaDwvc3Bhbj48YnI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMXB4O2NvbG9yOiNhOWMxZGYiPklURU0gPGIgaWQ9Iml0ZW0iPuKRoOacquaJgOaMgeOAgOKRoeacquaJgOaMgTwvYj48L3NwYW4+PC9kaXY+CiA8L2Rpdj4KIDxkaXYgaWQ9ImNlbnRlck1zZyI+PC9kaXY+PGRpdiBpZD0ic3ViTXNnIj48L2Rpdj4KIDxkaXYgaWQ9ImRyaWZ0SHVkIiBzdHlsZT0icG9zaXRpb246YWJzb2x1dGU7dG9wOjQ0JTtsZWZ0OjUwJTt0cmFuc2Zvcm06dHJhbnNsYXRlWCgtNTAlKTt3aWR0aDoxNTBweDtoZWlnaHQ6NXB4O2JvcmRlci1yYWRpdXM6OHB4O2JhY2tncm91bmQ6IzE0MjMzZWFhO29wYWNpdHk6Ljg7b3ZlcmZsb3c6aGlkZGVuIj48ZGl2IGlkPSJkcmlmdEZpbGwiIHN0eWxlPSJoZWlnaHQ6MTAwJTt3aWR0aDowO2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDkwZGVnLCMyM2VhZmYsI2ZmNGJkOCk7Ym94LXNoYWRvdzowIDAgMTJweCAjMjhlYWZmIj48L2Rpdj48L2Rpdj4KIDxkaXYgaWQ9ImNvbnRyb2xzIj48ZGl2IGNsYXNzPSJwYWQiPjxidXR0b24gY2xhc3M9ImN0cmwiIGlkPSJsZWZ0Ij7il4A8L2J1dHRvbj48YnV0dG9uIGNsYXNzPSJjdHJsIiBpZD0icmlnaHQiPuKWtjwvYnV0dG9uPjwvZGl2PjxkaXYgY2xhc3M9InBhZCIgaWQ9InJpZ2h0UGFkIj48YnV0dG9uIGNsYXNzPSJjdHJsIiBpZD0iaXRlbUJ0biI+SVRFTTwvYnV0dG9uPjxidXR0b24gY2xhc3M9ImN0cmwgYWN0aW9uIiBpZD0iYnJha2UiPkJSQUtFPC9idXR0b24+PGJ1dHRvbiBjbGFzcz0iY3RybCBhY3Rpb24iIGlkPSJib29zdCI+4payPC9idXR0b24+PC9kaXY+PC9kaXY+CjwvZGl2Pgo8ZGl2IGlkPSJtZW51Ij48ZGl2IGNsYXNzPSJjYXJkIj4KIDxkaXYgY2xhc3M9ImtpY2tlciI+TkVYVC1HRU4gU1RSRUVUIFJBQ0lORzwvZGl2PjxoMT5ORU9OPGJyPkNJUkNVSVQ8L2gxPgogPHAgY2xhc3M9ImRlc2MiPuODjeOCquODs+OBq+WMheOBvuOCjOOBn+i/keacquadpemDveW4guOCkumnhuOBkeaKnOOBkeOCjeOAguOCv+ODg+ODgeaTjeS9nOWvvuW/nOODu+WFqDEy5Y+w44O75YWoM+WRqOOBrjNE44Os44O844K544CCPC9wPgogPGxhYmVsIGZvcj0ic2tpbiI+44Oe44K344Oz44Kr44Op44O8PC9sYWJlbD48c2VsZWN0IGlkPSJza2luIj48b3B0aW9uIHZhbHVlPSIjMTZlMGU5Ij5DWUFOPC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0iI2ZmNGJkOCI+TUFHRU5UQTwvb3B0aW9uPjxvcHRpb24gdmFsdWU9IiNhNGZmNDMiPkxJTUU8L29wdGlvbj48b3B0aW9uIHZhbHVlPSIjZmY5YjM1Ij5PUkFOR0U8L29wdGlvbj48b3B0aW9uIHZhbHVlPSIjZWVlZWZmIj5XSElURTwvb3B0aW9uPjwvc2VsZWN0PgogPGxhYmVsIGZvcj0iY3B1Ij5DUFXjga7lvLfjgZU8L2xhYmVsPjxzZWxlY3QgaWQ9ImNwdSI+PG9wdGlvbiB2YWx1ZT0iMC44NiI+RUFTWTwvb3B0aW9uPjxvcHRpb24gdmFsdWU9IjAuOTgiIHNlbGVjdGVkPk5PUk1BTDwvb3B0aW9uPjxvcHRpb24gdmFsdWU9IjEuMTIiPkhBUkQ8L29wdGlvbj48L3NlbGVjdD4KIDxidXR0b24gaWQ9InN0YXJ0Ij5SQUNFIFNUQVJUPC9idXR0b24+PGJ1dHRvbiBpZD0ib3BlblRldHJpcyIgdHlwZT0iYnV0dG9uIj7wn6epIFRFVFJJUyDjgpLjg5fjg6zjgqQ8L2J1dHRvbj4KIDxkaXYgaWQ9ImhlbHAiPuaTjeS9nO+8muKXgCDilrYg44Gn44OP44Oz44OJ44OrIO+8jyDilrIg44Gn44Ki44Kv44K744OrIO+8jyBCUkFLRSDjgafjg5bjg6zjg7zjgq0g77yPIElURU0g44Gn44Ki44Kk44OG44Og5L2/55So77yI44Ki44Kv44K744Or77yLSVRFTeOBruWQjOaZguOCv+ODg+ODl+WvvuW/nO+8iTxicj7ou4rjga/oh6rli5XjgafjgrPjg7zjgrnjgpLpgLLjgb/jgb7jgZvjgpPjgILoh6rliIbjgafmm7LjgYzjgaPjgabjgrPjg7zjgrnjgpLotbDjgo3jgYbvvIE8YnI+44Ki44Kk44OG44Og44Oc44OD44Kv44K544KS5aKX6YeP77yBIENQVTEx5Y+w44KC44Ki44Kk44OG44Og44KS5L2/44GG44CC44Os44O844K55Lit5pat44Oc44K/44Oz44Gn44K/44Kk44OI44Or44Gr5oi744KM44KL44CCPGJyPuOCreODjuOCs++8mumAmuW4uOacgOmrmOmAnysxMjBrbS9o44G+44Gn5Yqg6YCf4oaSMuenkue2reaMgeKGkua4m+mAn+OAguOCs+ODvOOCueWkluOBr+e0hDgwa20vaOOAggrjgrPjg7zjg4rjg7zjgafjg4/jg7Pjg4njg6vjgpLjgZ/jgoHjgabpm6LjgZnjgajjg4njg6rjg5Xjg4jjgr/jg7zjg5zvvIE8L2Rpdj4KPC9kaXY+PC9kaXY+CjxkaXYgaWQ9InJlc3VsdCI+PGRpdiBjbGFzcz0iY2FyZCI+PGRpdiBjbGFzcz0ia2lja2VyIj5SQUNFIENPTVBMRVRFPC9kaXY+PGgxIGlkPSJyZXN1bHRUaXRsZSI+RklOSVNIPC9oMT48cCBpZD0icmVzdWx0VGV4dCIgY2xhc3M9ImRlc2MiPjwvcD48YnV0dG9uIGlkPSJhZ2FpbiIgc3R5bGU9IndpZHRoOjEwMCU7cGFkZGluZzoxNHB4O2JvcmRlcjowO2JvcmRlci1yYWRpdXM6MTBweDtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCg5MGRlZywjMTZiY2QyLCM4YTQzZGMpO2NvbG9yOndoaXRlO2ZvbnQtd2VpZ2h0OjkwMCI+44KC44GG5LiA5bqmPC9idXR0b24+PC9kaXY+PC9kaXY+CjxzY3JpcHQ+CndpbmRvdy5fX3JhY2VCb290RXJyb3I9bnVsbDsKd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ2Vycm9yJyxmdW5jdGlvbihlKXt3aW5kb3cuX19yYWNlQm9vdEVycm9yPWUubWVzc2FnZXx8J+OCsuODvOODoOOBruiqreOBv+i+vOOBv+OBq+WkseaVl+OBl+OBvuOBl+OBnyd9KTsKZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3N0YXJ0JykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLGZ1bmN0aW9uKCl7aWYodHlwZW9mIHdpbmRvdy5fX3N0YXJ0UmFjZSE9PSdmdW5jdGlvbicpe2NvbnN0IG1zZz13aW5kb3cuX19yYWNlQm9vdEVycm9yfHwnM0Tjgqjjg7Pjgrjjg7PjgpLoqq3jgb/ovrzjgb/kuK3jgafjgZnjgILpgJrkv6HnirbmhYvjgpLnorroqo3jgZfjgabjgIHmlbDnp5LlvozjgavjgoLjgYbkuIDluqbmirzjgZfjgabjgY/jgaDjgZXjgYTjgIInO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdoZWxwJykudGV4dENvbnRlbnQ9bXNnKyfvvIhTYWZhcmnjgadIVE1M44OV44Kh44Kk44Or44KS6ZaL44GN44CB44Kk44Oz44K/44O844ON44OD44OI44Gr5o6l57aa44GX44Gm5YaN6Kmm6KGM44GX44Gm44GP44Gg44GV44GE77yJJ319KTsKPC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvbnBtL3RocmVlQDAuMTUyLjIvYnVpbGQvdGhyZWUubWluLmpzIiBvbmVycm9yPSJ0aGlzLm9uZXJyb3I9bnVsbDt0aGlzLnNyYz0naHR0cHM6Ly91bnBrZy5jb20vdGhyZWVAMC4xNTIuMi9idWlsZC90aHJlZS5taW4uanMnOyI+PC9zY3JpcHQ+CjxzY3JpcHQ+CmNvbnN0ICQ9aWQ9PmRvY3VtZW50LmdldEVsZW1lbnRCeUlkKGlkKTsKY29uc3Qgc2NlbmU9bmV3IFRIUkVFLlNjZW5lKCk7c2NlbmUuYmFja2dyb3VuZD1uZXcgVEhSRUUuQ29sb3IoMHgwNTA5MWIpO3NjZW5lLmZvZz1uZXcgVEhSRUUuRm9nRXhwMigweDA4MGQyNSwuMDA2KTsKY29uc3QgY2FtZXJhPW5ldyBUSFJFRS5QZXJzcGVjdGl2ZUNhbWVyYSg2NSxpbm5lcldpZHRoL2lubmVySGVpZ2h0LC4xLDEyMDApOwpjb25zdCByZW5kZXJlcj1uZXcgVEhSRUUuV2ViR0xSZW5kZXJlcih7YW50aWFsaWFzOnRydWV9KTtyZW5kZXJlci5zZXRQaXhlbFJhdGlvKE1hdGgubWluKGRldmljZVBpeGVsUmF0aW8sMS44KSk7cmVuZGVyZXIuc2V0U2l6ZShpbm5lcldpZHRoLGlubmVySGVpZ2h0KTtyZW5kZXJlci5zaGFkb3dNYXAuZW5hYmxlZD10cnVlO3JlbmRlcmVyLnNoYWRvd01hcC50eXBlPVRIUkVFLlBDRlNvZnRTaGFkb3dNYXA7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChyZW5kZXJlci5kb21FbGVtZW50KTsKc2NlbmUuYWRkKG5ldyBUSFJFRS5IZW1pc3BoZXJlTGlnaHQoMHg5MWNmZmYsMHgxMTExMjcsMS41KSk7CmNvbnN0IHN1bj1uZXcgVEhSRUUuRGlyZWN0aW9uYWxMaWdodCgweGZmZmZmZiwxLjMpO3N1bi5wb3NpdGlvbi5zZXQoMTAwLDE1MCw2MCk7c3VuLmNhc3RTaGFkb3c9dHJ1ZTtzY2VuZS5hZGQoc3VuKTsKY29uc3QgY3lhbk1hdD1uZXcgVEhSRUUuTWVzaFN0YW5kYXJkTWF0ZXJpYWwoe2NvbG9yOjB4MTlkZmY1LGVtaXNzaXZlOjB4MDg3ZTljLGVtaXNzaXZlSW50ZW5zaXR5OjEuMn0pOwpjb25zdCBwaW5rTWF0PW5ldyBUSFJFRS5NZXNoU3RhbmRhcmRNYXRlcmlhbCh7Y29sb3I6MHhmZjM4YzgsZW1pc3NpdmU6MHg4YjE3NmQsZW1pc3NpdmVJbnRlbnNpdHk6MX0pOwpjb25zdCByb2FkTWF0PW5ldyBUSFJFRS5NZXNoU3RhbmRhcmRNYXRlcmlhbCh7Y29sb3I6MHgyMDJhNDMscm91Z2huZXNzOi44Mn0pOwpjb25zdCBlZGdlTWF0PW5ldyBUSFJFRS5NZXNoU3RhbmRhcmRNYXRlcmlhbCh7Y29sb3I6MHgyOGVhZmYsZW1pc3NpdmU6MHgwYjhiYTUsZW1pc3NpdmVJbnRlbnNpdHk6MS42fSk7CmNvbnN0IHBvaW50czI9QXJyYXkuZnJvbSh7bGVuZ3RoOjY0fSwoXyxpKT0+e2NvbnN0IGE9aS82NCpNYXRoLlBJKjI7Y29uc3Qgcj0xNzgrMTUqTWF0aC5zaW4oMyphKy4zNSkrOSpNYXRoLnNpbig1KmErMS4xKTtyZXR1cm5bTWF0aC5jb3MoYSkqcixNYXRoLnNpbihhKSpyXX0pOwpjb25zdCBjdXJ2ZT1uZXcgVEhSRUUuQ2F0bXVsbFJvbUN1cnZlMyhwb2ludHMyLm1hcChwPT5uZXcgVEhSRUUuVmVjdG9yMyhwWzBdLDAscFsxXSkpLHRydWUsJ2NhdG11bGxyb20nLC4zNSk7CmNvbnN0IE49OTAwLHJvYWRXaWR0aD0yNixmcmFtZXM9Y3VydmUuY29tcHV0ZUZyZW5ldEZyYW1lcyhOLHRydWUpLHZlcnRzPVtdLGluZHM9W10sdXY9W107CmZvcihsZXQgaT0wO2k8PU47aSsrKXtsZXQgdD1pL04scD1jdXJ2ZS5nZXRQb2ludEF0KHQpLHRhbj1jdXJ2ZS5nZXRUYW5nZW50QXQodCksc2lkZT1uZXcgVEhSRUUuVmVjdG9yMygtdGFuLnosMCx0YW4ueCkubm9ybWFsaXplKCk7Zm9yKGxldCBqPTA7ajwyO2orKyl7bGV0IHY9cC5jbG9uZSgpLmFkZFNjYWxlZFZlY3RvcihzaWRlLChqPzE6LTEpKnJvYWRXaWR0aC8yKTt2ZXJ0cy5wdXNoKHYueCwuMDgsdi56KTt1di5wdXNoKGosdCoxOCl9fQpmb3IobGV0IGk9MDtpPE47aSsrKXtsZXQgYT1pKjI7aW5kcy5wdXNoKGEsYSsxLGErMixhKzEsYSszLGErMil9CmxldCBnZW89bmV3IFRIUkVFLkJ1ZmZlckdlb21ldHJ5KCk7Z2VvLnNldEF0dHJpYnV0ZSgncG9zaXRpb24nLG5ldyBUSFJFRS5GbG9hdDMyQnVmZmVyQXR0cmlidXRlKHZlcnRzLDMpKTtnZW8uc2V0QXR0cmlidXRlKCd1dicsbmV3IFRIUkVFLkZsb2F0MzJCdWZmZXJBdHRyaWJ1dGUodXYsMikpO2dlby5zZXRJbmRleChpbmRzKTtnZW8uY29tcHV0ZVZlcnRleE5vcm1hbHMoKTtzY2VuZS5hZGQobmV3IFRIUkVFLk1lc2goZ2VvLHJvYWRNYXQpKTsKZnVuY3Rpb24gcmFpbChvZmZzZXQsbWF0ZXJpYWwpe2xldCBhcnI9W107Zm9yKGxldCBpPTA7aTw9TjtpKyspe2xldCBwPWN1cnZlLmdldFBvaW50QXQoaS9OKSx0PWN1cnZlLmdldFRhbmdlbnRBdChpL04pLHM9bmV3IFRIUkVFLlZlY3RvcjMoLXQueiwwLHQueCkubm9ybWFsaXplKCk7cC5hZGRTY2FsZWRWZWN0b3IocyxvZmZzZXQpO3AueT0uNDU7YXJyLnB1c2gocCl9bGV0IGc9bmV3IFRIUkVFLkJ1ZmZlckdlb21ldHJ5KCkuc2V0RnJvbVBvaW50cyhhcnIpO3NjZW5lLmFkZChuZXcgVEhSRUUuTWVzaChuZXcgVEhSRUUuVHViZUdlb21ldHJ5KG5ldyBUSFJFRS5DYXRtdWxsUm9tQ3VydmUzKGFyciksTiwuMjIsNix0cnVlKSxtYXRlcmlhbCkpfQpyYWlsKHJvYWRXaWR0aC8yLGVkZ2VNYXQpO3JhaWwoLXJvYWRXaWR0aC8yLGVkZ2VNYXQpOwpmb3IobGV0IGk9MDtpPDE0MDtpKyspe2xldCB0PWkvMTQwLHA9Y3VydmUuZ2V0UG9pbnRBdCh0KSx0YW49Y3VydmUuZ2V0VGFuZ2VudEF0KHQpLG09bmV3IFRIUkVFLk1lc2gobmV3IFRIUkVFLkJveEdlb21ldHJ5KC4xOCwuMDM1LDIuMSksbmV3IFRIUkVFLk1lc2hCYXNpY01hdGVyaWFsKHtjb2xvcjoweDg3OTliOX0pKTttLnBvc2l0aW9uLnNldChwLngsLjE3LHAueik7bS5yb3RhdGlvbi55PU1hdGguYXRhbjIodGFuLngsdGFuLnopO3NjZW5lLmFkZChtKX0KY29uc3QgZ3JvdW5kPW5ldyBUSFJFRS5NZXNoKG5ldyBUSFJFRS5QbGFuZUdlb21ldHJ5KDEyMDAsMTIwMCksbmV3IFRIUkVFLk1lc2hTdGFuZGFyZE1hdGVyaWFsKHtjb2xvcjoweDA4MGUyNCxyb3VnaG5lc3M6MX0pKTtncm91bmQucm90YXRpb24ueD0tTWF0aC5QSS8yO2dyb3VuZC5wb3NpdGlvbi55PS0uNTtzY2VuZS5hZGQoZ3JvdW5kKTsKZm9yKGxldCBpPTA7aTwxODA7aSsrKXtsZXQgYT1NYXRoLnJhbmRvbSgpKk1hdGguUEkqMixyPTIzNStNYXRoLnJhbmRvbSgpKjMwMCx4PU1hdGguY29zKGEpKnIsej1NYXRoLnNpbihhKSpyLGg9MTIrTWF0aC5yYW5kb20oKSo3NSx3PTUrTWF0aC5yYW5kb20oKSoxMztsZXQgYj1uZXcgVEhSRUUuTWVzaChuZXcgVEhSRUUuQm94R2VvbWV0cnkodyxoLHcpLG5ldyBUSFJFRS5NZXNoU3RhbmRhcmRNYXRlcmlhbCh7Y29sb3I6bmV3IFRIUkVFLkNvbG9yKCkuc2V0SFNMKC41OCtNYXRoLnJhbmRvbSgpKi4yMiwuNTUsLjEyK01hdGgucmFuZG9tKCkqLjEyKSxlbWlzc2l2ZToweDEwMWI0YixlbWlzc2l2ZUludGVuc2l0eTouN30pKTtiLnBvc2l0aW9uLnNldCh4LGgvMi0uNSx6KTtzY2VuZS5hZGQoYik7Zm9yKGxldCB5PTQ7eTxoLTM7eSs9NSl7bGV0IHdpbj1uZXcgVEhSRUUuTWVzaChuZXcgVEhSRUUuQm94R2VvbWV0cnkodyouNzIsLjM1LC4wOCksTWF0aC5yYW5kb20oKT4uNT9jeWFuTWF0OnBpbmtNYXQpO3dpbi5wb3NpdGlvbi5zZXQoeCx5LHordy8yKy4wNSk7c2NlbmUuYWRkKHdpbil9fQpmb3IobGV0IGk9MDtpPDUwO2krKyl7bGV0IHQ9aS81MCxwPWN1cnZlLmdldFBvaW50QXQodCksdGFuPWN1cnZlLmdldFRhbmdlbnRBdCh0KSxzaWRlPW5ldyBUSFJFRS5WZWN0b3IzKC10YW4ueiwwLHRhbi54KS5ub3JtYWxpemUoKSxwb3M9cC5jbG9uZSgpLmFkZFNjYWxlZFZlY3RvcihzaWRlLChpJTI/MTotMSkqKDIwK01hdGgucmFuZG9tKCkqMTIpKSxoPTEwK01hdGgucmFuZG9tKCkqMTgscG9sZT1uZXcgVEhSRUUuTWVzaChuZXcgVEhSRUUuQ3lsaW5kZXJHZW9tZXRyeSguMTIsLjE4LGgsNiksbmV3IFRIUkVFLk1lc2hTdGFuZGFyZE1hdGVyaWFsKHtjb2xvcjoweDI4MzQ1MixtZXRhbG5lc3M6Ljd9KSk7cG9sZS5wb3NpdGlvbi5zZXQocG9zLngsaC8yLHBvcy56KTtzY2VuZS5hZGQocG9sZSk7bGV0IGxhbXA9bmV3IFRIUkVFLk1lc2gobmV3IFRIUkVFLkJveEdlb21ldHJ5KDIsLjM1LC43KSxpJTI/cGlua01hdDpjeWFuTWF0KTtsYW1wLnBvc2l0aW9uLnNldChwb3MueCxoLHBvcy56KTtzY2VuZS5hZGQobGFtcCl9CmNvbnN0IHN0YXJ0UD1jdXJ2ZS5nZXRQb2ludEF0KDApLHN0YXJ0VGFuPWN1cnZlLmdldFRhbmdlbnRBdCgwKSxnYW50cnk9bmV3IFRIUkVFLkdyb3VwKCk7Z2FudHJ5LnBvc2l0aW9uLnNldChzdGFydFAueCwwLHN0YXJ0UC56KTtnYW50cnkucm90YXRpb24ueT1NYXRoLmF0YW4yKHN0YXJ0VGFuLngsc3RhcnRUYW4ueik7c2NlbmUuYWRkKGdhbnRyeSk7CmxldCBwb3N0bWF0PW5ldyBUSFJFRS5NZXNoU3RhbmRhcmRNYXRlcmlhbCh7Y29sb3I6MHgyNzMxNGUsbWV0YWxuZXNzOi42fSk7CmZvcihsZXQgeCBvZlstOCw4XSl7bGV0IHA9bmV3IFRIUkVFLk1lc2gobmV3IFRIUkVFLkJveEdlb21ldHJ5KC42LDcsLjYpLHBvc3RtYXQpO3AucG9zaXRpb24uc2V0KHgsMy41LDApO2dhbnRyeS5hZGQocCl9CmxldCBiZWFtPW5ldyBUSFJFRS5NZXNoKG5ldyBUSFJFRS5Cb3hHZW9tZXRyeSgxNywuNywuOCkscGlua01hdCk7YmVhbS5wb3NpdGlvbi55PTc7Z2FudHJ5LmFkZChiZWFtKTsKZm9yKGxldCBpPTA7aTw1O2krKyl7bGV0IGw9bmV3IFRIUkVFLk1lc2gobmV3IFRIUkVFLkJveEdlb21ldHJ5KDEuNSwuNDUsLjQpLG5ldyBUSFJFRS5NZXNoQmFzaWNNYXRlcmlhbCh7Y29sb3I6MHhmZmZmZmZ9KSk7bC5wb3NpdGlvbi5zZXQoLTYraSozLDcsLjUpO2dhbnRyeS5hZGQobCl9CmNvbnN0IGJvb3N0UGFkcz1bXSxpdGVtQm94ZXM9W10sYm9vc3RNYXQ9bmV3IFRIUkVFLk1lc2hTdGFuZGFyZE1hdGVyaWFsKHtjb2xvcjoweGZmYTUyZSxlbWlzc2l2ZToweGZmNWIwMCxlbWlzc2l2ZUludGVuc2l0eToyfSk7CmZvcihsZXQgdCBvZlsuMTMsLjM2LC42MiwuODRdKXtsZXQgcD1jdXJ2ZS5nZXRQb2ludEF0KHQpLHRhbj1jdXJ2ZS5nZXRUYW5nZW50QXQodCksbT1uZXcgVEhSRUUuTWVzaChuZXcgVEhSRUUuQm94R2VvbWV0cnkoNywuMjIsNCksYm9vc3RNYXQpO20ucG9zaXRpb24uc2V0KHAueCwuMjUscC56KTttLnJvdGF0aW9uLnk9TWF0aC5hdGFuMih0YW4ueCx0YW4ueik7c2NlbmUuYWRkKG0pO2Jvb3N0UGFkcy5wdXNoKHt0LHVzZWQ6ZmFsc2V9KX0KY29uc3QgYm94TWF0PW5ldyBUSFJFRS5NZXNoU3RhbmRhcmRNYXRlcmlhbCh7Y29sb3I6MHg5ZDRjZmYsZW1pc3NpdmU6MHg2MDJjZmYsZW1pc3NpdmVJbnRlbnNpdHk6MS40LG1ldGFsbmVzczouMyxyb3VnaG5lc3M6LjJ9KTsKY29uc3QgYm94Um93cz1BcnJheS5mcm9tKHtsZW5ndGg6OX0sKF8saSk9Pih7dDouMDM1K2kqLjEwNSxsYW5lczpbLTgsMCw4XX0pKTsKZm9yKGNvbnN0IHJvdyBvZiBib3hSb3dzKXtjb25zdCBwPWN1cnZlLmdldFBvaW50QXQocm93LnQpLHRhbj1jdXJ2ZS5nZXRUYW5nZW50QXQocm93LnQpLHNpZGU9bmV3IFRIUkVFLlZlY3RvcjMoLXRhbi56LDAsdGFuLngpLm5vcm1hbGl6ZSgpO2Zvcihjb25zdCBsYW5lIG9mIHJvdy5sYW5lcyl7Y29uc3QgbT1uZXcgVEhSRUUuTWVzaChuZXcgVEhSRUUuQm94R2VvbWV0cnkoMi4yNSwyLjI1LDIuMjUpLGJveE1hdCk7bS5wb3NpdGlvbi5jb3B5KHApLmFkZFNjYWxlZFZlY3RvcihzaWRlLGxhbmUpO20ucG9zaXRpb24ueT0xLjU1O3NjZW5lLmFkZChtKTtpdGVtQm94ZXMucHVzaCh7bWVzaDptLHQ6cm93LnQsYWN0aXZlOnRydWUscmVzcGF3bjowfSl9fQpmdW5jdGlvbiBtYWtlQ2FyKGNvbG9yLGlzQ1BVPWZhbHNlKXtsZXQgZz1uZXcgVEhSRUUuR3JvdXAoKSxib2R5PW5ldyBUSFJFRS5NZXNoKG5ldyBUSFJFRS5Cb3hHZW9tZXRyeSgyLjIsLjcyLDMuNSksbmV3IFRIUkVFLk1lc2hTdGFuZGFyZE1hdGVyaWFsKHtjb2xvcixtZXRhbG5lc3M6LjUscm91Z2huZXNzOi4yOCxlbWlzc2l2ZTpjb2xvcixlbWlzc2l2ZUludGVuc2l0eTouMTh9KSk7Ym9keS5wb3NpdGlvbi55PS43NTtib2R5LmNhc3RTaGFkb3c9dHJ1ZTtnLmFkZChib2R5KTtsZXQgY2FiaW49bmV3IFRIUkVFLk1lc2gobmV3IFRIUkVFLkJveEdlb21ldHJ5KDEuNDUsLjcyLDEuNTUpLG5ldyBUSFJFRS5NZXNoU3RhbmRhcmRNYXRlcmlhbCh7Y29sb3I6MHgxNzIzM2MsbWV0YWxuZXNzOi42LHJvdWdobmVzczouMTV9KSk7Y2FiaW4ucG9zaXRpb24uc2V0KDAsMS4zNSwtLjE1KTtnLmFkZChjYWJpbik7bGV0IG5vc2U9bmV3IFRIUkVFLk1lc2gobmV3IFRIUkVFLkJveEdlb21ldHJ5KDEuNjUsLjE4LC42KSxuZXcgVEhSRUUuTWVzaEJhc2ljTWF0ZXJpYWwoe2NvbG9yOmlzQ1BVPzB4ZmY0YmQ4OjB4N2RmZmZmfSkpO25vc2UucG9zaXRpb24uc2V0KDAsLjk4LDEuNDUpO2cuYWRkKG5vc2UpO2ZvcihsZXQgeCBvZlstMSwxXSlmb3IobGV0IHogb2ZbLTEuMDUsMS4wNV0pe2xldCB3PW5ldyBUSFJFRS5NZXNoKG5ldyBUSFJFRS5DeWxpbmRlckdlb21ldHJ5KC4zOCwuMzgsLjI4LDE2KSxuZXcgVEhSRUUuTWVzaFN0YW5kYXJkTWF0ZXJpYWwoe2NvbG9yOjB4MDgwYjE0LHJvdWdobmVzczoxfSkpO3cucm90YXRpb24uej1NYXRoLlBJLzI7dy5wb3NpdGlvbi5zZXQoeCwuNDMseik7Zy5hZGQodyk7bGV0IGh1Yj1uZXcgVEhSRUUuTWVzaChuZXcgVEhSRUUuQ3lsaW5kZXJHZW9tZXRyeSguMTYsLjE2LC4zLDEyKSxuZXcgVEhSRUUuTWVzaFN0YW5kYXJkTWF0ZXJpYWwoe2NvbG9yOjB4OWVlZmZmLG1ldGFsbmVzczouOCxlbWlzc2l2ZToweDE2ODZhYSxlbWlzc2l2ZUludGVuc2l0eTouMzV9KSk7aHViLnJvdGF0aW9uLno9TWF0aC5QSS8yO2h1Yi5wb3NpdGlvbi5zZXQoeCwuNDMseik7Zy5hZGQoaHViKX1sZXQgc3BvaWxlcj1uZXcgVEhSRUUuTWVzaChuZXcgVEhSRUUuQm94R2VvbWV0cnkoMi4zNSwuMTYsLjQ4KSxuZXcgVEhSRUUuTWVzaFN0YW5kYXJkTWF0ZXJpYWwoe2NvbG9yOjB4MTExYTMwLG1ldGFsbmVzczouNjUscm91Z2huZXNzOi4yNX0pKTtzcG9pbGVyLnBvc2l0aW9uLnNldCgwLDEuMTUsLTEuNTgpO2cuYWRkKHNwb2lsZXIpO2ZvcihsZXQgeCBvZlstLjYyLC42Ml0pe2xldCBsYW1wPW5ldyBUSFJFRS5NZXNoKG5ldyBUSFJFRS5Cb3hHZW9tZXRyeSguNDIsLjE2LC4wOCksbmV3IFRIUkVFLk1lc2hCYXNpY01hdGVyaWFsKHtjb2xvcjoweGQ4ZmZmZn0pKTtsYW1wLnBvc2l0aW9uLnNldCh4LC45NSwxLjc4KTtnLmFkZChsYW1wKX1sZXQgZ2xvdz1uZXcgVEhSRUUuTWVzaChuZXcgVEhSRUUuQm94R2VvbWV0cnkoMS44LC4wNSwyLjUpLG5ldyBUSFJFRS5NZXNoQmFzaWNNYXRlcmlhbCh7Y29sb3I6aXNDUFU/MHhmZjRiZDg6MHgyMGVhZmYsdHJhbnNwYXJlbnQ6dHJ1ZSxvcGFjaXR5Oi40NX0pKTtnbG93LnBvc2l0aW9uLnk9LjI1O2cuYWRkKGdsb3cpO3JldHVybiBnfQpjb25zdCBwbGF5ZXI9bWFrZUNhcigweDE2ZTBlOSk7c2NlbmUuYWRkKHBsYXllcik7CmNvbnN0IGNwdUNvbG9ycz1bMHhmZjRiZDgsMHhmZmE1MmUsMHhhNGZmNDMsMHg1NjhiZmYsMHhmZjVkNmMsMHg4YzYyZmYsMHhmZmRjNDUsMHg0MmU2YjQsMHhmZjdmYmQsMHhiNmQ4ZmYsMHhmZjc4M2RdOwpjb25zdCBjcHVzPWNwdUNvbG9ycy5tYXAoY29sb3I9Pm1ha2VDYXIoY29sb3IsdHJ1ZSkpO2NwdXMuZm9yRWFjaChjPT5zY2VuZS5hZGQoYykpOwpsZXQgcnVubmluZz1mYWxzZSxzdGFydGVkPWZhbHNlLGZpbmlzaD1mYWxzZSxjbG9ja1N0YXJ0PTAsZWxhcHNlZD0wLGJlc3Q9bnVsbCxsYXA9MSxwcm9ncmVzcz0wLHNwZWVkPTAsc3RlZXI9MCxib29zdFRpbWU9MCxzdHVuPTAsaXRlbXM9W251bGwsbnVsbF0sY3B1TGV2ZWw9MSxsYXVuY2hNb2RlPTAsbGF1bmNoSGVsZD1mYWxzZSxjb3VudGRvd25Ub2tlbj0wOwpsZXQgbXVzaHJvb21QaGFzZT0nJyxtdXNocm9vbVRpbWVyPTAsbXVzaHJvb21TdGFydFNwZWVkPTAsbXVzaHJvb21QZWFrPTU4LjY0LGJvb3N0Rng9MCxib29zdFNoYWtlPTA7CmxldCBkcmlmdENoYXJnZT0wLGRyaWZ0Q29vbGRvd249MCx3YXNEcmlmdGluZz1mYWxzZTsKY29uc3QgQkFTRV9UT1BfU1BFRUQ9MzYsS01IX1BFUl9VTklUPTUuMyxwbGF5ZXJQb3M9bmV3IFRIUkVFLlZlY3RvcjMoKTsKbGV0IHBsYXllcllhdz0wLHByZXZpb3VzVHJhY2tUPTAsb2ZmUm9hZD1mYWxzZTsKY29uc3Qga2V5cz17bGVmdDpmYWxzZSxyaWdodDpmYWxzZSxnYXM6ZmFsc2UsYnJha2U6ZmFsc2V9OwpsZXQgYXVkaW9DdHg9bnVsbCxtYXN0ZXJHYWluPW51bGwsc291bmRFbmFibGVkPXRydWU7CmZ1bmN0aW9uIGluaXRBdWRpbygpe2NvbnN0IEFDPXdpbmRvdy5BdWRpb0NvbnRleHR8fHdpbmRvdy53ZWJraXRBdWRpb0NvbnRleHQ7aWYoIUFDKXJldHVybjtpZighYXVkaW9DdHgpe2F1ZGlvQ3R4PW5ldyBBQygpO21hc3RlckdhaW49YXVkaW9DdHguY3JlYXRlR2FpbigpO21hc3RlckdhaW4uZ2Fpbi52YWx1ZT0uNDg7bWFzdGVyR2Fpbi5jb25uZWN0KGF1ZGlvQ3R4LmRlc3RpbmF0aW9uKX1pZihhdWRpb0N0eC5zdGF0ZT09PSdzdXNwZW5kZWQnKWF1ZGlvQ3R4LnJlc3VtZSgpfQpmdW5jdGlvbiB0b25lKGZyZXE9NDQwLGR1cmF0aW9uPS4xMix3YXZlPSdzaW5lJyx2b2x1bWU9LjE4LHNsaWRlPTApe2lmKCFzb3VuZEVuYWJsZWQpcmV0dXJuO2luaXRBdWRpbygpO2lmKCFhdWRpb0N0eClyZXR1cm47Y29uc3QgdD1hdWRpb0N0eC5jdXJyZW50VGltZSxvPWF1ZGlvQ3R4LmNyZWF0ZU9zY2lsbGF0b3IoKSxnPWF1ZGlvQ3R4LmNyZWF0ZUdhaW4oKTtvLnR5cGU9d2F2ZTtvLmZyZXF1ZW5jeS5zZXRWYWx1ZUF0VGltZShNYXRoLm1heCgzNSxmcmVxKSx0KTtpZihzbGlkZSlvLmZyZXF1ZW5jeS5leHBvbmVudGlhbFJhbXBUb1ZhbHVlQXRUaW1lKE1hdGgubWF4KDM1LGZyZXErc2xpZGUpLHQrZHVyYXRpb24pO2cuZ2Fpbi5zZXRWYWx1ZUF0VGltZSguMDAwMSx0KTtnLmdhaW4uZXhwb25lbnRpYWxSYW1wVG9WYWx1ZUF0VGltZShNYXRoLm1heCguMDAxLHZvbHVtZSksdCsuMDEyKTtnLmdhaW4uZXhwb25lbnRpYWxSYW1wVG9WYWx1ZUF0VGltZSguMDAwMSx0K2R1cmF0aW9uKTtvLmNvbm5lY3QoZyk7Zy5jb25uZWN0KG1hc3RlckdhaW4pO28uc3RhcnQodCk7by5zdG9wKHQrZHVyYXRpb24rLjAyNSl9CmZ1bmN0aW9uIG5vaXNlQnVyc3QoZHVyYXRpb249LjE2LHZvbHVtZT0uMSxmaWx0ZXI9MTEwMCl7aWYoIXNvdW5kRW5hYmxlZClyZXR1cm47aW5pdEF1ZGlvKCk7aWYoIWF1ZGlvQ3R4KXJldHVybjtjb25zdCB0PWF1ZGlvQ3R4LmN1cnJlbnRUaW1lLG49TWF0aC5mbG9vcihhdWRpb0N0eC5zYW1wbGVSYXRlKmR1cmF0aW9uKSxidWY9YXVkaW9DdHguY3JlYXRlQnVmZmVyKDEsbixhdWRpb0N0eC5zYW1wbGVSYXRlKSxkYXRhPWJ1Zi5nZXRDaGFubmVsRGF0YSgwKTtmb3IobGV0IGk9MDtpPG47aSsrKWRhdGFbaV09KE1hdGgucmFuZG9tKCkqMi0xKSooMS1pL24pO2NvbnN0IHNyYz1hdWRpb0N0eC5jcmVhdGVCdWZmZXJTb3VyY2UoKSxmPWF1ZGlvQ3R4LmNyZWF0ZUJpcXVhZEZpbHRlcigpLGc9YXVkaW9DdHguY3JlYXRlR2FpbigpO3NyYy5idWZmZXI9YnVmO2YudHlwZT0nbG93cGFzcyc7Zi5mcmVxdWVuY3kudmFsdWU9ZmlsdGVyO2cuZ2Fpbi5zZXRWYWx1ZUF0VGltZSh2b2x1bWUsdCk7Zy5nYWluLmV4cG9uZW50aWFsUmFtcFRvVmFsdWVBdFRpbWUoLjAwMDEsdCtkdXJhdGlvbik7c3JjLmNvbm5lY3QoZik7Zi5jb25uZWN0KGcpO2cuY29ubmVjdChtYXN0ZXJHYWluKTtzcmMuc3RhcnQodCk7c3JjLnN0b3AodCtkdXJhdGlvbil9CmZ1bmN0aW9uIHNmeChuYW1lKXtzd2l0Y2gobmFtZSl7Y2FzZSdjb3VudCc6dG9uZSg1MjAsLjEzLCdzcXVhcmUnLC4xMik7YnJlYWs7Y2FzZSdnbyc6dG9uZSg2NjAsLjE2LCdzYXd0b290aCcsLjE4LDUyMCk7c2V0VGltZW91dCgoKT0+dG9uZSg5OTAsLjI4LCd0cmlhbmdsZScsLjE2LDM1MCksOTApO2JyZWFrO2Nhc2UnaXRlbSc6dG9uZSg3NDAsLjA5LCdzaW5lJywuMTksMjYwKTtzZXRUaW1lb3V0KCgpPT50b25lKDExMjAsLjE2LCdzaW5lJywuMTYsMjIwKSw3NSk7YnJlYWs7Y2FzZSdpdGVtVXNlJzp0b25lKDM2MCwuMDksJ3NxdWFyZScsLjE0LDI0MCk7c2V0VGltZW91dCgoKT0+dG9uZSg2MjAsLjE0LCd0cmlhbmdsZScsLjE2LDQyMCksNjUpO2JyZWFrO2Nhc2UnbXVzaHJvb20nOnRvbmUoMTgwLC41Miwnc2F3dG9vdGgnLC4yLDEyNTApO25vaXNlQnVyc3QoLjMsLjA5LDIyMDApO2JyZWFrO2Nhc2UnZHJpZnQnOnRvbmUoMzAwLC4yLCd0cmlhbmdsZScsLjEyLDY1MCk7bm9pc2VCdXJzdCguMiwuMDcsMTYwMCk7YnJlYWs7Y2FzZSdzaGVsbCc6dG9uZSg0MjAsLjEyLCdzcXVhcmUnLC4xMiw1MDApO2JyZWFrO2Nhc2UnaGl0Jzpub2lzZUJ1cnN0KC4yNCwuMiw2NTApO3RvbmUoMTI1LC4yMiwnc2F3dG9vdGgnLC4xNiwtNjUpO2JyZWFrO2Nhc2UnZ3VhcmQnOnRvbmUoODgwLC4xLCd0cmlhbmdsZScsLjE2LDUyMCk7dG9uZSgxMzIwLC4xNiwnc2luZScsLjEyLDc2MCk7YnJlYWs7Y2FzZSdicmFrZSc6bm9pc2VCdXJzdCguMTIsLjA0NSw5MDApO2JyZWFrO2Nhc2UnZmluaXNoJzpbNjYwLDgzMCw5OTAsMTMyMF0uZm9yRWFjaCgoZixpKT0+c2V0VGltZW91dCgoKT0+dG9uZShmLC4zMiwndHJpYW5nbGUnLC4xNiksaSoxMzApKTticmVhaztjYXNlJ2ZhbHNlJzp0b25lKDIyMCwuNDIsJ3Nhd3Rvb3RoJywuMTgsLTEzMCk7YnJlYWs7Y2FzZSdwYWQnOnRvbmUoNTAwLC4yNSwndHJpYW5nbGUnLC4xNCw3MDApO2JyZWFrfX0KJCgnc291bmRUb2dnbGUnKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsKCk9Pntzb3VuZEVuYWJsZWQ9IXNvdW5kRW5hYmxlZDskKCdzb3VuZFRvZ2dsZScpLnRleHRDb250ZW50PXNvdW5kRW5hYmxlZD8n8J+UiiBTT1VORCBPTic6J/CflIcgU09VTkQgT0ZGJztpZihzb3VuZEVuYWJsZWQpe2luaXRBdWRpbygpO3RvbmUoNjYwLC4xLCdzaW5lJywuMSl9fSk7CmZ1bmN0aW9uIGJpbmQoaWQsa2V5KXtsZXQgZWw9JChpZCk7bGV0IGRvd249ZT0+e2UucHJldmVudERlZmF1bHQoKTtrZXlzW2tleV09dHJ1ZTtlbC5jbGFzc0xpc3QuYWRkKCdkb3duJyl9LHVwPWU9PntlLnByZXZlbnREZWZhdWx0KCk7a2V5c1trZXldPWZhbHNlO2VsLmNsYXNzTGlzdC5yZW1vdmUoJ2Rvd24nKX07ZWwuYWRkRXZlbnRMaXN0ZW5lcigncG9pbnRlcmRvd24nLGRvd24pO1sncG9pbnRlcnVwJywncG9pbnRlcmNhbmNlbCcsJ3BvaW50ZXJsZWF2ZSddLmZvckVhY2gobj0+ZWwuYWRkRXZlbnRMaXN0ZW5lcihuLHVwKSl9CmJpbmQoJ2xlZnQnLCdsZWZ0Jyk7YmluZCgncmlnaHQnLCdyaWdodCcpO2JpbmQoJ2Jvb3N0JywnZ2FzJyk7YmluZCgnYnJha2UnLCdicmFrZScpOwokKCdzdGFydCcpLmFkZEV2ZW50TGlzdGVuZXIoJ3BvaW50ZXJkb3duJywoKT0+e2luaXRBdWRpbygpfSx7b25jZTp0cnVlfSk7JCgnc3RhcnQnKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsKCk9Pntpbml0QXVkaW8oKX0pOwphZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJyxlPT57aWYoZS5rZXk9PT0nQXJyb3dMZWZ0J3x8ZS5rZXk9PT0nYScpa2V5cy5sZWZ0PXRydWU7aWYoZS5rZXk9PT0nQXJyb3dSaWdodCd8fGUua2V5PT09J2QnKWtleXMucmlnaHQ9dHJ1ZTtpZihlLmtleT09PSdBcnJvd1VwJ3x8ZS5rZXk9PT0ndyd8fGUua2V5PT09JyAnKWtleXMuZ2FzPXRydWU7aWYoZS5rZXk9PT0nQXJyb3dEb3duJ3x8ZS5rZXk9PT0ncycpa2V5cy5icmFrZT10cnVlO2lmKGUua2V5PT09J3gnKXVzZUl0ZW0oKX0pOwphZGRFdmVudExpc3RlbmVyKCdrZXl1cCcsZT0+e2lmKGUua2V5PT09J0Fycm93TGVmdCd8fGUua2V5PT09J2EnKWtleXMubGVmdD1mYWxzZTtpZihlLmtleT09PSdBcnJvd1JpZ2h0J3x8ZS5rZXk9PT0nZCcpa2V5cy5yaWdodD1mYWxzZTtpZihlLmtleT09PSdBcnJvd1VwJ3x8ZS5rZXk9PT0ndyd8fGUua2V5PT09JyAnKWtleXMuZ2FzPWZhbHNlO2lmKGUua2V5PT09J0Fycm93RG93bid8fGUua2V5PT09J3MnKWtleXMuYnJha2U9ZmFsc2V9KTsKY29uc3QgaXRlbUJ1dHRvbj0kKCdpdGVtQnRuJyk7Cml0ZW1CdXR0b24uYWRkRXZlbnRMaXN0ZW5lcigncG9pbnRlcmRvd24nLGU9PntlLnByZXZlbnREZWZhdWx0KCk7aWYoaXRlbUJ1dHRvbi5zZXRQb2ludGVyQ2FwdHVyZSl7dHJ5e2l0ZW1CdXR0b24uc2V0UG9pbnRlckNhcHR1cmUoZS5wb2ludGVySWQpfWNhdGNoKF8pe319dXNlSXRlbSgpfSk7Cml0ZW1CdXR0b24uYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLGU9PmUucHJldmVudERlZmF1bHQoKSk7CmNvbnN0IHNoZWxscz1bXTsKZnVuY3Rpb24gbWFrZVNoZWxsKHR5cGUpe2NvbnN0IGdyb3VwPW5ldyBUSFJFRS5Hcm91cCgpLGNvbG9yPXR5cGU9PT0nUkVEJz8weGZmMjkyOToweDM1ZTY2YSxzaGVsbE1hdD1uZXcgVEhSRUUuTWVzaFN0YW5kYXJkTWF0ZXJpYWwoe2NvbG9yLHJvdWdobmVzczouMjgsbWV0YWxuZXNzOi4xOCxlbWlzc2l2ZTpjb2xvcixlbWlzc2l2ZUludGVuc2l0eTouMzV9KSxiYWxsPW5ldyBUSFJFRS5NZXNoKG5ldyBUSFJFRS5TcGhlcmVHZW9tZXRyeSguOSwxOCwxNCksc2hlbGxNYXQpO2JhbGwuc2NhbGUuc2V0KDEsLjcyLDEuMDgpO2dyb3VwLmFkZChiYWxsKTtjb25zdCBzcGlrZU1hdD1uZXcgVEhSRUUuTWVzaFN0YW5kYXJkTWF0ZXJpYWwoe2NvbG9yOjB4ZjVmN2ZmLHJvdWdobmVzczouMzV9KTtmb3IobGV0IGk9MDtpPDY7aSsrKXtjb25zdCBhPWkqTWF0aC5QSS8zLHNwaWtlPW5ldyBUSFJFRS5NZXNoKG5ldyBUSFJFRS5Db25lR2VvbWV0cnkoLjI4LC43NSw3KSxzcGlrZU1hdCk7c3Bpa2UucG9zaXRpb24uc2V0KE1hdGguY29zKGEpKi43MiwuMTIsTWF0aC5zaW4oYSkqLjcyKTtzcGlrZS5yb3RhdGlvbi56PS1NYXRoLmNvcyhhKSouNzU7c3Bpa2Uucm90YXRpb24ueD1NYXRoLnNpbihhKSouNzU7Z3JvdXAuYWRkKHNwaWtlKX1jb25zdCByaW5nPW5ldyBUSFJFRS5NZXNoKG5ldyBUSFJFRS5Ub3J1c0dlb21ldHJ5KC45MywuMDksOCwyMCksbmV3IFRIUkVFLk1lc2hCYXNpY01hdGVyaWFsKHtjb2xvcn0pKTtyaW5nLnJvdGF0aW9uLng9TWF0aC5QSS8yO2dyb3VwLmFkZChyaW5nKTtyZXR1cm4gZ3JvdXB9CmZ1bmN0aW9uIHNob290U2hlbGwodHlwZSxvd25lcj1udWxsLHRhcmdldE92ZXJyaWRlPW51bGwpe2xldCBmb3J3YXJkLG9yaWdpbjtpZihvd25lcil7b3JpZ2luPW93bmVyLnBvc2l0aW9uLmNsb25lKCk7Zm9yd2FyZD0odGFyZ2V0T3ZlcnJpZGU/dGFyZ2V0T3ZlcnJpZGUucG9zaXRpb24uY2xvbmUoKTpwbGF5ZXJQb3MuY2xvbmUoKSkuc3ViKG9yaWdpbikuc2V0WSgwKS5ub3JtYWxpemUoKX1lbHNle2ZvcndhcmQ9bmV3IFRIUkVFLlZlY3RvcjMoTWF0aC5zaW4ocGxheWVyWWF3KSwwLE1hdGguY29zKHBsYXllcllhdykpO29yaWdpbj1wbGF5ZXJQb3MuY2xvbmUoKX1jb25zdCBtZXNoPW1ha2VTaGVsbCh0eXBlKTttZXNoLnBvc2l0aW9uLmNvcHkob3JpZ2luKS5hZGRTY2FsZWRWZWN0b3IoZm9yd2FyZCwzKTttZXNoLnBvc2l0aW9uLnk9MS41NTtzY2VuZS5hZGQobWVzaCk7bGV0IHRhcmdldD10YXJnZXRPdmVycmlkZTtpZighb3duZXImJnR5cGU9PT0nUkVEJyl7Y29uc3QgY2FuZGlkYXRlcz1jcHVzLm1hcChjPT4oe2NhcjpjLGRpc3Q6Yy5wb3NpdGlvbi5kaXN0YW5jZVRvKHBsYXllclBvcyl9KSk7Y2FuZGlkYXRlcy5zb3J0KChhLGIpPT5hLmRpc3QtYi5kaXN0KTt0YXJnZXQ9Y2FuZGlkYXRlcy5sZW5ndGg/Y2FuZGlkYXRlc1swXS5jYXI6bnVsbH1zaGVsbHMucHVzaCh7bWVzaCx0eXBlLHRhcmdldCxvd25lcixkaXI6Zm9yd2FyZC5jbG9uZSgpLGxpZmU6Nn0pO3NmeCgnc2hlbGwnKX0KZnVuY3Rpb24gZ3VhcmRJbmNvbWluZ1NoZWxsKHNoKXtjb25zdCBzbG90PWl0ZW1zLmZpbmRJbmRleCh2PT52IT09bnVsbCk7aWYoc2xvdDwwKXJldHVybiBmYWxzZTtjb25zdCBndWFyZEl0ZW09aXRlbXNbc2xvdF07aWYoZ3VhcmRJdGVtIT09J1JFRCcmJmd1YXJkSXRlbSE9PSdHUkVFTicmJmd1YXJkSXRlbSE9PSdNVVNIUk9PTScpcmV0dXJuIGZhbHNlO2l0ZW1zW3Nsb3RdPW51bGw7cmVmcmVzaEl0ZW1IVUQoKTtzZngoJ2d1YXJkJyk7aWYoZ3VhcmRJdGVtPT09J01VU0hST09NJylzdGFydE11c2hyb29tKCk7cmV0dXJuIHRydWV9CmZ1bmN0aW9uIHVwZGF0ZVNoZWxscyhkdCl7Zm9yKGxldCBpPXNoZWxscy5sZW5ndGgtMTtpPj0wO2ktLSl7Y29uc3Qgc2g9c2hlbGxzW2ldO3NoLmxpZmUtPWR0O2lmKHNoLnR5cGU9PT0nUkVEJyYmc2gudGFyZ2V0JiZzaC50YXJnZXQucGFyZW50KXtjb25zdCBkZXNpcmVkPXNoLnRhcmdldC5wb3NpdGlvbi5jbG9uZSgpLnN1YihzaC5tZXNoLnBvc2l0aW9uKS5ub3JtYWxpemUoKTtzaC5kaXIubGVycChkZXNpcmVkLE1hdGgubWluKDEsZHQqNikpLm5vcm1hbGl6ZSgpfXNoLm1lc2gucG9zaXRpb24uYWRkU2NhbGVkVmVjdG9yKHNoLmRpcixkdCooc2gudHlwZT09PSdSRUQnPzgyOjQ4KSk7c2gubWVzaC5wb3NpdGlvbi55PTEuNDUrTWF0aC5zaW4ocGVyZm9ybWFuY2Uubm93KCkqLjAxMitpKSouMTg7c2gubWVzaC5yb3RhdGlvbi54Kz1kdCo0O3NoLm1lc2gucm90YXRpb24ueis9ZHQqNTtpZihzaC5vd25lcil7aWYoc2gub3duZXIhPT1wbGF5ZXImJnBsYXllci5wb3NpdGlvbi5kaXN0YW5jZVRvKHNoLm1lc2gucG9zaXRpb24pPDMuMil7aWYoIWd1YXJkSW5jb21pbmdTaGVsbChzaCkpe3N0dW49TWF0aC5tYXgoc3R1bixzaC50eXBlPT09J1JFRCc/MS44OjEuMSk7c2Z4KCdoaXQnKX1zaC5saWZlPTB9bGV0IGhpdENQVT1udWxsO2Zvcihjb25zdCBjcHUgb2YgY3B1cyl7aWYoY3B1IT09c2gub3duZXImJmNwdS5wb3NpdGlvbi5kaXN0YW5jZVRvKHNoLm1lc2gucG9zaXRpb24pPDMuMSl7aGl0Q1BVPWNwdTticmVha319aWYoaGl0Q1BVKXtoaXRDUFUudXNlckRhdGEuc3R1bj1zaC50eXBlPT09J1JFRCc/Mi41OjEuNztzaC5saWZlPTA7c2Z4KCdoaXQnKX19ZWxzZXtsZXQgaGl0PW51bGw7Zm9yKGNvbnN0IGNwdSBvZiBjcHVzKXtpZihjcHUucG9zaXRpb24uZGlzdGFuY2VUbyhzaC5tZXNoLnBvc2l0aW9uKTwzLjEpe2hpdD1jcHU7YnJlYWt9fWlmKGhpdCl7aGl0LnVzZXJEYXRhLnN0dW49c2gudHlwZT09PSdSRUQnPzIuNToxLjc7c2gubGlmZT0wO3NmeCgnaGl0Jyl9fWlmKHNoLmxpZmU8PTApe3NjZW5lLnJlbW92ZShzaC5tZXNoKTtzaC5tZXNoLnRyYXZlcnNlKG89PntpZihvLmdlb21ldHJ5KW8uZ2VvbWV0cnkuZGlzcG9zZSgpfSk7c2hlbGxzLnNwbGljZShpLDEpfX19CmZ1bmN0aW9uIGl0ZW1MYWJlbCh2YWx1ZSl7cmV0dXJuIHZhbHVlPT09J01VU0hST09NJz8n8J+NhOOCreODjuOCsyc6dmFsdWU9PT0nUkVEJz8n8J+UtOi1pOeUsue+hSc6dmFsdWU9PT0nR1JFRU4nPyfwn5+i57eR55Sy576FJzon5pyq5omA5oyBJ30KZnVuY3Rpb24gcmVmcmVzaEl0ZW1IVUQoKXskKCdpdGVtJykudGV4dENvbnRlbnQ9YOKRoCR7aXRlbUxhYmVsKGl0ZW1zWzBdKX3jgIDikaEke2l0ZW1MYWJlbChpdGVtc1sxXSl9YH0KZnVuY3Rpb24gdHJpZ2dlckJvb3N0RngobGFiZWw9J0JPT1NUIScpe2Jvb3N0Rng9Ljk7Ym9vc3RTaGFrZT0uNztjb25zdCBlbD0kKCdib29zdEJhbm5lcicpO2VsLnRleHRDb250ZW50PWxhYmVsO2VsLmNsYXNzTGlzdC5yZW1vdmUoJ3Nob3cnKTt2b2lkIGVsLm9mZnNldFdpZHRoO2VsLmNsYXNzTGlzdC5hZGQoJ3Nob3cnKX0KZnVuY3Rpb24gc3RhcnRNdXNocm9vbSgpe211c2hyb29tUGhhc2U9J3JhbXAnO211c2hyb29tVGltZXI9MDttdXNocm9vbVN0YXJ0U3BlZWQ9c3BlZWQ7bXVzaHJvb21QZWFrPShCQVNFX1RPUF9TUEVFRCpLTUhfUEVSX1VOSVQrMTIwKS9LTUhfUEVSX1VOSVQ7dHJpZ2dlckJvb3N0RngoJ01VU0hST09NIEJPT1NUIScpO3NmeCgnbXVzaHJvb20nKX0KZnVuY3Rpb24gdXNlSXRlbSgpe2lmKCFydW5uaW5nKXJldHVybjtjb25zdCBzbG90PWl0ZW1zLmZpbmRJbmRleCh2PT52IT09bnVsbCk7aWYoc2xvdDwwKXJldHVybjtjb25zdCB0eXA9aXRlbXNbc2xvdF07aXRlbXNbc2xvdF09bnVsbDtyZWZyZXNoSXRlbUhVRCgpO3NmeCgnaXRlbVVzZScpO2lmKHR5cD09PSdNVVNIUk9PTScpe3N0YXJ0TXVzaHJvb20oKTtyZXR1cm59aWYodHlwPT09J0dSRUVOJ3x8dHlwPT09J1JFRCcpc2hvb3RTaGVsbCh0eXApfQpmdW5jdGlvbiBzZXRJdGVtKCl7Y29uc3Qgc2xvdD1pdGVtcy5maW5kSW5kZXgodj0+dj09PW51bGwpO2lmKHNsb3Q8MClyZXR1cm47Y29uc3Qgcj1NYXRoLnJhbmRvbSgpO2l0ZW1zW3Nsb3RdPXI8LjM2PydNVVNIUk9PTSc6cjwuNjg/J0dSRUVOJzonUkVEJztyZWZyZXNoSXRlbUhVRCgpfQpmdW5jdGlvbiBuZWFyZXN0VChwb3Mpe2xldCBiZXN0VD0wLGJlc3REPTFlOTtmb3IobGV0IGk9MDtpPDEwMDtpKyspe2xldCB0PWkvMTAwLHA9Y3VydmUuZ2V0UG9pbnRBdCh0KSxkPXAuZGlzdGFuY2VUb1NxdWFyZWQocG9zKTtpZihkPGJlc3REKXtiZXN0RD1kO2Jlc3RUPXR9fXJldHVybnt0OmJlc3RULGQ6TWF0aC5zcXJ0KGJlc3REKX19CmZ1bmN0aW9uIHRyYWNrUG9zZSh0LG9mZj0wKXtsZXQgcD1jdXJ2ZS5nZXRQb2ludEF0KCh0JTErMSklMSksdGFuPWN1cnZlLmdldFRhbmdlbnRBdCgodCUxKzEpJTEpLHNpZGU9bmV3IFRIUkVFLlZlY3RvcjMoLXRhbi56LDAsdGFuLngpLm5vcm1hbGl6ZSgpO3AuYWRkU2NhbGVkVmVjdG9yKHNpZGUsb2ZmKTtyZXR1cm57cCx0YW4sc2lkZX19CmZ1bmN0aW9uIHJlc2V0Q2Fycygpe3Byb2dyZXNzPTA7bGFwPTE7c3BlZWQ9MDtzdGVlcj0wO2Jvb3N0VGltZT0wO211c2hyb29tUGhhc2U9Jyc7bXVzaHJvb21UaW1lcj0wO2Jvb3N0Rng9MDtib29zdFNoYWtlPTA7ZHJpZnRDaGFyZ2U9MDtkcmlmdENvb2xkb3duPTA7d2FzRHJpZnRpbmc9ZmFsc2U7c3R1bj0wO2l0ZW1zPVtudWxsLG51bGxdO3JlZnJlc2hJdGVtSFVEKCk7cHJldmlvdXNUcmFja1Q9MDtvZmZSb2FkPWZhbHNlO3NoZWxscy5mb3JFYWNoKHNoPT5zY2VuZS5yZW1vdmUoc2gubWVzaCkpO3NoZWxscy5sZW5ndGg9MDtwbGF5ZXJQb3MuY29weShjdXJ2ZS5nZXRQb2ludEF0KDApKTtwbGF5ZXJQb3MueT0uMTtwbGF5ZXJZYXc9TWF0aC5hdGFuMihzdGFydFRhbi54LHN0YXJ0VGFuLnopO3BsYXllci5wb3NpdGlvbi5jb3B5KHBsYXllclBvcyk7cGxheWVyLnJvdGF0aW9uLnk9cGxheWVyWWF3O2NwdXMuZm9yRWFjaCgoYyxpKT0+e2MudXNlckRhdGEucHJvZz0tLjAwOSooaSsxKTtjLnVzZXJEYXRhLnN0dW49MDtjLnVzZXJEYXRhLmJvb3N0PTA7Yy51c2VyRGF0YS5pdGVtVGltZXI9My41K2kqLjQ3O2MudXNlckRhdGEuYWlJdGVtPW51bGw7Yy51c2VyRGF0YS5sYW5lPVstOCwtNCwwLDQsOF1baSU1XTtjLnVzZXJEYXRhLmJhc2VMYW5lPWMudXNlckRhdGEubGFuZX0pfQpmdW5jdGlvbiBzdGFydFJhY2UoKXtjb3VudGRvd25Ub2tlbisrOyQoJ3F1aXRSYWNlJykuc3R5bGUuZGlzcGxheT0nYmxvY2snO2NwdUxldmVsPU51bWJlcigkKCdjcHUnKS52YWx1ZSk7cGxheWVyLmNoaWxkcmVuWzBdLm1hdGVyaWFsLmNvbG9yLnNldCgkKCdza2luJykudmFsdWUpO3Jlc2V0Q2FycygpOyQoJ21lbnUnKS5zdHlsZS5kaXNwbGF5PSdub25lJzskKCdyZXN1bHQnKS5zdHlsZS5kaXNwbGF5PSdub25lJztydW5uaW5nPWZhbHNlO2ZpbmlzaD1mYWxzZTtzdGFydGVkPWZhbHNlO2NvdW50ZG93bigpfQpmdW5jdGlvbiBjb3VudGRvd24oKXtjb25zdCBteVRva2VuPSsrY291bnRkb3duVG9rZW47bGV0IG49MztsYXVuY2hNb2RlPTA7bGF1bmNoSGVsZD1rZXlzLmdhcztsZXQgcHJlc3NlZEF0Mz1rZXlzLmdhczskKCdjZW50ZXJNc2cnKS50ZXh0Q29udGVudD0nMyc7JCgnc3ViTXNnJykudGV4dENvbnRlbnQ9J1JFQURZJztjb25zdCB0aWNrPSgpPT57aWYobXlUb2tlbiE9PWNvdW50ZG93blRva2VuKXJldHVybjtpZihuPT09Myl7JCgnY2VudGVyTXNnJykudGV4dENvbnRlbnQ9JzMnOyQoJ3N1Yk1zZycpLnRleHRDb250ZW50PSdSRUFEWSd9ZWxzZSBpZihuPT09Mil7JCgnY2VudGVyTXNnJykudGV4dENvbnRlbnQ9JzInOyQoJ3N1Yk1zZycpLnRleHRDb250ZW50PSfjgqLjgq/jgrvjg6vjgpLmirzjgZnjgarjgonku4rvvIEnfWVsc2UgaWYobj09PTEpeyQoJ2NlbnRlck1zZycpLnRleHRDb250ZW50PScxJzskKCdzdWJNc2cnKS50ZXh0Q29udGVudD0nJ31lbHNleyQoJ2NlbnRlck1zZycpLnRleHRDb250ZW50PSdHTyEnOyQoJ3N1Yk1zZycpLnRleHRDb250ZW50PScnO3NmeCgnZ28nKTtydW5uaW5nPXRydWU7c3RhcnRlZD10cnVlO2Nsb2NrU3RhcnQ9cGVyZm9ybWFuY2Uubm93KCk7aWYobGF1bmNoTW9kZT09PS0xKXtzdHVuPTEuMjskKCdjZW50ZXJNc2cnKS50ZXh0Q29udGVudD0nRkFMU0UgU1RBUlQnOyQoJ3N1Yk1zZycpLnRleHRDb250ZW50PSfjgrnjgr/jg7zjg4jlpLHmlZfvvIEnO3NmeCgnZmFsc2UnKX1lbHNlIGlmKGxhdW5jaE1vZGU9PT0xKXtib29zdFRpbWU9Mi4zOyQoJ2NlbnRlck1zZycpLnRleHRDb250ZW50PSdCT09TVCEnO3RyaWdnZXJCb29zdEZ4KCdST0NLRVQgU1RBUlQhJyk7c2Z4KCdtdXNocm9vbScpfXNldFRpbWVvdXQoKCk9PnskKCdjZW50ZXJNc2cnKS50ZXh0Q29udGVudD0nJzskKCdzdWJNc2cnKS50ZXh0Q29udGVudD0nJ30sMTAwMCk7cmV0dXJufWlmKG49PT0zfHxuPT09Mnx8bj09PTEpc2Z4KCdjb3VudCcpO2lmKG49PT0zJiZrZXlzLmdhcylwcmVzc2VkQXQzPXRydWU7aWYobj09PTImJmtleXMuZ2FzJiYhbGF1bmNoSGVsZCYmIXByZXNzZWRBdDMpbGF1bmNoTW9kZT0xO2lmKG49PT0yJiZwcmVzc2VkQXQzKWxhdW5jaE1vZGU9LTE7bGF1bmNoSGVsZD1rZXlzLmdhcztuLS07c2V0VGltZW91dCh0aWNrLDg1MCl9O3RpY2soKX0Kd2luZG93Ll9fcmFjZVBhdXNlRm9yR2FtZT0oKT0+e3J1bm5pbmc9ZmFsc2U7c3RhcnRlZD1mYWxzZX07d2luZG93Ll9fc3RhcnRSYWNlPXN0YXJ0UmFjZTskKCdzdGFydCcpLm9uY2xpY2s9c3RhcnRSYWNlOyQoJ2FnYWluJykub25jbGljaz0oKT0+eyQoJ21lbnUnKS5zdHlsZS5kaXNwbGF5PSdmbGV4JzskKCdyZXN1bHQnKS5zdHlsZS5kaXNwbGF5PSdub25lJztydW5uaW5nPWZhbHNlfQpmdW5jdGlvbiBxdWl0UmFjZSgpe2NvdW50ZG93blRva2VuKys7cnVubmluZz1mYWxzZTtzdGFydGVkPWZhbHNlO2ZpbmlzaD1mYWxzZTtrZXlzLmxlZnQ9a2V5cy5yaWdodD1rZXlzLmdhcz1rZXlzLmJyYWtlPWZhbHNlOyQoJ2NlbnRlck1zZycpLnRleHRDb250ZW50PScnOyQoJ3N1Yk1zZycpLnRleHRDb250ZW50PScnOyQoJ3Jlc3VsdCcpLnN0eWxlLmRpc3BsYXk9J25vbmUnOyQoJ21lbnUnKS5zdHlsZS5kaXNwbGF5PSdmbGV4JzskKCdxdWl0UmFjZScpLmJsdXIoKX0KJCgncXVpdFJhY2UnKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycscXVpdFJhY2UpOwpmdW5jdGlvbiBmbXQobXMpe2xldCBtPU1hdGguZmxvb3IobXMvNjAwMDApLHM9TWF0aC5mbG9vcihtcy8xMDAwKSU2MCx6PU1hdGguZmxvb3IobXMlMTAwMCk7cmV0dXJuYCR7U3RyaW5nKG0pLnBhZFN0YXJ0KDIsJzAnKX06JHtTdHJpbmcocykucGFkU3RhcnQoMiwnMCcpfS4ke1N0cmluZyh6KS5wYWRTdGFydCgzLCcwJyl9YH0KZnVuY3Rpb24gZmluaXNoUmFjZSgpe3J1bm5pbmc9ZmFsc2U7ZmluaXNoPXRydWU7c2Z4KCdmaW5pc2gnKTtiZXN0PWJlc3Q9PT1udWxsP2VsYXBzZWQ6TWF0aC5taW4oYmVzdCxlbGFwc2VkKTskKCdyZXN1bHRUaXRsZScpLnRleHRDb250ZW50PSdGSU5JU0gnOyQoJ3Jlc3VsdFRleHQnKS50ZXh0Q29udGVudD1gVElNRSAke2ZtdChlbGFwc2VkKX3jgIDvvI/jgIBCRVNUICR7Zm10KGJlc3QpfVxu6aCG5L2NICR7JCgncG9zJykudGV4dENvbnRlbnR9YDskKCdyZXN1bHQnKS5zdHlsZS5kaXNwbGF5PSdmbGV4J30KbGV0IGxhc3Q9cGVyZm9ybWFuY2Uubm93KCksYm94Q29vbGRvd249MDsKZnVuY3Rpb24gYW5pbWF0ZShub3cpe3JlcXVlc3RBbmltYXRpb25GcmFtZShhbmltYXRlKTtsZXQgZHQ9TWF0aC5taW4oKG5vdy1sYXN0KS8xMDAwLC4wNCk7bGFzdD1ub3c7CmlmKHJ1bm5pbmcpe2VsYXBzZWQ9bm93LWNsb2NrU3RhcnQ7JCgndGltZScpLnRleHRDb250ZW50PWZtdChlbGFwc2VkKTtpZihzdHVuPjApc3R1bi09ZHQ7aWYoYm9vc3RUaW1lPjApYm9vc3RUaW1lLT1kdDtpZihib29zdEZ4PjApYm9vc3RGeD1NYXRoLm1heCgwLGJvb3N0RngtZHQpO2lmKGJvb3N0U2hha2U+MClib29zdFNoYWtlPU1hdGgubWF4KDAsYm9vc3RTaGFrZS1kdCoxLjgpOyQoJ2RyaWZ0RmlsbCcpLnN0eWxlLndpZHRoPWAke01hdGgubWluKDEwMCxkcmlmdENoYXJnZS8xLjA1KjEwMCl9JWA7CmlmKG11c2hyb29tUGhhc2Upe211c2hyb29tVGltZXIrPWR0O2lmKG11c2hyb29tUGhhc2U9PT0ncmFtcCcpe2NvbnN0IHE9TWF0aC5taW4oMSxtdXNocm9vbVRpbWVyLy43MiksZWFzZT0xLU1hdGgucG93KDEtcSwzKTtzcGVlZD1tdXNocm9vbVN0YXJ0U3BlZWQrKG11c2hyb29tUGVhay1tdXNocm9vbVN0YXJ0U3BlZWQpKmVhc2U7aWYocT49MSl7bXVzaHJvb21QaGFzZT0naG9sZCc7bXVzaHJvb21UaW1lcj0wfX1lbHNlIGlmKG11c2hyb29tUGhhc2U9PT0naG9sZCcpe3NwZWVkPW11c2hyb29tUGVhaztpZihtdXNocm9vbVRpbWVyPj0yKXttdXNocm9vbVBoYXNlPSdkZWNheSc7bXVzaHJvb21UaW1lcj0wO211c2hyb29tU3RhcnRTcGVlZD1zcGVlZH19ZWxzZSBpZihtdXNocm9vbVBoYXNlPT09J2RlY2F5Jyl7Y29uc3QgcT1NYXRoLm1pbigxLG11c2hyb29tVGltZXIvMS4wNSksZWFzZT1xKnEqKDMtMipxKTtzcGVlZD1tdXNocm9vbVN0YXJ0U3BlZWQrKEJBU0VfVE9QX1NQRUVELW11c2hyb29tU3RhcnRTcGVlZCkqZWFzZTtpZihxPj0xKW11c2hyb29tUGhhc2U9Jyd9fQpjb25zdCBzdGVlcklucHV0PShrZXlzLmxlZnQ/MTowKS0oa2V5cy5yaWdodD8xOjApO3N0ZWVyKz0oc3RlZXJJbnB1dC1zdGVlcikqTWF0aC5taW4oMSxkdCo2LjIpO2lmKE1hdGguYWJzKHN0ZWVyKT4uMDE1JiZzcGVlZD4xKXBsYXllcllhdys9c3RlZXIqZHQqKC4zOCtNYXRoLm1pbihzcGVlZCw0MikqLjAxMjUpOwppZihkcmlmdENvb2xkb3duPjApZHJpZnRDb29sZG93bj1NYXRoLm1heCgwLGRyaWZ0Q29vbGRvd24tZHQpOwpjb25zdCBkcmlmdGluZz1NYXRoLmFicyhzdGVlcklucHV0KT4wJiZzcGVlZD4xNSYmIWtleXMuYnJha2UmJiFvZmZSb2FkOyQoJ2RyaWZ0SHVkJykuc3R5bGUub3BhY2l0eT1kcmlmdGluZz8nLjk1JzonLjM1JztpZihkcmlmdGluZyYmZHJpZnRDb29sZG93bjw9MClkcmlmdENoYXJnZT1NYXRoLm1pbigxLjA1LGRyaWZ0Q2hhcmdlK2R0KTsKaWYod2FzRHJpZnRpbmcmJiFkcmlmdGluZyYmZHJpZnRDaGFyZ2U+PS43OCYmZHJpZnRDb29sZG93bjw9MCYmIW11c2hyb29tUGhhc2Upe2Jvb3N0VGltZT1NYXRoLm1heChib29zdFRpbWUsMS4zNSk7dHJpZ2dlckJvb3N0RngoJ0RSSUZUIFRVUkJPIScpO3NmeCgnZHJpZnQnKTtkcmlmdENvb2xkb3duPTMuODtkcmlmdENoYXJnZT0wfWlmKCFkcmlmdGluZyYmZHJpZnRDaGFyZ2U8Ljc4KWRyaWZ0Q2hhcmdlPU1hdGgubWF4KDAsZHJpZnRDaGFyZ2UtZHQqMS44KTt3YXNEcmlmdGluZz1kcmlmdGluZzsKY29uc3QgYmVmb3JlRHJpdmVPZmZyb2FkPW5lYXJlc3RUKHBsYXllclBvcykuZD5yb2FkV2lkdGgqLjQ3OwppZighbXVzaHJvb21QaGFzZSl7aWYoc3R1bj4wKXNwZWVkPU1hdGgubWF4KDAsc3BlZWQtMzAqZHQpO2Vsc2UgaWYoa2V5cy5icmFrZSlzcGVlZD1NYXRoLm1heCgwLHNwZWVkLTMxKmR0KTtlbHNlIGlmKGtleXMuZ2FzKXtpZihiZWZvcmVEcml2ZU9mZnJvYWQpe2NvbnN0IGNhcD1ib29zdFRpbWU+MD9CQVNFX1RPUF9TUEVFRDo4MC9LTUhfUEVSX1VOSVQ7aWYoc3BlZWQ8Y2FwKXNwZWVkPU1hdGgubWluKGNhcCxzcGVlZCsoYm9vc3RUaW1lPjA/Mzg6MTkpKmR0KTtlbHNlIHNwZWVkKz0oY2FwLXNwZWVkKSooMS1NYXRoLmV4cCgtMS4wNSpkdCkpfWVsc2V7Y29uc3QgY2FwPWJvb3N0VGltZT4wPzQ5OkJBU0VfVE9QX1NQRUVEO3NwZWVkPU1hdGgubWluKGNhcCxzcGVlZCsoYm9vc3RUaW1lPjA/Mzg6MTkpKmR0KX19ZWxzZSBzcGVlZD1NYXRoLm1heCgwLHNwZWVkLTEuMDUqZHQpfQpjb25zdCBmb3J3YXJkPW5ldyBUSFJFRS5WZWN0b3IzKE1hdGguc2luKHBsYXllcllhdyksMCxNYXRoLmNvcyhwbGF5ZXJZYXcpKTtwbGF5ZXJQb3MuYWRkU2NhbGVkVmVjdG9yKGZvcndhcmQsc3BlZWQqZHQpO3BsYXllci5wb3NpdGlvbi5zZXQocGxheWVyUG9zLngsLjEscGxheWVyUG9zLnopO3BsYXllci5yb3RhdGlvbi55PXBsYXllcllhdzsKY29uc3QgbmVhcj1uZWFyZXN0VChwbGF5ZXJQb3MpO3Byb2dyZXNzPW5lYXIudDtvZmZSb2FkPW5lYXIuZD5yb2FkV2lkdGgqLjQ3O2lmKG9mZlJvYWQmJiFtdXNocm9vbVBoYXNlKXtjb25zdCBvZmZyb2FkTGltaXQ9Ym9vc3RUaW1lPjA/QkFTRV9UT1BfU1BFRUQ6ODAvS01IX1BFUl9VTklUO2lmKHNwZWVkPm9mZnJvYWRMaW1pdClzcGVlZCs9KG9mZnJvYWRMaW1pdC1zcGVlZCkqKDEtTWF0aC5leHAoLTEuMDUqZHQpKX0KaWYocHJldmlvdXNUcmFja1Q+Ljk0JiZuZWFyLnQ8LjA2JiZmb3J3YXJkLmRvdChjdXJ2ZS5nZXRUYW5nZW50QXQoMCkpPi4xNSl7bGFwKys7aWYobGFwPjMpe2xhcD0zO2ZpbmlzaFJhY2UoKX19cHJldmlvdXNUcmFja1Q9bmVhci50OwokKCdsYXAnKS50ZXh0Q29udGVudD1gJHtsYXB9IC8gM2A7JCgnc3BlZWQnKS50ZXh0Q29udGVudD1NYXRoLnJvdW5kKHNwZWVkKktNSF9QRVJfVU5JVCk7JCgnc3BlZWQnKS5zdHlsZS5jb2xvcj0obXVzaHJvb21QaGFzZXx8Ym9vc3RUaW1lPjApPycjZmZlNjZiJzonJzsKaWYoYm94Q29vbGRvd24+MClib3hDb29sZG93bi09ZHQ7CmZvcihsZXQgYiBvZiBpdGVtQm94ZXMpe2IubWVzaC5yb3RhdGlvbi55Kz1kdCoxLjI7aWYoIWIuYWN0aXZlKXtiLnJlc3Bhd24tPWR0O2lmKGIucmVzcGF3bjw9MCl7Yi5hY3RpdmU9dHJ1ZTtiLm1lc2gudmlzaWJsZT10cnVlfWNvbnRpbnVlfWNvbnN0IGR4PXBsYXllclBvcy54LWIubWVzaC5wb3NpdGlvbi54LGR6PXBsYXllclBvcy56LWIubWVzaC5wb3NpdGlvbi56O2lmKE1hdGguaHlwb3QoZHgsZHopPDMuNyYmYm94Q29vbGRvd248PTAmJml0ZW1zLnNvbWUodj0+dj09PW51bGwpKXtiLmFjdGl2ZT1mYWxzZTtiLm1lc2gudmlzaWJsZT1mYWxzZTtiLnJlc3Bhd249NztzZXRJdGVtKCk7c2Z4KCdpdGVtJyk7Ym94Q29vbGRvd249LjM1fX0KdXBkYXRlU2hlbGxzKGR0KTsKZm9yKGxldCB0IG9mWy4xMywuMzYsLjYyLC44NF0pe2xldCBwPWN1cnZlLmdldFBvaW50QXQodCk7aWYobmVhci5kPHJvYWRXaWR0aCouNCYmcC5kaXN0YW5jZVRvKHBsYXllclBvcyk8NSYmYm9vc3RUaW1lPD0wJiYhbXVzaHJvb21QaGFzZSl7Ym9vc3RUaW1lPS45O3RyaWdnZXJCb29zdEZ4KCdTUEVFRCBQQUQhJyk7c2Z4KCdwYWQnKX19CmxldCBwbGF5ZXJSYWNlUHJvZ3Jlc3M9KGxhcC0xKStwcm9ncmVzczsKY3B1cy5mb3JFYWNoKChjLGkpPT57aWYoYy51c2VyRGF0YS5zdHVuPjApYy51c2VyRGF0YS5zdHVuPU1hdGgubWF4KDAsYy51c2VyRGF0YS5zdHVuLWR0KTtpZihjLnVzZXJEYXRhLmJvb3N0PjApYy51c2VyRGF0YS5ib29zdD1NYXRoLm1heCgwLGMudXNlckRhdGEuYm9vc3QtZHQpO2MudXNlckRhdGEuaXRlbVRpbWVyLT1kdDtpZihjLnVzZXJEYXRhLml0ZW1UaW1lcjw9MCYmIWMudXNlckRhdGEuYWlJdGVtKXtjb25zdCByPU1hdGgucmFuZG9tKCk7Yy51c2VyRGF0YS5haUl0ZW09cjwuMzY/J01VU0hST09NJzpyPC43MD8nUkVEJzonR1JFRU4nO2MudXNlckRhdGEuaXRlbVRpbWVyPTQuMitNYXRoLnJhbmRvbSgpKjMuOH0KY29uc3Qgcml2YWxzPVt7Y2FyOnBsYXllcixwcm9nOnBsYXllclJhY2VQcm9ncmVzc31dLmNvbmNhdChjcHVzLmZpbHRlcihvdGhlcj0+b3RoZXIhPT1jKS5tYXAob3RoZXI9Pih7Y2FyOm90aGVyLHByb2c6b3RoZXIudXNlckRhdGEucHJvZ30pKSkubWFwKHI9Pih7Li4ucixnYXA6ci5wcm9nLWMudXNlckRhdGEucHJvZ30pKS5maWx0ZXIocj0+ci5nYXA+LjAwNiYmci5nYXA8LjI0KS5zb3J0KChhLGIpPT5hLmdhcC1iLmdhcCkscml2YWw9cml2YWxzWzBdfHxudWxsOwppZihjLnVzZXJEYXRhLmFpSXRlbSl7aWYoYy51c2VyRGF0YS5haUl0ZW09PT0nTVVTSFJPT00nJiYoYy51c2VyRGF0YS5wcm9nPHBsYXllclJhY2VQcm9ncmVzcysuMDN8fE1hdGgucmFuZG9tKCk8LjAxMikpe2MudXNlckRhdGEuYm9vc3Q9MjtjLnVzZXJEYXRhLmFpSXRlbT1udWxsfWVsc2UgaWYoKGMudXNlckRhdGEuYWlJdGVtPT09J1JFRCd8fGMudXNlckRhdGEuYWlJdGVtPT09J0dSRUVOJykmJnJpdmFsJiZNYXRoLnJhbmRvbSgpPC4xMil7c2hvb3RTaGVsbChjLnVzZXJEYXRhLmFpSXRlbSxjLHJpdmFsLmNhcik7Yy51c2VyRGF0YS5haUl0ZW09bnVsbH19CmxldCBkZXNpcmVkTGFuZT1jLnVzZXJEYXRhLmJhc2VMYW5lPz9jLnVzZXJEYXRhLmxhbmU7Y29uc3QgbmVhcmJ5PWNwdXMuZmlsdGVyKG90aGVyPT5vdGhlciE9PWMmJk1hdGguYWJzKG90aGVyLnVzZXJEYXRhLnByb2ctYy51c2VyRGF0YS5wcm9nKTwuMDE4JiZNYXRoLmFicyhvdGhlci51c2VyRGF0YS5sYW5lLWMudXNlckRhdGEubGFuZSk8NS41KTtpZihuZWFyYnkubGVuZ3RoKXtjb25zdCBzaWRlPWklMj09PTA/MTotMTtkZXNpcmVkTGFuZT1NYXRoLm1heCgtMTAsTWF0aC5taW4oMTAsYy51c2VyRGF0YS5iYXNlTGFuZStzaWRlKjUpKX1jLnVzZXJEYXRhLmxhbmUrPShkZXNpcmVkTGFuZS1jLnVzZXJEYXRhLmxhbmUpKk1hdGgubWluKDEsZHQqMi4yKTtpZihjLnVzZXJEYXRhLnN0dW48PTApe2NvbnN0IGJvb3N0RmFjdG9yPWMudXNlckRhdGEuYm9vc3Q+MD8xLjM4OjE7Yy51c2VyRGF0YS5wcm9nKz1kdCooLjAzNCpjcHVMZXZlbCkqKDEraSouMDAzNSkqYm9vc3RGYWN0b3J9bGV0IGNwPXRyYWNrUG9zZShjLnVzZXJEYXRhLnByb2csYy51c2VyRGF0YS5sYW5lKTtjLnBvc2l0aW9uLnNldChjcC5wLngsLjEsY3AucC56KTtjLnJvdGF0aW9uLnk9TWF0aC5hdGFuMihjcC50YW4ueCxjcC50YW4ueil9KTsKbGV0IHJhbms9MStjcHVzLmZpbHRlcihjPT5jLnVzZXJEYXRhLnByb2c+cGxheWVyUmFjZVByb2dyZXNzKS5sZW5ndGg7JCgncG9zJykudGV4dENvbnRlbnQ9YCR7cmFua30gLyAxMmA7CmNvbnN0IGJvb3N0SW50ZW5zaXR5PW11c2hyb29tUGhhc2U9PT0ncmFtcCc/TWF0aC5taW4oMSxtdXNocm9vbVRpbWVyLy43Mik6bXVzaHJvb21QaGFzZT09PSdob2xkJz8xOm11c2hyb29tUGhhc2U9PT0nZGVjYXknP01hdGgubWF4KDAsMS1tdXNocm9vbVRpbWVyLzEuMDUpOmJvb3N0VGltZT4wPy40NTowLHRhcmdldEZvdj02NStib29zdEludGVuc2l0eSoxMztjYW1lcmEuZm92Kz0odGFyZ2V0Rm92LWNhbWVyYS5mb3YpKk1hdGgubWluKDEsZHQqNSk7Y2FtZXJhLnVwZGF0ZVByb2plY3Rpb25NYXRyaXgoKTsKY29uc3QgY2FtVGFyZ2V0PXBsYXllclBvcy5jbG9uZSgpLmFkZChuZXcgVEhSRUUuVmVjdG9yMygwLDMuNSwwKSkuYWRkU2NhbGVkVmVjdG9yKGZvcndhcmQsOCksYmVoaW5kPXBsYXllclBvcy5jbG9uZSgpLmFkZFNjYWxlZFZlY3Rvcihmb3J3YXJkLC0xMy1ib29zdEludGVuc2l0eSoyKS5hZGQobmV3IFRIUkVFLlZlY3RvcjMoMCw3K2Jvb3N0SW50ZW5zaXR5Ki41LDApKTtjYW1lcmEucG9zaXRpb24ubGVycChiZWhpbmQsLjEwKTtpZihib29zdFNoYWtlPjApe2NhbWVyYS5wb3NpdGlvbi54Kz0oTWF0aC5yYW5kb20oKS0uNSkqYm9vc3RTaGFrZSouMzI7Y2FtZXJhLnBvc2l0aW9uLnkrPShNYXRoLnJhbmRvbSgpLS41KSpib29zdFNoYWtlKi4yMn1jYW1lcmEubG9va0F0KGNhbVRhcmdldCk7JCgnc3BlZWRGWCcpLnN0eWxlLm9wYWNpdHk9U3RyaW5nKE1hdGgubWluKC44LGJvb3N0SW50ZW5zaXR5Ki43MikpOyQoJ2Jvb3N0Rmxhc2gnKS5zdHlsZS5vcGFjaXR5PVN0cmluZyhib29zdEZ4Ki40MikKfWVsc2V7JCgnc3BlZWRGWCcpLnN0eWxlLm9wYWNpdHk9JzAnOyQoJ2Jvb3N0Rmxhc2gnKS5zdHlsZS5vcGFjaXR5PScwJztjYW1lcmEuZm92Kz0oNjUtY2FtZXJhLmZvdikqTWF0aC5taW4oMSxkdCozKTtjYW1lcmEudXBkYXRlUHJvamVjdGlvbk1hdHJpeCgpO2lmKCFzdGFydGVkKXtsZXQgdD1ub3cqLjAwMDA4LHA9Y3VydmUuZ2V0UG9pbnRBdCh0JTEpO2NhbWVyYS5wb3NpdGlvbi5sZXJwKG5ldyBUSFJFRS5WZWN0b3IzKHAueCszNSwzMixwLnorNDgpLC4wMik7Y2FtZXJhLmxvb2tBdCgwLDAsMCl9fQpyZW5kZXJlci5yZW5kZXIoc2NlbmUsY2FtZXJhKX0KcmVxdWVzdEFuaW1hdGlvbkZyYW1lKGFuaW1hdGUpOwphZGRFdmVudExpc3RlbmVyKCdyZXNpemUnLCgpPT57Y2FtZXJhLmFzcGVjdD1pbm5lcldpZHRoL2lubmVySGVpZ2h0O2NhbWVyYS51cGRhdGVQcm9qZWN0aW9uTWF0cml4KCk7cmVuZGVyZXIuc2V0U2l6ZShpbm5lcldpZHRoLGlubmVySGVpZ2h0KX0pOwo8L3NjcmlwdD4KPHNjcmlwdD4KKCgpPT57CiBjb25zdCBzY3JlZW49ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3RldHJpc1NjcmVlbicpOwogY29uc3QgcmFjZUVscz1bZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2h1ZCcpLGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdtZW51JyksZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jlc3VsdCcpLGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdxdWl0UmFjZScpLGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdzb3VuZFRvZ2dsZScpXTsKIGNvbnN0IHJhY2VDYW52YXM9KCk9PmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ2JvZHkgPiBjYW52YXMnKTsKZnVuY3Rpb24gc2hvd1RldHJpcygpe2lmKHR5cGVvZiB3aW5kb3cuX19yYWNlUGF1c2VGb3JHYW1lPT09J2Z1bmN0aW9uJyl3aW5kb3cuX19yYWNlUGF1c2VGb3JHYW1lKCk7cmFjZUVscy5mb3JFYWNoKGU9PntpZihlKWUuc3R5bGUuZGlzcGxheT0nbm9uZSd9KTtjb25zdCBjPXJhY2VDYW52YXMoKTtpZihjKWMuc3R5bGUuZGlzcGxheT0nbm9uZSc7c2NyZWVuLnN0eWxlLmRpc3BsYXk9J2ZsZXgnO1Quc3RhcnQoKX0KZnVuY3Rpb24gYmFja1RvUmFjZU1lbnUoKXtULnN0b3AoKTtzY3JlZW4uc3R5bGUuZGlzcGxheT0nbm9uZSc7cmFjZUVscy5mb3JFYWNoKGU9PntpZihlKWUuc3R5bGUuZGlzcGxheT0nJ30pO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdtZW51Jykuc3R5bGUuZGlzcGxheT0nZmxleCc7ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jlc3VsdCcpLnN0eWxlLmRpc3BsYXk9J25vbmUnO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdxdWl0UmFjZScpLnN0eWxlLmRpc3BsYXk9J25vbmUnO2NvbnN0IGM9cmFjZUNhbnZhcygpO2lmKGMpYy5zdHlsZS5kaXNwbGF5PSdibG9jayd9CmRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdvcGVuVGV0cmlzJykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLHNob3dUZXRyaXMpOwpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndGV0cmlzQmFjaycpLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJyxiYWNrVG9SYWNlTWVudSk7CmNvbnN0IGNhbnZhcz1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndGV0cmlzQ2FudmFzJyksY3R4PWNhbnZhcy5nZXRDb250ZXh0KCcyZCcpLG5leHRDYW52YXM9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ25leHRDYW52YXMnKSxuY3R4PW5leHRDYW52YXMuZ2V0Q29udGV4dCgnMmQnKTsKY29uc3QgVz0xMCxIPTIwLFM9MzA7CmNvbnN0IHNoYXBlcz17STpbWzEsMSwxLDFdXSxPOltbMSwxXSxbMSwxXV0sVDpbWzAsMSwwXSxbMSwxLDFdXSxTOltbMCwxLDFdLFsxLDEsMF1dLFo6W1sxLDEsMF0sWzAsMSwxXV0sSjpbWzEsMCwwXSxbMSwxLDFdXSxMOltbMCwwLDFdLFsxLDEsMV1dfTsKY29uc3QgY29sb3JzPXtJOicjNDNlYWZmJyxPOicjZmZlNDVlJyxUOicjYjc2YmZmJyxTOicjNjJmNThhJyxaOicjZmY2MDc4JyxKOicjNTY4Y2ZmJyxMOicjZmZhZDRkJ307CmxldCBib2FyZCxhY3RpdmUsbmV4dCxzY29yZSxsaW5lcyxsZXZlbCxkcm9wQ291bnRlcixsYXN0VGltZSxyYWYscGxheWluZyxwYXVzZWQsb3ZlcjsKY29uc3QgcmFuZD0oKT0+e2NvbnN0IGtleXM9T2JqZWN0LmtleXMoc2hhcGVzKTtyZXR1cm4ga2V5c1tNYXRoLmZsb29yKE1hdGgucmFuZG9tKCkqa2V5cy5sZW5ndGgpXX07CmNvbnN0IGNsb25lPW09Pm0ubWFwKHI9PnIuc2xpY2UoKSk7CmZ1bmN0aW9uIGZyZXNoKCl7Ym9hcmQ9QXJyYXkuZnJvbSh7bGVuZ3RoOkh9LCgpPT5BcnJheShXKS5maWxsKCcnKSk7YWN0aXZlPXt0eXBlOnJhbmQoKSxtYXRyaXg6bnVsbCx4OjMseTowfTthY3RpdmUubWF0cml4PWNsb25lKHNoYXBlc1thY3RpdmUudHlwZV0pO25leHQ9cmFuZCgpO3Njb3JlPTA7bGluZXM9MDtsZXZlbD0xO2Ryb3BDb3VudGVyPTA7bGFzdFRpbWU9MDtwbGF5aW5nPXRydWU7cGF1c2VkPWZhbHNlO292ZXI9ZmFsc2U7bWVzc2FnZSgnJyk7dXBkYXRlSW5mbygpO3NwYXduKCk7ZHJhdygpfQpmdW5jdGlvbiBzcGF3bigpe2FjdGl2ZT17dHlwZTpuZXh0LG1hdHJpeDpjbG9uZShzaGFwZXNbbmV4dF0pLHg6TWF0aC5mbG9vcigoVy1zaGFwZXNbbmV4dF1bMF0ubGVuZ3RoKS8yKSx5OjB9O25leHQ9cmFuZCgpO2RyYXdOZXh0KCk7aWYoY29sbGlkZShhY3RpdmUubWF0cml4LGFjdGl2ZS54LGFjdGl2ZS55KSl7b3Zlcj10cnVlO3BsYXlpbmc9ZmFsc2U7bWVzc2FnZSgnR0FNRSBPVkVSIOKAlCDmnIDliJ3jgYvjgonjgaflho3mjJHmiKYnKX19CmZ1bmN0aW9uIGNvbGxpZGUobSx4LHkpe2ZvcihsZXQgcj0wO3I8bS5sZW5ndGg7cisrKWZvcihsZXQgYz0wO2M8bVtyXS5sZW5ndGg7YysrKWlmKG1bcl1bY10pe2xldCBueD14K2Msbnk9eStyO2lmKG54PDB8fG54Pj1XfHxueT49SHx8KG55Pj0wJiZib2FyZFtueV1bbnhdKSlyZXR1cm4gdHJ1ZX1yZXR1cm4gZmFsc2V9CmZ1bmN0aW9uIG1lcmdlKCl7YWN0aXZlLm1hdHJpeC5mb3JFYWNoKChyLHkpPT5yLmZvckVhY2goKHYseCk9PntpZih2JiZhY3RpdmUueSt5Pj0wKWJvYXJkW2FjdGl2ZS55K3ldW2FjdGl2ZS54K3hdPWFjdGl2ZS50eXBlfSkpfQpmdW5jdGlvbiBjbGVhckxpbmVzKCl7bGV0IGNvdW50PTA7Zm9yKGxldCB5PUgtMTt5Pj0wO3ktLSl7aWYoYm9hcmRbeV0uZXZlcnkoQm9vbGVhbikpe2JvYXJkLnNwbGljZSh5LDEpO2JvYXJkLnVuc2hpZnQoQXJyYXkoVykuZmlsbCgnJykpO2NvdW50Kys7eSsrfX1pZihjb3VudCl7bGluZXMrPWNvdW50O3Njb3JlKz1bMCwxMDAsMzAwLDUwMCw4MDBdW2NvdW50XSpsZXZlbDtsZXZlbD0xK01hdGguZmxvb3IobGluZXMvMTApO3VwZGF0ZUluZm8oKTttZXNzYWdlKGAke2NvdW50fSBMSU5FJHtjb3VudD4xPydTJzonJ30gQ0xFQVIhYCl9fQpmdW5jdGlvbiBsb2NrKCl7bWVyZ2UoKTtjbGVhckxpbmVzKCk7c3Bhd24oKX0KZnVuY3Rpb24gbW92ZShkeCxkeSl7aWYoIXBsYXlpbmd8fHBhdXNlZHx8b3ZlcilyZXR1cm4gZmFsc2U7aWYoIWNvbGxpZGUoYWN0aXZlLm1hdHJpeCxhY3RpdmUueCtkeCxhY3RpdmUueStkeSkpe2FjdGl2ZS54Kz1keDthY3RpdmUueSs9ZHk7ZHJhdygpO3JldHVybiB0cnVlfWlmKGR5PjApbG9jaygpO3JldHVybiBmYWxzZX0KZnVuY3Rpb24gcm90YXRlKCl7aWYoIXBsYXlpbmd8fHBhdXNlZHx8b3ZlcilyZXR1cm47Y29uc3QgbT1hY3RpdmUubWF0cml4LHJvdD1tWzBdLm1hcCgoXyxpKT0+bS5tYXAocm93PT5yb3dbaV0pLnJldmVyc2UoKSk7Zm9yKGNvbnN0IGtpY2sgb2ZbMCwtMSwxLC0yLDJdKWlmKCFjb2xsaWRlKHJvdCxhY3RpdmUueCtraWNrLGFjdGl2ZS55KSl7YWN0aXZlLm1hdHJpeD1yb3Q7YWN0aXZlLngrPWtpY2s7ZHJhdygpO3JldHVybn19CmZ1bmN0aW9uIGhhcmREcm9wKCl7aWYoIXBsYXlpbmd8fHBhdXNlZHx8b3ZlcilyZXR1cm47bGV0IGQ9MDt3aGlsZSghY29sbGlkZShhY3RpdmUubWF0cml4LGFjdGl2ZS54LGFjdGl2ZS55KzEpKXthY3RpdmUueSsrO2QrK31zY29yZSs9ZCoyO2xvY2soKTt1cGRhdGVJbmZvKCl9CmZ1bmN0aW9uIGRyYXdDZWxsKGMseCx5LHNpemU9Uyl7aWYoIWMpcmV0dXJuO2N0eC5maWxsU3R5bGU9Y29sb3JzW2NdO2N0eC5maWxsUmVjdCh4KnNpemUrMSx5KnNpemUrMSxzaXplLTIsc2l6ZS0yKTtjdHguZmlsbFN0eWxlPScjZmZmZmZmMzMnO2N0eC5maWxsUmVjdCh4KnNpemUrMyx5KnNpemUrMyxzaXplLTYsTWF0aC5tYXgoMixzaXplKi4xMykpO2N0eC5zdHJva2VTdHlsZT0nI2ZmZmZmZjU1JztjdHguc3Ryb2tlUmVjdCh4KnNpemUrMS41LHkqc2l6ZSsxLjUsc2l6ZS0zLHNpemUtMyl9CmZ1bmN0aW9uIGRyYXcoKXtjdHguY2xlYXJSZWN0KDAsMCxjYW52YXMud2lkdGgsY2FudmFzLmhlaWdodCk7Y3R4LmZpbGxTdHlsZT0nIzA4MGUyMCc7Y3R4LmZpbGxSZWN0KDAsMCwzMDAsNjAwKTtmb3IobGV0IHk9MDt5PEg7eSsrKWZvcihsZXQgeD0wO3g8Vzt4Kyspe2lmKGJvYXJkW3ldW3hdKWRyYXdDZWxsKGJvYXJkW3ldW3hdLHgseSk7ZWxzZXtjdHguc3Ryb2tlU3R5bGU9JyNmZmZmZmYwZCc7Y3R4LnN0cm9rZVJlY3QoeCpTKy41LHkqUysuNSxTLFMpfX1pZihhY3RpdmUmJmFjdGl2ZS5tYXRyaXgpYWN0aXZlLm1hdHJpeC5mb3JFYWNoKChyLHkpPT5yLmZvckVhY2goKHYseCk9PntpZih2KWRyYXdDZWxsKGFjdGl2ZS50eXBlLGFjdGl2ZS54K3gsYWN0aXZlLnkreSl9KSk7aWYocGF1c2VkfHxvdmVyKXtjdHguZmlsbFN0eWxlPScjMDMwODE3YmInO2N0eC5maWxsUmVjdCgwLDAsMzAwLDYwMCk7Y3R4LmZpbGxTdHlsZT0nI2ZmZic7Y3R4LnRleHRBbGlnbj0nY2VudGVyJztjdHguZm9udD0nYm9sZCAyNXB4IHN5c3RlbS11aSc7Y3R4LmZpbGxUZXh0KG92ZXI/J0dBTUUgT1ZFUic6J1BBVVNFRCcsMTUwLDI4NSl9fQpmdW5jdGlvbiBkcmF3TmV4dCgpe25jdHguY2xlYXJSZWN0KDAsMCwxMDAsMTAwKTtjb25zdCBtPXNoYXBlc1tuZXh0XSxzaXplPTIwLG94PSgxMDAtbVswXS5sZW5ndGgqc2l6ZSkvMixveT0oMTAwLW0ubGVuZ3RoKnNpemUpLzI7Zm9yKGxldCB5PTA7eTxtLmxlbmd0aDt5KyspZm9yKGxldCB4PTA7eDxtW3ldLmxlbmd0aDt4KyspaWYobVt5XVt4XSl7bmN0eC5maWxsU3R5bGU9Y29sb3JzW25leHRdO25jdHguZmlsbFJlY3Qob3greCpzaXplKzEsb3kreSpzaXplKzEsc2l6ZS0yLHNpemUtMik7bmN0eC5zdHJva2VTdHlsZT0nI2ZmZmZmZjY2JztuY3R4LnN0cm9rZVJlY3Qob3greCpzaXplKzEsb3kreSpzaXplKzEsc2l6ZS0yLHNpemUtMil9fQpmdW5jdGlvbiB1cGRhdGVJbmZvKCl7ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3RTY29yZScpLnRleHRDb250ZW50PXNjb3JlO2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0TGluZXMnKS50ZXh0Q29udGVudD1saW5lcztkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndExldmVsJykudGV4dENvbnRlbnQ9bGV2ZWx9CmZ1bmN0aW9uIG1lc3NhZ2UodCl7ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3RldHJpc01lc3NhZ2UnKS50ZXh0Q29udGVudD10fQpmdW5jdGlvbiB0aWNrKHRpbWU9MCl7aWYoIXBsYXlpbmcpcmV0dXJuO2NvbnN0IGRlbHRhPU1hdGgubWluKHRpbWUtbGFzdFRpbWUsMTAwKTtsYXN0VGltZT10aW1lO2lmKCFwYXVzZWQmJiFvdmVyKXtkcm9wQ291bnRlcis9ZGVsdGE7aWYoZHJvcENvdW50ZXI+TWF0aC5tYXgoOTAsODUwLShsZXZlbC0xKSo2NSkpe21vdmUoMCwxKTtkcm9wQ291bnRlcj0wfX1kcmF3KCk7cmFmPXJlcXVlc3RBbmltYXRpb25GcmFtZSh0aWNrKX0KZnVuY3Rpb24gc3RhcnQoKXtpZihwbGF5aW5nJiZyYWYpcmV0dXJuO2ZyZXNoKCk7Y2FuY2VsQW5pbWF0aW9uRnJhbWUocmFmKTtyYWY9cmVxdWVzdEFuaW1hdGlvbkZyYW1lKHRpY2spfQpmdW5jdGlvbiBzdG9wKCl7cGxheWluZz1mYWxzZTtjYW5jZWxBbmltYXRpb25GcmFtZShyYWYpO3JhZj0wfQpmdW5jdGlvbiB0b2dnbGVQYXVzZSgpe2lmKG92ZXIpcmV0dXJuO3BhdXNlZD0hcGF1c2VkO21lc3NhZ2UocGF1c2VkPyfkuIDmmYLlgZzmraLkuK0nOicnKTtkcmF3KCl9CmZ1bmN0aW9uIGFjdChhKXtpZihhPT09J2xlZnQnKW1vdmUoLTEsMCk7aWYoYT09PSdyaWdodCcpbW92ZSgxLDApO2lmKGE9PT0nZG93bicpe2lmKG1vdmUoMCwxKSlzY29yZSsrO3VwZGF0ZUluZm8oKX1pZihhPT09J3JvdGF0ZScpcm90YXRlKCk7aWYoYT09PSdkcm9wJyloYXJkRHJvcCgpO2lmKGE9PT0ncGF1c2UnKXRvZ2dsZVBhdXNlKCk7aWYoYT09PSdyZXN0YXJ0Jyl7ZnJlc2goKTtjYW5jZWxBbmltYXRpb25GcmFtZShyYWYpO3JhZj1yZXF1ZXN0QW5pbWF0aW9uRnJhbWUodGljayl9fQpkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCcudEtleScpLmZvckVhY2goYj0+e2NvbnN0IGE9Yi5kYXRhc2V0LmFjdDtiLmFkZEV2ZW50TGlzdGVuZXIoJ3BvaW50ZXJkb3duJyxlPT57ZS5wcmV2ZW50RGVmYXVsdCgpO2FjdChhKX0pfSk7CndpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJyxlPT57aWYoc2NyZWVuLnN0eWxlLmRpc3BsYXkhPT0nZmxleCcpcmV0dXJuO2NvbnN0IG1hcD17QXJyb3dMZWZ0OidsZWZ0JyxBcnJvd1JpZ2h0OidyaWdodCcsQXJyb3dEb3duOidkb3duJyxBcnJvd1VwOidyb3RhdGUnLCcgJzonZHJvcCcsRXNjYXBlOidwYXVzZSd9O2lmKG1hcFtlLmtleV0pe2UucHJldmVudERlZmF1bHQoKTthY3QobWFwW2Uua2V5XSl9fSk7CmNvbnN0IFQ9e3N0YXJ0LHN0b3B9O3dpbmRvdy5fX1RFVFJJUz1UO2ZyZXNoKCk7cGxheWluZz1mYWxzZTtkcmF3KCk7Cn0pKCk7Cjwvc2NyaXB0Pgo8ZGl2IGlkPSJwb3J0YWxIb21lIj4KIDxkaXYgY2xhc3M9InBvcnRhbEdyaWRCZyI+PC9kaXY+CiA8aGVhZGVyIGNsYXNzPSJwb3J0YWxCYXIiPgogIDxkaXYgY2xhc3M9InBvcnRhbEJyYW5kIj48ZGl2IGNsYXNzPSJwb3J0YWxNYXJrIj5OPC9kaXY+PGRpdj5ORU9OIEFSQ0FERTxzbWFsbD5QRVJTT05BTCBHQU1FIFBPUlRBTDwvc21hbGw+PC9kaXY+PC9kaXY+CiAgPGRpdiBzdHlsZT0iZm9udC1zaXplOjlweDtsZXR0ZXItc3BhY2luZzouMTZlbTtjb2xvcjojOTFhNmJiIj5HQU1FIFBPUlRBTDwvZGl2PgogPC9oZWFkZXI+CiA8bWFpbiBjbGFzcz0icG9ydGFsV3JhcCI+CiAgPHNlY3Rpb24gY2xhc3M9InBvcnRhbEhlcm8iPgogICA8ZGl2IGNsYXNzPSJwb3J0YWxFeWVicm93Ij5TRUxFQ1QgWU9VUiBFWFBFUklFTkNFPC9kaXY+CiAgIDxoMj5QTEFZIFRIRTxicj48c3Bhbj5ORVhUIExFVkVMLjwvc3Bhbj48L2gyPgogICA8cCBjbGFzcz0icG9ydGFsSW50cm8iPuOBk+OBk+OBi+OCieOCsuODvOODoOOBruS4lueVjOOBuOOAguODrOODvOOCueOCguODkeOCuuODq+OCguOAgeOBsuOBqOOBpOOBruOCsuODvOODoOODoeODi+ODpeODvOOBi+OCiemBuOOCk+OBp+ODl+ODrOOCpOOBp+OBjeOBvuOBmeOAgjwvcD4KICAgPGRpdiBjbGFzcz0icG9ydGFsUGlsbHMiPjxzcGFuIGNsYXNzPSJwb3J0YWxQaWxsIj7inKYgVE9VQ0ggRlJJRU5ETFk8L3NwYW4+PHNwYW4gY2xhc3M9InBvcnRhbFBpbGwiPuKcpiAzRCBSQUNJTkc8L3NwYW4+PHNwYW4gY2xhc3M9InBvcnRhbFBpbGwiPuKcpiBQVVpaTEUgR0FNRTwvc3Bhbj48L2Rpdj4KICA8L3NlY3Rpb24+CiAgPHNlY3Rpb24+CiAgIDxkaXYgY2xhc3M9InBvcnRhbFNlY3Rpb25IZWFkIj4KICAgIDxkaXY+PGRpdiBjbGFzcz0icG9ydGFsS2lja2VyIj4wMSAvIEdBTUUgTElCUkFSWTwvZGl2PjxoMz7jgrLjg7zjg6DjgpLpgbjmip48L2gzPjwvZGl2PgogICAgPGRpdiBjbGFzcz0icG9ydGFsSGludCI+R0FNRSBTVEFSVOOBi+OCieODrOODvOOCueOBvuOBn+OBr+ODhuODiOODquOCueOCkumBuOOBueOBvuOBmTwvZGl2PgogICA8L2Rpdj4KICAgPGRpdiBjbGFzcz0icG9ydGFsQ2FyZHMiPgogICAgPGFydGljbGUgY2xhc3M9InBvcnRhbENhcmQiPgogICAgIDxkaXYgY2xhc3M9InBvcnRhbEFydCI+PGRpdiBjbGFzcz0icG9ydGFsQXJ0TGFiZWwiPlJBQ0lORyAvIFBVWlpMRTwvZGl2PjxkaXYgY2xhc3M9InBvcnRhbEFydEljb24iPuKXiDwvZGl2PjwvZGl2PgogICAgIDxkaXYgY2xhc3M9InBvcnRhbENhcmRCb2R5Ij4KICAgICAgPGRpdiBjbGFzcz0icG9ydGFsQ2FyZFRhZyI+VFdPIEdBTUVTIMK3IE9ORSBNRU5VPC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9InBvcnRhbENhcmRUaXRsZSI+TkVPTiBDSVJDVUlUICsgVEVUUklTPC9kaXY+CiAgICAgIDxwIGNsYXNzPSJwb3J0YWxDYXJkRGVzYyI+M0Tjg6zjg7zjgrnjgrLjg7zjg6Djgajjg4bjg4jjg6rjgrnjgpLlj47pjLLjgILjgrnjgr/jg7zjg4jlvozjga7jgrLjg7zjg6Dpgbjmip7nlLvpnaLjgafjgIHlpb3jgY3jgarmlrnjgpLpgbjjgpPjgafpgYrjgbnjgb7jgZnjgII8L3A+CiAgICAgIDxkaXYgY2xhc3M9InBvcnRhbENhcmRGb290Ij48c3BhbiBjbGFzcz0icG9ydGFsSW5kZXgiPkdBTUUgMDAxIC8gMDAyPC9zcGFuPjxidXR0b24gY2xhc3M9InBvcnRhbEJ1dHRvbiIgaWQ9InBvcnRhbEdhbWVTdGFydCI+R0FNRSBTVEFSVCDihpc8L2J1dHRvbj48L2Rpdj4KICAgICA8L2Rpdj4KICAgIDwvYXJ0aWNsZT4KICAgIDxhcnRpY2xlIGNsYXNzPSJwb3J0YWxDYXJkIj4KICAgICA8ZGl2IGNsYXNzPSJwb3J0YWxBcnQiPjxkaXYgY2xhc3M9InBvcnRhbEFydExhYmVsIj5TQ1JBVENIIC8gQ1JFQVRJT05TPC9kaXY+PGRpdiBjbGFzcz0icG9ydGFsUHV6emxlSWNvbiI+4pymPC9kaXY+PC9kaXY+CiAgICAgPGRpdiBjbGFzcz0icG9ydGFsQ2FyZEJvZHkiPgogICAgICA8ZGl2IGNsYXNzPSJwb3J0YWxDYXJkVGFnIj5DT01NVU5JVFkgR0FNRVM8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0icG9ydGFsQ2FyZFRpdGxlIj5TQ1JBVENIIEdBTUVTPC9kaXY+CiAgICAgIDxwIGNsYXNzPSJwb3J0YWxDYXJkRGVzYyI+aXR0aTczNzMg44GV44KT44GuU2NyYXRjaOWFrOmWi+S9nOWTgeOCkue0ueS7i+OAguS9nOWTgeS4gOimp+OBi+OCiemBuOOCk+OBp+ODl+ODrOOCpOOBp+OBjeOBvuOBmeOAgjwvcD4KICAgICAgPGRpdiBjbGFzcz0icG9ydGFsQ2FyZEZvb3QiPjxzcGFuIGNsYXNzPSJwb3J0YWxJbmRleCI+Q09MTEVDVElPTiAwMDM8L3NwYW4+PGJ1dHRvbiBjbGFzcz0icG9ydGFsQnV0dG9uIiBpZD0icG9ydGFsU2NyYXRjaE9wZW4iPlZJRVcgR0FNRVMg4oaXPC9idXR0b24+PC9kaXY+CiAgICAgPC9kaXY+CiAgICA8L2FydGljbGU+CiAgIDwvZGl2PgogICA8ZGl2IGNsYXNzPSJwb3J0YWxPbmVHYW1lTm90ZSI+TkVPTiBDSVJDVUlU44GoVEVUUklT44Gv5ZCM44GY44Ky44O844Og5pys5L2T44Gr57WE44G/6L6844G/5riI44G/44Gn44GZ44CCR0FNRSBTVEFSVOOCkuaKvOOBmeOBqOOAgeWFg+OBrk5FT04gQ0lSQ1VJVOOBruODoeODi+ODpeODvOOBjOmWi+OBjeOBvuOBmeOAguOBneOBk+OBp+OAjFJBQ0UgU1RBUlTjgI3jgb7jgZ/jga/jgIxURVRSSVPjgI3jgpLpgbjjgbnjgb7jgZnjgII8L2Rpdj4KICA8L3NlY3Rpb24+CiA8L21haW4+CiA8Zm9vdGVyIGNsYXNzPSJwb3J0YWxGb290ZXIiPjxkaXYgY2xhc3M9InBvcnRhbFdyYXAgcG9ydGFsRm9vdGVySW5uZXIiPjxzcGFuPk5FT04gQVJDQURFIOKAlCBHQU1FIFBPUlRBTDwvc3Bhbj48c3Bhbj5NQURFIEZPUiBQTEFZSU5HPC9zcGFuPjwvZGl2PjwvZm9vdGVyPgo8L2Rpdj4KCjxkaXYgaWQ9InBvcnRhbFNjcmF0Y2giPgogPGRpdiBjbGFzcz0icG9ydGFsR3JpZEJnIj48L2Rpdj4KIDxoZWFkZXIgY2xhc3M9InBvcnRhbEJhciI+CiAgPGRpdiBjbGFzcz0icG9ydGFsQnJhbmQiPjxkaXYgY2xhc3M9InBvcnRhbE1hcmsiPk48L2Rpdj48ZGl2Pk5FT04gQVJDQURFPHNtYWxsPlNDUkFUQ0ggQ09MTEVDVElPTjwvc21hbGw+PC9kaXY+PC9kaXY+CiAgPGEgY2xhc3M9InBvcnRhbFByb2ZpbGUiIGhyZWY9Imh0dHBzOi8vc2NyYXRjaC5taXQuZWR1L3VzZXJzL2l0dGk3MzczLyIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiPlNDUkFUQ0ggUFJPRklMRSDihpc8L2E+CiA8L2hlYWRlcj4KIDxtYWluIGNsYXNzPSJwb3J0YWxXcmFwIj4KICA8ZGl2IGNsYXNzPSJwb3J0YWxTY3JhdGNoSGVhZCI+CiAgIDxkaXY+PGRpdiBjbGFzcz0icG9ydGFsS2lja2VyIj4wMyAvIFNDUkFUQ0ggQ09MTEVDVElPTjwvZGl2PjxoMj5TQ1JBVENIIEdBTUVTPC9oMj48cD5pdHRpNzM3MyDjgZXjgpPjga7lhazplovkvZzlk4E8L3A+PC9kaXY+CiAgPC9kaXY+CiAgPGRpdiBpZD0icG9ydGFsU2NyYXRjaE5vdGljZSIgY2xhc3M9InBvcnRhbE5vdGljZSI+U2NyYXRjaOOBruWFrOmWi+S9nOWTgeOCkuiqreOBv+i+vOOCk+OBp+OBhOOBvuOBmeKApjwvZGl2PgogIDxkaXYgaWQ9InBvcnRhbFNjcmF0Y2hHcmlkIiBjbGFzcz0icG9ydGFsUHJvamVjdEdyaWQiPjwvZGl2PgogIDxkaXYgaWQ9InBvcnRhbFNjcmF0Y2hQbGF5ZXIiIGNsYXNzPSJwb3J0YWxQbGF5ZXIiPgogICA8ZGl2IGNsYXNzPSJwb3J0YWxQbGF5ZXJCYXIiPjxzdHJvbmcgaWQ9InBvcnRhbFNjcmF0Y2hUaXRsZSI+U2NyYXRjaCBQcm9qZWN0PC9zdHJvbmc+PGJ1dHRvbiBjbGFzcz0icG9ydGFsQnV0dG9uIiBpZD0icG9ydGFsU2NyYXRjaENsb3NlIj7plonjgZjjgos8L2J1dHRvbj48L2Rpdj4KICAgPGlmcmFtZSBpZD0icG9ydGFsU2NyYXRjaEZyYW1lIiBhbGxvd3RyYW5zcGFyZW5jeT0idHJ1ZSIgYWxsb3dmdWxsc2NyZWVuPjwvaWZyYW1lPgogIDwvZGl2PgogIDxkaXYgY2xhc3M9InBvcnRhbEJhY2siPjxidXR0b24gaWQ9InBvcnRhbEJhY2tIb21lIj7ihpAg44Ky44O844Og6YG45oqe44Gr5oi744KLPC9idXR0b24+PC9kaXY+CiA8L21haW4+CjwvZGl2PgoKCjxzY3JpcHQgaWQ9InBvcnRhbENvbnRyb2xsZXIiPgooKCk9PnsKIGNvbnN0IGhvbWU9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3BvcnRhbEhvbWUnKTsKIGNvbnN0IHNjcmF0Y2g9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3BvcnRhbFNjcmF0Y2gnKTsKIGNvbnN0IG1lbnU9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ21lbnUnKTsKIGNvbnN0IHJldHVybkJ1dHRvbj1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCdidXR0b24nKTsKIHJldHVybkJ1dHRvbi5pZD0ncG9ydGFsUmV0dXJuJzsKIHJldHVybkJ1dHRvbi50eXBlPSdidXR0b24nOwogcmV0dXJuQnV0dG9uLnRleHRDb250ZW50PSfihpAgTkVPTiBBUkNBREUg44Gr5oi744KLJzsKIG1lbnUucXVlcnlTZWxlY3RvcignLmNhcmQnKS5hcHBlbmRDaGlsZChyZXR1cm5CdXR0b24pOwoKIGZ1bmN0aW9uIHNob3dIb21lKCl7CiAgZG9jdW1lbnQuYm9keS5zdHlsZS50b3VjaEFjdGlvbj0ncGFuLXknOwogIGlmKHR5cGVvZiB3aW5kb3cuX19yYWNlUGF1c2VGb3JHYW1lPT09J2Z1bmN0aW9uJyl3aW5kb3cuX19yYWNlUGF1c2VGb3JHYW1lKCk7CiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3RldHJpc1NjcmVlbicpLnN0eWxlLmRpc3BsYXk9J25vbmUnOwogIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyZXN1bHQnKS5zdHlsZS5kaXNwbGF5PSdub25lJzsKICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbWVudScpLnN0eWxlLmRpc3BsYXk9J25vbmUnOwogIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdodWQnKS5zdHlsZS5kaXNwbGF5PSdub25lJzsKICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncXVpdFJhY2UnKS5zdHlsZS5kaXNwbGF5PSdub25lJzsKICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnc291bmRUb2dnbGUnKS5zdHlsZS5kaXNwbGF5PSdub25lJzsKICBjb25zdCBjYW52YXM9ZG9jdW1lbnQucXVlcnlTZWxlY3RvcignYm9keSA+IGNhbnZhcycpOwogIGlmKGNhbnZhcyljYW52YXMuc3R5bGUuZGlzcGxheT0nbm9uZSc7CiAgc2NyYXRjaC5zdHlsZS5kaXNwbGF5PSdub25lJzsKICBob21lLnN0eWxlLmRpc3BsYXk9J2Jsb2NrJzsKICB3aW5kb3cuc2Nyb2xsVG8oMCwwKTsKIH0KIGZ1bmN0aW9uIGVudGVyR2FtZU1lbnUoKXsKICBkb2N1bWVudC5ib2R5LnN0eWxlLnRvdWNoQWN0aW9uPSdub25lJzsKICBob21lLnN0eWxlLmRpc3BsYXk9J25vbmUnOwogIHNjcmF0Y2guc3R5bGUuZGlzcGxheT0nbm9uZSc7CiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2h1ZCcpLnN0eWxlLmRpc3BsYXk9Jyc7CiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ21lbnUnKS5zdHlsZS5kaXNwbGF5PSdmbGV4JzsKICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncmVzdWx0Jykuc3R5bGUuZGlzcGxheT0nbm9uZSc7CiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3F1aXRSYWNlJykuc3R5bGUuZGlzcGxheT0nbm9uZSc7CiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3NvdW5kVG9nZ2xlJykuc3R5bGUuZGlzcGxheT0nJzsKICBjb25zdCBjYW52YXM9ZG9jdW1lbnQucXVlcnlTZWxlY3RvcignYm9keSA+IGNhbnZhcycpOwogIGlmKGNhbnZhcyljYW52YXMuc3R5bGUuZGlzcGxheT0nYmxvY2snOwogfQogZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3BvcnRhbEdhbWVTdGFydCcpLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJyxlbnRlckdhbWVNZW51KTsKIHJldHVybkJ1dHRvbi5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsc2hvd0hvbWUpOwogZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3F1aXRSYWNlJykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCgpPT57fSk7CiBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndGV0cmlzQmFjaycpLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywoKT0+e30pOwogZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FnYWluJykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCgpPT57fSk7CgogY29uc3Qgc2NyYXRjaEdyaWQ9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3BvcnRhbFNjcmF0Y2hHcmlkJyk7CiBjb25zdCBub3RpY2U9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3BvcnRhbFNjcmF0Y2hOb3RpY2UnKTsKIGNvbnN0IHBsYXllcj1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncG9ydGFsU2NyYXRjaFBsYXllcicpOwogY29uc3QgZnJhbWU9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3BvcnRhbFNjcmF0Y2hGcmFtZScpOwogbGV0IHNjcmF0Y2hMb2FkZWQ9ZmFsc2U7CgogZnVuY3Rpb24gc2hvd1NjcmF0Y2goKXsKICBkb2N1bWVudC5ib2R5LnN0eWxlLnRvdWNoQWN0aW9uPSdwYW4teSc7CiAgaG9tZS5zdHlsZS5kaXNwbGF5PSdub25lJzsKICBzY3JhdGNoLnN0eWxlLmRpc3BsYXk9J2Jsb2NrJzsKICB3aW5kb3cuc2Nyb2xsVG8oMCwwKTsKICBpZighc2NyYXRjaExvYWRlZClsb2FkU2NyYXRjaCgpOwogfQogZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3BvcnRhbFNjcmF0Y2hPcGVuJykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLHNob3dTY3JhdGNoKTsKIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwb3J0YWxCYWNrSG9tZScpLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywoKT0+ewogIGNsb3NlU2NyYXRjaCgpOwogIHNjcmF0Y2guc3R5bGUuZGlzcGxheT0nbm9uZSc7CiAgaG9tZS5zdHlsZS5kaXNwbGF5PSdibG9jayc7CiAgd2luZG93LnNjcm9sbFRvKDAsMCk7CiB9KTsKIGZ1bmN0aW9uIGNsb3NlU2NyYXRjaCgpewogIGZyYW1lLnNyYz0nYWJvdXQ6YmxhbmsnOwogIHBsYXllci5zdHlsZS5kaXNwbGF5PSdub25lJzsKIH0KIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwb3J0YWxTY3JhdGNoQ2xvc2UnKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsY2xvc2VTY3JhdGNoKTsKCiBhc3luYyBmdW5jdGlvbiBsb2FkU2NyYXRjaCgpewogIG5vdGljZS50ZXh0Q29udGVudD0nU2NyYXRjaOOBruWFrOmWi+S9nOWTgeOCkuiqreOBv+i+vOOCk+OBp+OBhOOBvuOBmeKApic7CiAgc2NyYXRjaEdyaWQuaW5uZXJIVE1MPScnOwogIHRyeXsKICAgY29uc3QgcmVzcG9uc2U9YXdhaXQgZmV0Y2goJ2h0dHBzOi8vYXBpLnNjcmF0Y2gubWl0LmVkdS91c2Vycy9pdHRpNzM3My9wcm9qZWN0cy8/bGltaXQ9NDAmb2Zmc2V0PTAnKTsKICAgaWYoIXJlc3BvbnNlLm9rKXRocm93IG5ldyBFcnJvcignU2NyYXRjaCBBUEkgdW5hdmFpbGFibGUnKTsKICAgY29uc3QgcHJvamVjdHM9YXdhaXQgcmVzcG9uc2UuanNvbigpOwogICBpZighQXJyYXkuaXNBcnJheShwcm9qZWN0cyl8fHByb2plY3RzLmxlbmd0aD09PTApdGhyb3cgbmV3IEVycm9yKCdObyBwdWJsaWMgcHJvamVjdHMnKTsKICAgcHJvamVjdHMuZm9yRWFjaChwcm9qZWN0PT57CiAgICBjb25zdCBjYXJkPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2FydGljbGUnKTsKICAgIGNhcmQuY2xhc3NOYW1lPSdwb3J0YWxQcm9qZWN0JzsKICAgIGNvbnN0IGltZz1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCdpbWcnKTsKICAgIGltZy5sb2FkaW5nPSdsYXp5JzsKICAgIGltZy5hbHQ9Jyc7CiAgICBpbWcuc3JjPXByb2plY3QudGh1bWJuYWlsX3VybHx8YGh0dHBzOi8vdXBsb2Fkcy5zY3JhdGNoLm1pdC5lZHUvZ2V0X2ltYWdlL3Byb2plY3QvJHtwcm9qZWN0LmlkfV80ODB4MzYwLnBuZ2A7CiAgICBjb25zdCBpbmZvPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpOwogICAgaW5mby5jbGFzc05hbWU9J3BvcnRhbFByb2plY3RJbmZvJzsKICAgIGNvbnN0IHRpdGxlPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3N0cm9uZycpOwogICAgdGl0bGUudGV4dENvbnRlbnQ9cHJvamVjdC50aXRsZXx8J+eEoemhjOOBruS9nOWTgSc7CiAgICBjb25zdCBidXR0b249ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnYnV0dG9uJyk7CiAgICBidXR0b24udGV4dENvbnRlbnQ9J+OBk+OBruS9nOWTgeOCkumBiuOBtiDihpcnOwogICAgYnV0dG9uLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywoKT0+ewogICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwb3J0YWxTY3JhdGNoVGl0bGUnKS50ZXh0Q29udGVudD1wcm9qZWN0LnRpdGxlfHwnU2NyYXRjaCBQcm9qZWN0JzsKICAgICBmcmFtZS5zcmM9YGh0dHBzOi8vc2NyYXRjaC5taXQuZWR1L3Byb2plY3RzLyR7ZW5jb2RlVVJJQ29tcG9uZW50KHByb2plY3QuaWQpfS9lbWJlZGA7CiAgICAgcGxheWVyLnN0eWxlLmRpc3BsYXk9J2Jsb2NrJzsKICAgICBwbGF5ZXIuc2Nyb2xsSW50b1ZpZXcoe2JlaGF2aW9yOidzbW9vdGgnLGJsb2NrOidzdGFydCd9KTsKICAgIH0pOwogICAgaW5mby5hcHBlbmQodGl0bGUsYnV0dG9uKTsKICAgIGNhcmQuYXBwZW5kKGltZyxpbmZvKTsKICAgIHNjcmF0Y2hHcmlkLmFwcGVuZChjYXJkKTsKICAgfSk7CiAgIG5vdGljZS5zdHlsZS5kaXNwbGF5PSdub25lJzsKICAgc2NyYXRjaExvYWRlZD10cnVlOwogIH1jYXRjaChlcnJvcil7CiAgIG5vdGljZS5zdHlsZS5kaXNwbGF5PSdibG9jayc7CiAgIG5vdGljZS5pbm5lckhUTUw9J+WFrOmWi+S9nOWTgeS4gOimp+OCkuiHquWLleWPluW+l+OBp+OBjeOBvuOBm+OCk+OBp+OBl+OBn+OAglNjcmF0Y2jlgbTjgb7jgZ/jga/jg5bjg6njgqbjgrbjga7pgJrkv6HliLbpmZDjga7lj6/og73mgKfjgYzjgYLjgorjgb7jgZnjgII8YnI+PGJyPjxhIGhyZWY9Imh0dHBzOi8vc2NyYXRjaC5taXQuZWR1L3VzZXJzL2l0dGk3MzczLyIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIiIHN0eWxlPSJjb2xvcjojNTdlOGZmIj5pdHRpNzM3MyDjgZXjgpPjga5TY3JhdGNo44OX44Ot44OV44Kj44O844Or44KS6ZaL44GPIOKGlzwvYT48YnI+44OX44Ot44OV44Kj44O844Or44GL44KJ5YWs6ZaL5L2c5ZOB44KS6YG444G544G+44GZ44CCJzsKICB9CiB9CiBzaG93SG9tZSgpOwp9KSgpOwo8L3NjcmlwdD4KPC9ib2R5Pgo8L2h0bWw+Cg==';
+    </p>
+    <p>function decodeB64Utf8(str) {</p>
+    <p>const bin = atob(str);</p>
+    <p>const bytes = new Uint8Array(bin.length);</p>
+    <p>for (let i = 0; i &lt; bin.length; i++) bytes[i] = bin.charCodeAt(i);</p>
+    <p>return new TextDecoder().decode(bytes);</p>
+    <p>}</p>
+    <p>const PRESET_NEON_ITEM = {</p>
+    <p>id: 'preset_neon_arcade',</p>
+    <p>title: 'NEON ARCADE',</p>
+    <p>code: decodeB64Utf8(PRESET_NEON_B64)</p>
+    <p>};</p>
+    <p><br /></p>
+    <p>const defaultDeepCode = `&lt;!DOCTYPE html&gt;</p>
+    <p>&lt;html lang="ja"&gt;</p>
+    <p>&lt;head&gt;</p>
+    <p>&lt;meta charset="UTF-8" /&gt;</p>
+    <p>&lt;style&gt;</p>
+    <p>
+      body { margin: 0; font-family: monospace; background: #030712; color: #34d399; display: flex; align-items: center;
+      justify-content: center; min-height: 100vh; text-align: center; padding: 24px; box-sizing: border-box; }
+    </p>
+    <p>
+      .box { border: 1px solid #06b6d4; padding: 32px; border-radius: 12px; max-width: 520px; background: rgba(6, 182,
+      212, 0.06); }
+    </p>
+    <p>h1 { color: #22d3ee; margin-top: 0; font-size: 20px; letter-spacing: 2px; }</p>
+    <p>p { color: #94a3b8; font-size: 13px; line-height: 1.7; }</p>
+    <p>&lt;/style&gt;</p>
+    <p>&lt;/head&gt;</p>
+    <p>&lt;body&gt;</p>
+    <p>&lt;div class="box"&gt;</p>
+    <p>&lt;h1&gt;MULTI-CODE BANK // READY&lt;/h1&gt;</p>
+    <p>
+      &lt;p&gt;複数のHTMLコードを記憶して切り替えられます。&lt;br&gt;右上の「＋
+      新しいHTMLを追加」からコードを登録してください。&lt;/p&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;/body&gt;</p>
+    <p>&lt;/html&gt;`;</p>
+    <p><br /></p>
+    <p>const defaultState = {</p>
+    <p>coverTheme: 'school',</p>
+    <p>passcode: '7373',</p>
+    <p>savedCodes: [PRESET_NEON_ITEM],</p>
+    <p>activeCodeId: 'preset_neon_arcade',</p>
+    <p>missions: [</p>
+    <p>{ id: 1, title: '夜間観測データ（Sector-7）の照合', rank: 'TOP SECRET', done: false },</p>
+    <p>{ id: 2, title: '通信中継ノード04の暗号鍵ローテーション', rank: 'CONFIDENTIAL', done: true },</p>
+    <p>{ id: 3, title: '表サイトの偽装ログ定期クリーンアップ', rank: 'ROUTINE', done: false }</p>
+    <p>],</p>
+    <p>files: [</p>
+    <p>{</p>
+    <p>id: 'FILE-01',</p>
+    <p>title: '星陵学園・地下連絡通路に関する記録',</p>
+    <p>cipher: '0x9F 4A 7C [ENCRYPTED_DATA_BLOCK_A91] ... 認証済み端末のみ復号可能',</p>
+    <p>
+      plain:
+      '旧校舎図書館の地下2階には、かつて使われていた非常用通信設備が現在も稼働状態で保存されている。保守点検は毎月第3日曜日の深夜2時に実施。',
+    </p>
+    <p>decrypted: false</p>
+    <p>},</p>
+    <p>{</p>
+    <p>id: 'FILE-02',</p>
+    <p>title: 'オペレーション・エクリプス概要',</p>
+    <p>cipher: '0x3E 88 B1 [ENCRYPTED_DATA_BLOCK_F02] ... 認証済み端末のみ復号可能',</p>
+    <p>
+      plain:
+      '表向きのWebサイトを日常の風景に溶け込ませ、特定の合図を知る者だけが深層レイヤーへ到達できる秘密の連絡網。緊急時はESCキーひとつで即座に日常へ戻る。',
+    </p>
+    <p>decrypted: false</p>
+    <p>}</p>
+    <p>]</p>
+    <p>};</p>
+    <p><br /></p>
+    <p>function loadState() {</p>
+    <p>try {</p>
+    <p>
+      ['eclipse_portal_state_v1', 'eclipse_portal_state_v2', 'eclipse_portal_state_v3',
+      'eclipse_portal_state_v4'].forEach((k) =&gt; localStorage.removeItem(k));
+    </p>
+    <p>} catch (e) {}</p>
+    <p>return {</p>
+    <p>coverTheme: defaultState.coverTheme,</p>
+    <p>passcode: defaultState.passcode,</p>
+    <p>savedCodes: [Object.assign({}, PRESET_NEON_ITEM)],</p>
+    <p>activeCodeId: PRESET_NEON_ITEM.id,</p>
+    <p>missions: defaultState.missions.map((m) =&gt; Object.assign({}, m)),</p>
+    <p>files: defaultState.files.map((f) =&gt; Object.assign({}, f))</p>
+    <p>};</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>function saveState() {</p>
+    <p>// 再読み込みで初期状態（NEON ARCADEのみ搭載・パスコード7373）にリセットされるため永続保存しない</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>const state = loadState();</p>
+    <p>let inputCode = '';</p>
+    <p>let logoClickCount = 0;</p>
+    <p>let logoClickTimer = null;</p>
+    <p>let editingCodeId = null;</p>
+    <p><br /></p>
+    <p>let audioCtx = null;</p>
+    <p>function playBeep(freq, duration) {</p>
+    <p>try {</p>
+    <p>if (!audioCtx) {</p>
+    <p>const Ctx = window.AudioContext || window.webkitAudioContext;</p>
+    <p>if (!Ctx) return;</p>
+    <p>audioCtx = new Ctx();</p>
+    <p>}</p>
+    <p>const osc = audioCtx.createOscillator();</p>
+    <p>const gain = audioCtx.createGain();</p>
+    <p>osc.type = 'sine';</p>
+    <p>osc.frequency.value = freq;</p>
+    <p>gain.gain.value = 0.04;</p>
+    <p>osc.connect(gain);</p>
+    <p>gain.connect(audioCtx.destination);</p>
+    <p>osc.start();</p>
+    <p>osc.stop(audioCtx.currentTime + duration);</p>
+    <p>} catch (e) {}</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>// DOM References</p>
+    <p>const surfaceView = document.getElementById('surface-view');</p>
+    <p>const themeSchool = document.getElementById('theme-school');</p>
+    <p>const themeNews = document.getElementById('theme-news');</p>
+    <p>const keypadModal = document.getElementById('keypad-modal');</p>
+    <p>const keypadBox = document.getElementById('keypad-box');</p>
+    <p>const keypadDisplay = document.getElementById('keypad-display');</p>
+    <p>const keypadStatus = document.getElementById('keypad-status');</p>
+    <p>const decryptOverlay = document.getElementById('decrypt-overlay');</p>
+    <p>const decryptProgress = document.getElementById('decrypt-progress');</p>
+    <p>const secretView = document.getElementById('secret-view');</p>
+    <p>const deepSecretView = document.getElementById('deep-secret-view');</p>
+    <p>const deepEditorPanel = document.getElementById('deep-editor-panel');</p>
+    <p>const deepEditorHeading = document.getElementById('deep-editor-heading');</p>
+    <p>const deepTitleInput = document.getElementById('deep-title-input');</p>
+    <p>const deepCodeInput = document.getElementById('deep-code-input');</p>
+    <p>const deepCodeFrame = document.getElementById('deep-code-frame');</p>
+    <p>const deepSavedList = document.getElementById('deep-saved-list');</p>
+    <p>const deepFullscreenOverlay = document.getElementById('deep-fullscreen-overlay');</p>
+    <p>const deepFsCloseBtn = document.getElementById('deep-fs-close-btn');</p>
+    <p>const toastBox = document.getElementById('toast-box');</p>
+    <p><br /></p>
+    <p>function showToast(msg) {</p>
+    <p>toastBox.textContent = msg;</p>
+    <p>toastBox.classList.remove('hidden');</p>
+    <p>clearTimeout(showToast._t);</p>
+    <p>showToast._t = setTimeout(() =&gt; toastBox.classList.add('hidden'), 2600);</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>function applyCoverTheme() {</p>
+    <p>if (state.coverTheme === 'news') {</p>
+    <p>themeSchool.classList.add('hidden');</p>
+    <p>themeNews.classList.remove('hidden');</p>
+    <p>document.title = 'METRO DAILY NEWS | 最新ニュース・速報';</p>
+    <p>} else {</p>
+    <p>themeNews.classList.add('hidden');</p>
+    <p>themeSchool.classList.remove('hidden');</p>
+    <p>document.title = '私立 星陵学園 公式ホームページ | Seiryo Academy';</p>
+    <p>}</p>
+    <p>const label = document.getElementById('status-cover-label');</p>
+    <p>if (label) {</p>
+    <p>label.textContent = state.coverTheme === 'news' ? 'ニュースサイト偽装中' : '学校サイト偽装中';</p>
+    <p>}</p>
+    <p>const savedCountEl = document.getElementById('status-saved-count');</p>
+    <p>if (savedCountEl) {</p>
+    <p>savedCountEl.textContent = state.savedCodes.length + ' 件';</p>
+    <p>}</p>
+    <p>document.querySelectorAll('.cover-choice-btn').forEach((btn) =&gt; {</p>
+    <p>const active = btn.getAttribute('data-set-cover') === state.coverTheme;</p>
+    <p>btn.classList.toggle('border-emerald-500/60', active);</p>
+    <p>btn.classList.toggle('bg-emerald-500/10', active);</p>
+    <p>btn.classList.toggle('border-slate-700', !active);</p>
+    <p>btn.classList.toggle('bg-slate-950/60', !active);</p>
+    <p>});</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>function switchSchoolTab(tabName) {</p>
+    <p>document.querySelectorAll('.school-panel').forEach((p) =&gt; p.classList.add('hidden'));</p>
+    <p>const target = document.getElementById('school-panel-' + tabName);</p>
+    <p>if (target) target.classList.remove('hidden');</p>
+    <p><br /></p>
+    <p>document.querySelectorAll('.school-nav-btn').forEach((b) =&gt; {</p>
+    <p>const active = b.getAttribute('data-school-tab') === tabName;</p>
+    <p>b.classList.toggle('text-sky-800', active);</p>
+    <p>b.classList.toggle('bg-sky-50', active);</p>
+    <p>b.classList.toggle('text-slate-600', !active);</p>
+    <p>});</p>
+    <p>document.getElementById('school-mobile-nav').classList.add('hidden');</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>document.querySelectorAll('[data-school-tab]').forEach((btn) =&gt; {</p>
+    <p>btn.addEventListener('click', () =&gt; switchSchoolTab(btn.getAttribute('data-school-tab')));</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>document.getElementById('school-mobile-menu-btn').addEventListener('click', () =&gt; {</p>
+    <p>document.getElementById('school-mobile-nav').classList.toggle('hidden');</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>document.querySelectorAll('.news-cat-btn').forEach((btn) =&gt; {</p>
+    <p>btn.addEventListener('click', () =&gt; {</p>
+    <p>const cat = btn.getAttribute('data-news-cat');</p>
+    <p>document.querySelectorAll('.news-cat-btn').forEach((b) =&gt; b.classList.remove('text-rose-600'));</p>
+    <p>btn.classList.add('text-rose-600');</p>
+    <p>document.querySelectorAll('.news-card').forEach((card) =&gt; {</p>
+    <p>const match = cat === 'all' || card.getAttribute('data-cat') === cat;</p>
+    <p>card.classList.toggle('hidden', !match);</p>
+    <p>});</p>
+    <p>});</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>function openKeypad() {</p>
+    <p>inputCode = '';</p>
+    <p>updateKeypadDisplay();</p>
+    <p>keypadStatus.textContent = 'Enter Access Code';</p>
+    <p>keypadStatus.className = 'font-mono-tech text-[11px] tracking-wider text-slate-400 uppercase';</p>
+    <p>keypadModal.classList.remove('hidden');</p>
+    <p>playBeep(660, 0.08);</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>function closeKeypad() {</p>
+    <p>keypadModal.classList.add('hidden');</p>
+    <p>inputCode = '';</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>function handleLogoTrigger() {</p>
+    <p>logoClickCount += 1;</p>
+    <p>clearTimeout(logoClickTimer);</p>
+    <p>if (logoClickCount === 4) {</p>
+    <p>playBeep(520, 0.04);</p>
+    <p>}</p>
+    <p>if (logoClickCount &gt;= 5) {</p>
+    <p>logoClickCount = 0;</p>
+    <p>openKeypad();</p>
+    <p>return;</p>
+    <p>}</p>
+    <p>logoClickTimer = setTimeout(() =&gt; {</p>
+    <p>logoClickCount = 0;</p>
+    <p>}, 2000);</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>document.getElementById('school-logo-trigger').addEventListener('click', handleLogoTrigger);</p>
+    <p>document.getElementById('news-logo-trigger').addEventListener('click', handleLogoTrigger);</p>
+    <p>document.getElementById('school-year-trigger').addEventListener('dblclick', openKeypad);</p>
+    <p>document.getElementById('news-year-trigger').addEventListener('dblclick', openKeypad);</p>
+    <p>document.getElementById('keypad-close-btn').addEventListener('click', closeKeypad);</p>
+    <p><br /></p>
+    <p>function updateKeypadDisplay() {</p>
+    <p>const len = Math.max(state.passcode.length, 4);</p>
+    <p>const masked = '●'.repeat(inputCode.length);</p>
+    <p>const dashes = '-'.repeat(Math.max(0, len - inputCode.length));</p>
+    <p>keypadDisplay.textContent = masked + dashes;</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>function appendDigit(digit) {</p>
+    <p>if (inputCode.length &gt;= 8) return;</p>
+    <p>inputCode += digit;</p>
+    <p>playBeep(880, 0.04);</p>
+    <p>updateKeypadDisplay();</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>function submitPasscode() {</p>
+    <p>if (inputCode === state.passcode) {</p>
+    <p>playBeep(1046, 0.12);</p>
+    <p>keypadStatus.textContent = 'ACCESS GRANTED';</p>
+    <p>keypadStatus.className = 'font-mono-tech text-[11px] tracking-wider text-emerald-400 uppercase font-bold';</p>
+    <p>setTimeout(() =&gt; {</p>
+    <p>closeKeypad();</p>
+    <p>enterSecretSite();</p>
+    <p>}, 260);</p>
+    <p>} else {</p>
+    <p>playBeep(220, 0.18);</p>
+    <p>keypadStatus.textContent = 'ACCESS DENIED';</p>
+    <p>keypadStatus.className = 'font-mono-tech text-[11px] tracking-wider text-rose-400 uppercase font-bold';</p>
+    <p>keypadBox.className = keypadBox.className;</p>
+    <p>keypadBox.classList.remove('animate-shake');</p>
+    <p>void keypadBox.offsetWidth;</p>
+    <p>keypadBox.classList.add('animate-shake');</p>
+    <p>inputCode = '';</p>
+    <p>updateKeypadDisplay();</p>
+    <p>}</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>document.querySelectorAll('.kp-btn').forEach((btn) =&gt; {</p>
+    <p>btn.addEventListener('click', () =&gt; appendDigit(btn.getAttribute('data-key')));</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>document.getElementById('kp-clear').addEventListener('click', () =&gt; {</p>
+    <p>inputCode = '';</p>
+    <p>playBeep(440, 0.04);</p>
+    <p>updateKeypadDisplay();</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>document.getElementById('kp-enter').addEventListener('click', submitPasscode);</p>
+    <p><br /></p>
+    <p>function enterSecretSite() {</p>
+    <p>decryptOverlay.classList.remove('hidden');</p>
+    <p>decryptProgress.style.width = '0%';</p>
+    <p>setTimeout(() =&gt; { decryptProgress.style.width = '100%'; }, 40);</p>
+    <p>setTimeout(() =&gt; {</p>
+    <p>decryptOverlay.classList.add('hidden');</p>
+    <p>surfaceView.classList.add('hidden');</p>
+    <p>deepSecretView.classList.add('hidden');</p>
+    <p>secretView.classList.remove('hidden');</p>
+    <p>applyCoverTheme();</p>
+    <p>renderMissions();</p>
+    <p>renderClassifiedFiles();</p>
+    <p>lucide.createIcons();</p>
+    <p>}, 780);</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>// ===== Multi-HTML Code Bank Logic =====</p>
+    <p>function launchFullscreenCode(item) {</p>
+    <p>state.activeCodeId = item.id;</p>
+    <p>deepCodeFrame.srcdoc = item.code || defaultDeepCode;</p>
+    <p>deepFullscreenOverlay.classList.remove('hidden');</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>function closeFullscreenCode() {</p>
+    <p>deepFullscreenOverlay.classList.add('hidden');</p>
+    <p>deepCodeFrame.srcdoc = 'about:blank';</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>deepFsCloseBtn.addEventListener('click', closeFullscreenCode);</p>
+    <p><br /></p>
+    <p>function renderDeepBank() {</p>
+    <p>deepSavedList.innerHTML = '';</p>
+    <p>if (state.savedCodes.length === 0) {</p>
+    <p>const empty = document.createElement('div');</p>
+    <p>
+      empty.className = 'p-6 rounded-xl border border-slate-800 bg-slate-900/60 text-center text-xs font-mono-tech
+      text-slate-400';
+    </p>
+    <p>empty.textContent = '保存されているHTMLはありません。「＋ 新しいHTMLを追加」から登録できます。';</p>
+    <p>deepSavedList.appendChild(empty);</p>
+    <p>return;</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>state.savedCodes.forEach((item, idx) =&gt; {</p>
+    <p>const row = document.createElement('div');</p>
+    <p>
+      row.className = 'flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-xl bg-slate-900/85
+      border border-slate-800 hover:border-cyan-500/40 transition';
+    </p>
+    <p><br /></p>
+    <p>const info = document.createElement('div');</p>
+    <p>info.className = 'min-w-0 space-y-1';</p>
+    <p>const titleEl = document.createElement('div');</p>
+    <p>titleEl.className = 'flex items-center gap-2';</p>
+    <p>const badge = document.createElement('span');</p>
+    <p>
+      badge.className = 'px-2 py-0.5 rounded bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 text-[10px]
+      font-mono-tech shrink-0';
+    </p>
+    <p>badge.textContent = '#' + String(idx + 1).padStart(2, '0');</p>
+    <p>const name = document.createElement('span');</p>
+    <p>name.className = 'font-bold text-sm sm:text-base text-white truncate';</p>
+    <p>name.textContent = item.title;</p>
+    <p>titleEl.append(badge, name);</p>
+    <p><br /></p>
+    <p>const meta = document.createElement('p');</p>
+    <p>meta.className = 'text-xs font-mono-tech text-slate-400';</p>
+    <p>meta.textContent = 'サイズ: ' + item.code.length.toLocaleString() + ' 文字';</p>
+    <p>info.append(titleEl, meta);</p>
+    <p><br /></p>
+    <p>const actions = document.createElement('div');</p>
+    <p>actions.className = 'flex flex-wrap items-center gap-2 shrink-0';</p>
+    <p><br /></p>
+    <p>const launchBtn = document.createElement('button');</p>
+    <p>launchBtn.type = 'button';</p>
+    <p>
+      launchBtn.className = 'px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-mono-tech font-bold
+      text-xs tracking-wider transition';
+    </p>
+    <p>launchBtn.textContent = '全画面で開く ↗';</p>
+    <p>launchBtn.addEventListener('click', () =&gt; launchFullscreenCode(item));</p>
+    <p><br /></p>
+    <p>const editBtn = document.createElement('button');</p>
+    <p>editBtn.type = 'button';</p>
+    <p>
+      editBtn.className = 'px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-mono-tech text-xs
+      transition';
+    </p>
+    <p>editBtn.textContent = '編集';</p>
+    <p>editBtn.addEventListener('click', () =&gt; openDeepEditor(item));</p>
+    <p><br /></p>
+    <p>const delBtn = document.createElement('button');</p>
+    <p>delBtn.type = 'button';</p>
+    <p>
+      delBtn.className = 'px-3 py-2 rounded-lg bg-slate-800 hover:bg-rose-900/60 text-rose-400 font-mono-tech text-xs
+      transition';
+    </p>
+    <p>delBtn.textContent = '削除';</p>
+    <p>delBtn.addEventListener('click', () =&gt; {</p>
+    <p>state.savedCodes.splice(idx, 1);</p>
+    <p>if (state.activeCodeId === item.id) {</p>
+    <p>state.activeCodeId = state.savedCodes.length &gt; 0 ? state.savedCodes[0].id : null;</p>
+    <p>}</p>
+    <p>saveState();</p>
+    <p>renderDeepBank();</p>
+    <p>applyCoverTheme();</p>
+    <p>showToast('「' + item.title + '」を削除しました');</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>actions.append(launchBtn, editBtn, delBtn);</p>
+    <p>row.append(info, actions);</p>
+    <p>deepSavedList.appendChild(row);</p>
+    <p>});</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>function openDeepEditor(item) {</p>
+    <p>if (item) {</p>
+    <p>editingCodeId = item.id;</p>
+    <p>deepEditorHeading.textContent = '// コードの編集: ' + item.title;</p>
+    <p>deepTitleInput.value = item.title;</p>
+    <p>deepCodeInput.value = item.code;</p>
+    <p>} else {</p>
+    <p>editingCodeId = null;</p>
+    <p>deepEditorHeading.textContent = '// 新しいHTMLコードを追加';</p>
+    <p>deepTitleInput.value = '';</p>
+    <p>deepCodeInput.value = '';</p>
+    <p>}</p>
+    <p>deepEditorPanel.classList.remove('hidden');</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>function openDeepCore() {</p>
+    <p>secretView.classList.add('hidden');</p>
+    <p>deepSecretView.classList.remove('hidden');</p>
+    <p>renderDeepBank();</p>
+    <p>deepEditorPanel.classList.add('hidden');</p>
+    <p>lucide.createIcons();</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>document.getElementById('enter-deep-core-btn').addEventListener('click', openDeepCore);</p>
+    <p>document.getElementById('enter-deep-core-card-btn').addEventListener('click', openDeepCore);</p>
+    <p><br /></p>
+    <p>document.getElementById('back-to-layer1-btn').addEventListener('click', () =&gt; {</p>
+    <p>closeFullscreenCode();</p>
+    <p>deepSecretView.classList.add('hidden');</p>
+    <p>secretView.classList.remove('hidden');</p>
+    <p>applyCoverTheme();</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>document.getElementById('deep-new-code-btn').addEventListener('click', () =&gt; {</p>
+    <p>openDeepEditor(null);</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>document.getElementById('deep-cancel-edit-btn').addEventListener('click', () =&gt; {</p>
+    <p>deepEditorPanel.classList.add('hidden');</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>document.getElementById('deep-run-code-btn').addEventListener('click', () =&gt; {</p>
+    <p>const code = deepCodeInput.value;</p>
+    <p>if (!code.trim()) {</p>
+    <p>showToast('HTMLコードを入力してください');</p>
+    <p>return;</p>
+    <p>}</p>
+    <p>const title = deepTitleInput.value.trim() || ('秘密ページ ' + (state.savedCodes.length + 1));</p>
+    <p>let targetItem = null;</p>
+    <p><br /></p>
+    <p>if (editingCodeId) {</p>
+    <p>targetItem = state.savedCodes.find((c) =&gt; c.id === editingCodeId);</p>
+    <p>if (targetItem) {</p>
+    <p>targetItem.title = title;</p>
+    <p>targetItem.code = code;</p>
+    <p>}</p>
+    <p>} else {</p>
+    <p>const newId = 'code_' + Date.now();</p>
+    <p>targetItem = { id: newId, title, code };</p>
+    <p>state.savedCodes.push(targetItem);</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>saveState();</p>
+    <p>deepEditorPanel.classList.add('hidden');</p>
+    <p>renderDeepBank();</p>
+    <p>applyCoverTheme();</p>
+    <p>if (targetItem) launchFullscreenCode(targetItem);</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>function panicLock() {</p>
+    <p>closeFullscreenCode();</p>
+    <p>secretView.classList.add('hidden');</p>
+    <p>deepSecretView.classList.add('hidden');</p>
+    <p>closeKeypad();</p>
+    <p>surfaceView.classList.remove('hidden');</p>
+    <p>applyCoverTheme();</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>document.getElementById('panic-lock-btn').addEventListener('click', panicLock);</p>
+    <p>document.getElementById('deep-panic-btn').addEventListener('click', panicLock);</p>
+    <p><br /></p>
+    <p>document.addEventListener('keydown', (e) =&gt; {</p>
+    <p>if (e.key === 'Escape') {</p>
+    <p>if (!secretView.classList.contains('hidden') || !deepSecretView.classList.contains('hidden')) {</p>
+    <p>panicLock();</p>
+    <p>} else if (!keypadModal.classList.contains('hidden')) {</p>
+    <p>closeKeypad();</p>
+    <p>}</p>
+    <p>return;</p>
+    <p>}</p>
+    <p>
+      if (e.shiftKey &amp;&amp; (e.key === 'K' || e.key === 'k') &amp;&amp; secretView.classList.contains('hidden')
+      &amp;&amp; deepSecretView.classList.contains('hidden')) {
+    </p>
+    <p>openKeypad();</p>
+    <p>return;</p>
+    <p>}</p>
+    <p>if (!keypadModal.classList.contains('hidden')) {</p>
+    <p>if (/^\d$/.test(e.key)) {</p>
+    <p>appendDigit(e.key);</p>
+    <p>} else if (e.key === 'Backspace') {</p>
+    <p>inputCode = inputCode.slice(0, -1);</p>
+    <p>updateKeypadDisplay();</p>
+    <p>} else if (e.key === 'Enter') {</p>
+    <p>submitPasscode();</p>
+    <p>}</p>
+    <p>}</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>document.querySelectorAll('.secret-tab-btn').forEach((btn) =&gt; {</p>
+    <p>btn.addEventListener('click', () =&gt; {</p>
+    <p>const tab = btn.getAttribute('data-secret-tab');</p>
+    <p>document.querySelectorAll('.secret-panel').forEach((p) =&gt; p.classList.add('hidden'));</p>
+    <p>document.getElementById('secret-panel-' + tab).classList.remove('hidden');</p>
+    <p>document.querySelectorAll('.secret-tab-btn').forEach((b) =&gt; {</p>
+    <p>const active = b === btn;</p>
+    <p>b.classList.toggle('bg-emerald-500/20', active);</p>
+    <p>b.classList.toggle('text-emerald-300', active);</p>
+    <p>b.classList.toggle('border', active);</p>
+    <p>b.classList.toggle('border-emerald-500/40', active);</p>
+    <p>b.classList.toggle('text-slate-400', !active);</p>
+    <p>});</p>
+    <p>});</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>function renderMissions() {</p>
+    <p>const list = document.getElementById('mission-list');</p>
+    <p>list.innerHTML = '';</p>
+    <p>let activeCount = 0;</p>
+    <p>state.missions.forEach((m) =&gt; {</p>
+    <p>if (!m.done) activeCount++;</p>
+    <p>const li = document.createElement('li');</p>
+    <p>
+      li.className = 'flex items-center justify-between gap-3 p-3 rounded-lg bg-slate-950/70 border border-slate-800
+      hover:border-emerald-500/40 cursor-pointer transition';
+    </p>
+    <p>li.innerHTML = `</p>
+    <p>&lt;div class="flex items-center gap-3 min-w-0"&gt;</p>
+    <p>
+      &lt;span class="w-4 h-4 rounded border flex items-center justify-center shrink-0 ${m.done ? 'bg-emerald-500
+      border-emerald-500 text-slate-950' : 'border-slate-600'}"&gt;
+    </p>
+    <p>${m.done ? '✓' : ''}</p>
+    <p>&lt;/span&gt;</p>
+    <p>
+      &lt;span class="text-sm truncate ${m.done ? 'line-through text-slate-500' : 'text-slate-100'}"&gt;&lt;/span&gt;
+    </p>
+    <p>&lt;/div&gt;</p>
+    <p>
+      &lt;span class="px-2 py-0.5 rounded text-[10px] font-mono-tech shrink-0 ${m.rank === 'TOP SECRET' ?
+      'bg-rose-500/20 text-rose-300' : m.rank === 'CONFIDENTIAL' ? 'bg-amber-500/20 text-amber-300' : 'bg-slate-800
+      text-slate-400'}"&gt;${m.rank}&lt;/span&gt;
+    </p>
+    <p>`;</p>
+    <p>li.querySelector('span.text-sm').textContent = m.title;</p>
+    <p>li.addEventListener('click', () =&gt; {</p>
+    <p>m.done = !m.done;</p>
+    <p>saveState();</p>
+    <p>renderMissions();</p>
+    <p>});</p>
+    <p>list.appendChild(li);</p>
+    <p>});</p>
+    <p>document.getElementById('status-mission-count').textContent = activeCount + ' 件';</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>document.getElementById('mission-form').addEventListener('submit', (e) =&gt; {</p>
+    <p>e.preventDefault();</p>
+    <p>const input = document.getElementById('mission-input');</p>
+    <p>const rank = document.getElementById('mission-rank').value;</p>
+    <p>const val = input.value.trim();</p>
+    <p>if (!val) return;</p>
+    <p>state.missions.unshift({ id: Date.now(), title: val, rank, done: false });</p>
+    <p>input.value = '';</p>
+    <p>saveState();</p>
+    <p>renderMissions();</p>
+    <p>showToast('新規指令を登録しました');</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>function renderClassifiedFiles() {</p>
+    <p>const grid = document.getElementById('classified-grid');</p>
+    <p>grid.innerHTML = '';</p>
+    <p>state.files.forEach((f) =&gt; {</p>
+    <p>const card = document.createElement('div');</p>
+    <p>
+      card.className = 'bg-slate-900/80 border border-slate-800 hover:border-emerald-500/40 rounded-xl p-5 space-y-3
+      cursor-pointer transition';
+    </p>
+    <p>card.innerHTML = `</p>
+    <p>&lt;div class="flex items-center justify-between"&gt;</p>
+    <p>&lt;span class="font-mono-tech text-xs text-emerald-400"&gt;${f.id}&lt;/span&gt;</p>
+    <p>
+      &lt;span class="text-[10px] font-mono-tech px-2 py-0.5 rounded ${f.decrypted ? 'bg-emerald-500/20
+      text-emerald-300' : 'bg-slate-800 text-slate-400'}"&gt;
+    </p>
+    <p>${f.decrypted ? 'DECRYPTED' : 'LOCKED'}</p>
+    <p>&lt;/span&gt;</p>
+    <p>&lt;/div&gt;</p>
+    <p>&lt;h3 class="font-bold text-white text-sm"&gt;${f.title}&lt;/h3&gt;</p>
+    <p>
+      &lt;p class="text-xs leading-relaxed font-mono-tech ${f.decrypted ? 'text-slate-200' :
+      'text-slate-500'}"&gt;${f.decrypted ? f.plain : f.cipher}&lt;/p&gt;
+    </p>
+    <p>`;</p>
+    <p>card.addEventListener('click', () =&gt; {</p>
+    <p>f.decrypted = !f.decrypted;</p>
+    <p>playBeep(f.decrypted ? 920 : 520, 0.05);</p>
+    <p>renderClassifiedFiles();</p>
+    <p>});</p>
+    <p>grid.appendChild(card);</p>
+    <p>});</p>
+    <p>}</p>
+    <p><br /></p>
+    <p>document.querySelectorAll('[data-set-cover]').forEach((btn) =&gt; {</p>
+    <p>btn.addEventListener('click', () =&gt; {</p>
+    <p>state.coverTheme = btn.getAttribute('data-set-cover');</p>
+    <p>saveState();</p>
+    <p>applyCoverTheme();</p>
+    <p>showToast('表サイトの偽装テーマを更新しました');</p>
+    <p>});</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>document.getElementById('passcode-form').addEventListener('submit', (e) =&gt; {</p>
+    <p>e.preventDefault();</p>
+    <p>const input = document.getElementById('new-passcode-input');</p>
+    <p>const feedback = document.getElementById('passcode-feedback');</p>
+    <p>const val = input.value.trim();</p>
+    <p>if (!/^\d{4,8}$/.test(val)) {</p>
+    <p>feedback.textContent = 'エラー：4〜8桁の半角数字で入力してください。';</p>
+    <p>feedback.className = 'text-xs font-mono-tech text-rose-400';</p>
+    <p>return;</p>
+    <p>}</p>
+    <p>state.passcode = val;</p>
+    <p>saveState();</p>
+    <p>input.value = '';</p>
+    <p>feedback.textContent = 'パスコードを更新しました（再読み込みすると7373にリセットされます）';</p>
+    <p>feedback.className = 'text-xs font-mono-tech text-emerald-400';</p>
+    <p>showToast('パスコードを変更しました');</p>
+    <p>});</p>
+    <p><br /></p>
+    <p>setInterval(() =&gt; {</p>
+    <p>const el = document.getElementById('secret-clock');</p>
+    <p>if (el) {</p>
+    <p>const now = new Date();</p>
+    <p>el.textContent = now.toTimeString().slice(0, 8);</p>
+    <p>}</p>
+    <p>}, 1000);</p>
+    <p><br /></p>
+    <p>applyCoverTheme();</p>
+    <p>lucide.createIcons();</p>
+    <p>})();</p>
+    <p>&lt;/script&gt;</p>
+    <p>&lt;/body&gt;</p>
+    <p>&lt;/html&gt;</p>
+  </body>
+</html>

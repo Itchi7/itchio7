@@ -36,6 +36,47 @@
     .scanline-bar {
       animation: scanline 6s linear infinite;
     }
+    @keyframes schoolFadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .school-panel:not(.hidden) {
+      animation: schoolFadeUp 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    #theme-school button {
+      transition: transform 0.11s ease-out, background-color 0.16s ease, box-shadow 0.14s ease, border-color 0.16s ease;
+    }
+    #theme-school button:active,
+    #theme-school button.is-pressed {
+      transform: scale(0.975) translateY(1px);
+    }
+    #theme-school #school-logo-trigger:active,
+    #theme-school #school-logo-trigger.is-pressed {
+      transform: none;
+    }
+    #theme-school .crest-icon {
+      transition: transform 0.11s ease-out, box-shadow 0.11s ease-out;
+    }
+    #theme-school #school-logo-trigger:active .crest-icon,
+    #theme-school #school-logo-trigger.is-pressed .crest-icon {
+      transform: scale(0.94) translateY(1px);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+    }
+    .school-motion-card {
+      transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.24s ease, border-color 0.24s ease;
+    }
+    .school-motion-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -8px rgba(14, 116, 144, 0.16);
+      border-color: rgb(125 211 252);
+    }
+    .school-news-row {
+      transition: background-color 0.18s ease, padding-left 0.18s ease;
+    }
+    .school-news-row:hover {
+      background-color: rgba(240, 249, 255, 0.85);
+      padding-left: 1.35rem;
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-500/30">
@@ -57,7 +98,7 @@
       <header class="border-b border-slate-200 bg-white sticky top-0 z-30">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
           <button type="button" id="school-logo-trigger" class="flex items-center gap-3 text-left group focus:outline-none select-none" title="私立 星陵学園">
-            <div class="w-11 h-11 rounded-full bg-sky-800 text-white flex items-center justify-center shadow-sm transition-transform duration-150 group-active:scale-95">
+            <div class="crest-icon w-11 h-11 rounded-full bg-sky-800 text-white flex items-center justify-center shadow-sm transition-transform duration-150 group-hover:scale-105">
               <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
               </svg>
@@ -131,21 +172,21 @@
           </div>
 
           <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-6">
-            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-2">
+            <div class="school-motion-card bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-2">
               <div class="w-9 h-9 rounded-lg bg-sky-100 text-sky-800 flex items-center justify-center">
                 <i data-lucide="book-open" class="w-5 h-5"></i>
               </div>
               <h3 class="font-bold text-slate-900">探究型カリキュラム</h3>
               <p class="text-sm text-slate-600 leading-relaxed">課題発見から実験・発表までを一貫して行う独自プログラムを全学年で導入しています。</p>
             </div>
-            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-2">
+            <div class="school-motion-card bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-2">
               <div class="w-9 h-9 rounded-lg bg-sky-100 text-sky-800 flex items-center justify-center">
                 <i data-lucide="globe" class="w-5 h-5"></i>
               </div>
               <h3 class="font-bold text-slate-900">国際交流プログラム</h3>
               <p class="text-sm text-slate-600 leading-relaxed">姉妹校とのオンライン交流や海外研修を通じて、実践的な語学力と異文化理解を深めます。</p>
             </div>
-            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-2">
+            <div class="school-motion-card bg-slate-50 border border-slate-200 rounded-xl p-5 space-y-2">
               <div class="w-9 h-9 rounded-lg bg-sky-100 text-sky-800 flex items-center justify-center">
                 <i data-lucide="award" class="w-5 h-5"></i>
               </div>
@@ -250,22 +291,95 @@
 
         <!-- Tab: News -->
         <section id="school-panel-news" class="school-panel hidden max-w-4xl mx-auto px-4 py-12 space-y-6">
-          <h2 class="text-2xl font-serif-jp font-bold text-slate-900 border-b border-slate-200 pb-3">学園からのお知らせ</h2>
-          <div class="divide-y divide-slate-200 border border-slate-200 rounded-xl bg-white">
-            <div class="p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-              <span class="text-xs font-mono-tech text-slate-500">2026.11.18</span>
-              <span class="px-2 py-0.5 text-xs rounded bg-sky-100 text-sky-800 w-fit">重要</span>
-              <span class="text-sm font-medium text-slate-800">冬季休業期間中の事務室窓口の取り扱いについて</span>
+          <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+            <h2 class="text-2xl font-serif-jp font-bold text-slate-900">学園からのお知らせ</h2>
+            <span class="text-xs font-mono-tech text-slate-500">全 17 件</span>
+          </div>
+          <div class="divide-y divide-slate-200 border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.11.21</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-700 w-fit shrink-0">行事</span>
+              <span class="text-sm font-medium text-slate-800">星陵祭（文化祭）一般公開にご来場いただきありがとうございました</span>
             </div>
-            <div class="p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-              <span class="text-xs font-mono-tech text-slate-500">2026.11.10</span>
-              <span class="px-2 py-0.5 text-xs rounded bg-emerald-100 text-emerald-800 w-fit">部活動</span>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.11.18</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-sky-100 text-sky-800 w-fit shrink-0">重要</span>
+              <span class="text-sm font-medium text-slate-800">冬季休業期間中の事務室窓口・証明書発行の取り扱いについて</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.11.15</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-indigo-100 text-indigo-800 w-fit shrink-0">進路</span>
+              <span class="text-sm font-medium text-slate-800">高2対象・冬の大学別進路ガイダンス申込受付を開始しました</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.11.12</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-amber-100 text-amber-800 w-fit shrink-0">入試</span>
+              <span class="text-sm font-medium text-slate-800">2027年度 帰国生・一般入試の出願要項を公開しました</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.11.10</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-emerald-100 text-emerald-800 w-fit shrink-0">部活動</span>
               <span class="text-sm font-medium text-slate-800">物理・天文部が関東地区科学コンテストで優秀賞を受賞しました</span>
             </div>
-            <div class="p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-              <span class="text-xs font-mono-tech text-slate-500">2026.11.02</span>
-              <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-700 w-fit">行事</span>
-              <span class="text-sm font-medium text-slate-800">星陵祭（11/21開催）タイムテーブルを公開しました</span>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.11.07</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-sky-100 text-sky-800 w-fit shrink-0">重要</span>
+              <span class="text-sm font-medium text-slate-800">11月28日（土）保護者懇談会・授業参観のご案内</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.11.05</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-emerald-100 text-emerald-800 w-fit shrink-0">部活動</span>
+              <span class="text-sm font-medium text-slate-800">吹奏楽部 第28回定期演奏会（12月開催）の整理券配布について</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.11.02</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-700 w-fit shrink-0">行事</span>
+              <span class="text-sm font-medium text-slate-800">星陵祭（11/21開催）タイムテーブルおよび模擬店マップを公開しました</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.10.29</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-purple-100 text-purple-800 w-fit shrink-0">探究</span>
+              <span class="text-sm font-medium text-slate-800">探究学習中間発表会（中学3年・高校1年）の優秀発表グループ一覧</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.10.25</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-sky-100 text-sky-800 w-fit shrink-0">重要</span>
+              <span class="text-sm font-medium text-slate-800">インフルエンザ等感染症予防に伴う登校時の健康観察について</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.10.21</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-cyan-100 text-cyan-800 w-fit shrink-0">国際</span>
+              <span class="text-sm font-medium text-slate-800">カナダ提携校・短期交換留学生の受け入れレポートを掲載しました</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.10.18</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-amber-100 text-amber-800 w-fit shrink-0">入試</span>
+              <span class="text-sm font-medium text-slate-800">第2回 学校説明会・校内見学会（11/14開催）予約フォームを公開</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.10.14</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-emerald-100 text-emerald-800 w-fit shrink-0">部活動</span>
+              <span class="text-sm font-medium text-slate-800">陸上競技部が秋季県大会・男子4×100mリレーで3位入賞しました</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.10.10</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-700 w-fit shrink-0">事務</span>
+              <span class="text-sm font-medium text-slate-800">校内ネットワーク設備メンテナンスに伴う連絡網一時停止のお知らせ</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.10.07</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-700 w-fit shrink-0">行事</span>
+              <span class="text-sm font-medium text-slate-800">芸術鑑賞教室（交響楽団公演）を実施しました</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.10.04</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-indigo-100 text-indigo-800 w-fit shrink-0">進路</span>
+              <span class="text-sm font-medium text-slate-800">卒業生によるキャリアトークイベント開催報告</span>
+            </div>
+            <div class="school-news-row p-4 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span class="text-xs font-mono-tech text-slate-500 shrink-0">2026.10.01</span>
+              <span class="px-2 py-0.5 text-xs rounded bg-sky-100 text-sky-800 w-fit shrink-0">重要</span>
+              <span class="text-sm font-medium text-slate-800">後期始業式および10月からの完全冬服移行について</span>
             </div>
           </div>
         </section>
@@ -274,19 +388,19 @@
         <section id="school-panel-clubs" class="school-panel hidden max-w-4xl mx-auto px-4 py-12 space-y-6">
           <h2 class="text-2xl font-serif-jp font-bold text-slate-900 border-b border-slate-200 pb-3">部活動紹介</h2>
           <div class="grid sm:grid-cols-2 gap-4">
-            <div class="p-4 border border-slate-200 rounded-xl">
+            <div class="school-motion-card p-4 border border-slate-200 rounded-xl bg-white">
               <h3 class="font-bold text-slate-900">吹奏楽部</h3>
               <p class="text-sm text-slate-600 mt-1">週4日、音楽室にて活動中。定期演奏会は毎年満員御礼です。</p>
             </div>
-            <div class="p-4 border border-slate-200 rounded-xl">
+            <div class="school-motion-card p-4 border border-slate-200 rounded-xl bg-white">
               <h3 class="font-bold text-slate-900">物理・情報研究部</h3>
               <p class="text-sm text-slate-600 mt-1">ロボット制作やプログラミング、天体観測など幅広く探究しています。</p>
             </div>
-            <div class="p-4 border border-slate-200 rounded-xl">
+            <div class="school-motion-card p-4 border border-slate-200 rounded-xl bg-white">
               <h3 class="font-bold text-slate-900">陸上競技部</h3>
               <p class="text-sm text-slate-600 mt-1">県大会出場を目標に、日々のトレーニングに励んでいます。</p>
             </div>
-            <div class="p-4 border border-slate-200 rounded-xl">
+            <div class="school-motion-card p-4 border border-slate-200 rounded-xl bg-white">
               <h3 class="font-bold text-slate-900">茶道・華道部</h3>
               <p class="text-sm text-slate-600 mt-1">和室「星心庵」にて伝統文化の作法を楽しく学んでいます。</p>
             </div>
@@ -921,6 +1035,15 @@
       }
 
       document.getElementById('school-logo-trigger').addEventListener('click', handleLogoTrigger);
+      document.getElementById('theme-school').addEventListener('pointerdown', (e) => {
+        const btn = e.target.closest('button');
+        if (!btn) return;
+        btn.classList.add('is-pressed');
+        clearTimeout(btn._pressTimer);
+        btn._pressTimer = setTimeout(() => {
+          btn.classList.remove('is-pressed');
+        }, 120);
+      });
       document.getElementById('news-logo-trigger').addEventListener('click', handleLogoTrigger);
       document.getElementById('school-year-trigger').addEventListener('dblclick', openKeypad);
       document.getElementById('news-year-trigger').addEventListener('dblclick', openKeypad);
